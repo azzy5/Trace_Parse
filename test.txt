@@ -1,0 +1,11 @@
+2019-07-11 05:27:38.586509 ppid=13631576:pid=14024888:1:                                           	ENTER SQLSetStmtAttr
+
+2019-07-11 05:27:38.586509 ppid=13631576:pid=14024888:1:                                           	SQLHSTMT            0000000110a84ab0
+
+2019-07-11 05:27:38.586509 ppid=13631576:pid=14024888:1:                                           	SQLINTEGER                  18
+
+2019-07-11 05:27:38.586509 ppid=13631576:pid=14024888:1:                                           	SQLPOINTER                 0
+
+2019-07-11 05:27:38.586509 ppid=13631576:pid=14024888:1:                                           	SQLINTEGER                   0
+
+2019-07-11 05:27:38.586566 (Time elapsed in microseconds :       57) ppid=13631576:pid=14024888:1: 	EXIT  SQLSetStmtAttr  with return
