@@ -1,1582 +1,1220 @@
 
-OdbcTE32        4cf8-47b0	ENTER SQLAllocEnv
-		HENV *              0x0019E7DC
-
-OdbcTE32        4cf8-47b0	EXIT  SQLAllocEnv  with return code 0 (SQL_SUCCESS)
-		HENV *              0x0019E7DC ( 0x00BADBC0)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        2 <SQL_FETCH_FIRST>
-		WCHAR *             0x00BAC440
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        2 <SQL_FETCH_FIRST>
-		WCHAR *             0x00BAC440 [       9] "TestSQL32"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (9)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (39)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       2] "SF"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (2)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (25)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       3] "SF2"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (3)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (25)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       2] "MG"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (2)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (22)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       8] "Oracle12"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (8)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (35)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       9] "Cassandra"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (9)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (31)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       8] "Azur SQL"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (8)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (39)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       4] "PSG8"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (4)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (39)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       6] "PSG_VM"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (6)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (39)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       5] "Mongo"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (5)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (22)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [      13] "MongoDB_local"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (13)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (22)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       6] "SQL_14"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (6)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (39)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448 [       9] "SQLServer"
-		SWORD                       33
-		SWORD *             0x0019E7A8 (9)
-		WCHAR *             0x00000000 <null pointer>
-		SWORD                        0
-		SWORD *             0x0019E7A4 (39)
-
-OdbcTE32        4cf8-47b0	ENTER SQLDataSourcesW
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDataSourcesW  with return code 100 (SQL_NO_DATA_FOUND)
-		HENV                0x00BADBC0
-		UWORD                        1 <SQL_FETCH_NEXT>
-		WCHAR *             0x00BAE448
-		SWORD                       33
-		SWORD *             0x0019E7A8
-		WCHAR *             0x00000000
-		SWORD                        0
-		SWORD *             0x0019E7A4
-
-OdbcTE32        4cf8-47b0	ENTER SQLFreeEnv
-		HENV                0x00BADBC0
-
-OdbcTE32        4cf8-47b0	EXIT  SQLFreeEnv  with return code 0 (SQL_SUCCESS)
-		HENV                0x00BADBC0
-
-OdbcTE32        4cf8-47b0	ENTER SQLAllocHandle
+2019-05-29 18:44:24.000177 pid=14488:tid=3812                	ENTER SQLAllocHandle
 		SQLSMALLINT                  1 <SQL_HANDLE_ENV>
-		SQLHANDLE           0x00000000
-		SQLHANDLE *         0x0019ECC4
+		SQLHANDLE           0x0000000000000000
+		SQLHANDLE *         0x000000000008DF40
 
-OdbcTE32        4cf8-47b0	EXIT  SQLAllocHandle  with return code 0 (SQL_SUCCESS)
+2019-05-29 18:44:24.000177 pid=14488:tid=3812                	EXIT  SQLAllocHandle  with return code 0 (SQL_SUCCESS)
 		SQLSMALLINT                  1 <SQL_HANDLE_ENV>
-		SQLHANDLE           0x00000000
-		SQLHANDLE *         0x0019ECC4 ( 0x00BAD810)
+		SQLHANDLE           0x0000000000000000
+		SQLHANDLE *         0x000000000008DF40 ( 0x0000000005D10AB0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLSetEnvAttr
-		SQLHENV             0x00BAD810
+2019-05-29 18:44:24.000178 pid=14488:tid=3812                	ENTER SQLSetEnvAttr
+		SQLHENV             0x0000000005D10AB0
 		SQLINTEGER                 200 <SQL_ATTR_ODBC_VERSION>
-		SQLPOINTER                 3 <SQL_OV_ODBC3>
+		SQLPOINTER                   3
 		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	EXIT  SQLSetEnvAttr  with return code 0 (SQL_SUCCESS)
-		SQLHENV             0x00BAD810
+2019-05-29 18:44:24.000178 pid=14488:tid=3812                	EXIT  SQLSetEnvAttr  with return code 0 (SQL_SUCCESS)
+		SQLHENV             0x0000000005D10AB0
 		SQLINTEGER                 200 <SQL_ATTR_ODBC_VERSION>
-		SQLPOINTER                 3 <SQL_OV_ODBC3>
+		SQLPOINTER                   3
 		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetEnvAttr
-		SQLHENV             0x00BAD810
+2019-05-29 18:44:24.000178 pid=14488:tid=3812                	ENTER SQLGetEnvAttr
+		SQLHENV             0x0000000005D10AB0
 		SQLINTEGER               10001 <SQL_ATTR_OUTPUT_NTS>
-		SQLPOINTER          0x005C775C
+		SQLPOINTER             1440488
 		SQLINTEGER                 300
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetEnvAttr  with return code 0 (SQL_SUCCESS)
-		SQLHENV             0x00BAD810
+2019-05-29 18:44:24.000178 pid=14488:tid=3812                	EXIT  SQLGetEnvAttr  with return code 0 (SQL_SUCCESS)
+		SQLHENV             0x0000000005D10AB0
 		SQLINTEGER               10001 <SQL_ATTR_OUTPUT_NTS>
-		SQLPOINTER          0x005C775C (1) <SQL_TRUE>
+		SQLPOINTER             1440488
 		SQLINTEGER                 300
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLAllocHandle
+2019-05-29 18:44:24.000178 pid=14488:tid=3812                	ENTER SQLAllocHandle
 		SQLSMALLINT                  2 <SQL_HANDLE_DBC>
-		SQLHANDLE           0x00BAD810
-		SQLHANDLE *         0x0019ECBC
+		SQLHANDLE           0x0000000005D10AB0
+		SQLHANDLE *         0x000000000008DF38
 
-OdbcTE32        4cf8-47b0	EXIT  SQLAllocHandle  with return code 0 (SQL_SUCCESS)
+2019-05-29 18:44:24.000178 pid=14488:tid=3812                	EXIT  SQLAllocHandle  with return code 0 (SQL_SUCCESS)
 		SQLSMALLINT                  2 <SQL_HANDLE_DBC>
-		SQLHANDLE           0x00BAD810
-		SQLHANDLE *         0x0019ECBC ( 0x00BAD890)
+		SQLHANDLE           0x0000000005D10AB0
+		SQLHANDLE *         0x000000000008DF38 ( 0x0000000005D149D0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLDriverConnectW
-		HDBC                0x00BAD890
-		HWND                0x004E10F2
-		WCHAR *             0x6DF72440 [      -3] "******\ 0"
+2019-05-29 18:44:24.000179 pid=14488:tid=3812                	ENTER SQLDriverConnectW
+		HDBC                0x0000000005D149D0
+		HWND                0x00000000003E0A48
+		WCHAR *             0x00007FFCAF1E21B0 [      -3] "******"
 		SWORD                       -3
-		WCHAR *             0x6DF72440
+		WCHAR *             0x00007FFCAF1E21B0 [      -3] "******"
 		SWORD                       -3
-		SWORD *             0x00000000
+		SWORD *             0x0000000000000000
 		UWORD                        1 <SQL_DRIVER_COMPLETE>
 
-OdbcTE32        4cf8-47b0	EXIT  SQLDriverConnectW  with return code 0 (SQL_SUCCESS)
-		HDBC                0x00BAD890
-		HWND                0x004E10F2
-		WCHAR *             0x6DF72440 [      -3] "******\ 0"
+2019-05-29 18:44:28.000204 pid=14488:tid=3812                	EXIT  SQLDriverConnectW  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
+		HWND                0x00000000003E0A48
+		WCHAR *             0x00007FFCAF1E21B0
 		SWORD                       -3
-		WCHAR *             0x6DF72440 <Invalid buffer length!> [-3]
+		WCHAR *             0x00007FFCAF1E21B0
 		SWORD                       -3
-		SWORD *             0x00000000
+		SWORD *             0x0000000000000000
 		UWORD                        1 <SQL_DRIVER_COMPLETE>
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetFunctions
-		HDBC                0x00BAD890
+2019-05-29 18:44:28.000205 pid=14488:tid=3812                	ENTER SQLGetInfoW
+		HDBC                0x0000000005D149D0
+		UWORD                       17 <SQL_DBMS_NAME>
+		PTR                 0x0000000005D13A60
+		SWORD                      522
+		SWORD *             0x000000000008D070 (0)
+
+2019-05-29 18:44:28.000205 pid=14488:tid=3812                	EXIT  SQLGetInfoW  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
+		UWORD                       17 <SQL_DBMS_NAME>
+		PTR                 0x0000000005D13A60 [      -3] "UDB DB2 for Windows, UNIX, and Linux"
+		SWORD                      522
+		SWORD *             0x000000000008D070 (72)
+
+2019-05-29 18:44:28.000206 pid=14488:tid=3812                	ENTER SQLGetInfoW
+		HDBC                0x0000000005D149D0
+		UWORD                       18 <SQL_DBMS_VER>
+		PTR                 0x0000000005D13A60
+		SWORD                      522
+		SWORD *             0x000000000008D070 (0)
+
+2019-05-29 18:44:28.000206 pid=14488:tid=3812                	EXIT  SQLGetInfoW  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
+		UWORD                       18 <SQL_DBMS_VER>
+		PTR                 0x0000000005D13A60 [      -3] "10.50.0000"
+		SWORD                      522
+		SWORD *             0x000000000008D070 (20)
+
+2019-05-29 18:44:28.000206 pid=14488:tid=3812                	ENTER SQLGetInfoW
+		HDBC                0x0000000005D149D0
+		UWORD                        6 <SQL_DRIVER_NAME>
+		PTR                 0x0000000005D13A60
+		SWORD                      522
+		SWORD *             0x000000000008D070 (0)
+
+2019-05-29 18:44:28.000207 pid=14488:tid=3812                	EXIT  SQLGetInfoW  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
+		UWORD                        6 <SQL_DRIVER_NAME>
+		PTR                 0x0000000005D13A60 [      -3] "dddb227.dll"
+		SWORD                      522
+		SWORD *             0x000000000008D070 (22)
+
+2019-05-29 18:44:28.000207 pid=14488:tid=3812                	ENTER SQLGetInfoW
+		HDBC                0x0000000005D149D0
+		UWORD                        7 <SQL_DRIVER_VER>
+		PTR                 0x0000000005D13A60
+		SWORD                      522
+		SWORD *             0x000000000008D070 (0)
+
+2019-05-29 18:44:28.000207 pid=14488:tid=3812                	EXIT  SQLGetInfoW  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
+		UWORD                        7 <SQL_DRIVER_VER>
+		PTR                 0x0000000005D13A60 [      -3] "07.16.0306 (B0449, U0298)"
+		SWORD                      522
+		SWORD *             0x000000000008D070 (50)
+
+2019-05-29 18:44:28.000208 pid=14488:tid=3812                	ENTER SQLGetInfoW
+		HDBC                0x0000000005D149D0
+		UWORD                       26 <SQL_DEFAULT_TXN_ISOLATION>
+		PTR                     577712
+		SWORD                      261
+		SWORD *             0x000000000008D070 (0)
+
+2019-05-29 18:44:28.000208 pid=14488:tid=3812                	EXIT  SQLGetInfoW  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
+		UWORD                       26 <SQL_DEFAULT_TXN_ISOLATION>
+		PTR                     577712
+		SWORD                      261
+		SWORD *             0x000000000008D070 (4)
+
+2019-05-29 18:44:28.000209 pid=14488:tid=3812                	ENTER SQLGetFunctions
+		HDBC                0x0000000005D149D0
 		UWORD                      999
-		UWORD *             0x005FBF00
+		UWORD *             0x0000000000171A30 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetFunctions  with return code 0 (SQL_SUCCESS)
-		HDBC                0x00BAD890
+2019-05-29 18:44:28.000209 pid=14488:tid=3812                	EXIT  SQLGetFunctions  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
 		UWORD                      999
-		UWORD *             0x005FBF00 (65534)
+		UWORD *             0x0000000000171A30 (65534)
 
-OdbcTE32        4cf8-47b0	ENTER SQLAllocHandle
+2019-05-29 18:44:28.000212 pid=14488:tid=3812                	ENTER SQLAllocHandle
 		SQLSMALLINT                  3 <SQL_HANDLE_STMT>
-		SQLHANDLE           0x00BAD890
-		SQLHANDLE *         0x0019ECD4
+		SQLHANDLE           0x0000000005D149D0
+		SQLHANDLE *         0x000000000008DF50
 
-OdbcTE32        4cf8-47b0	EXIT  SQLAllocHandle  with return code 0 (SQL_SUCCESS)
+2019-05-29 18:44:28.000212 pid=14488:tid=3812                	EXIT  SQLAllocHandle  with return code 0 (SQL_SUCCESS)
 		SQLSMALLINT                  3 <SQL_HANDLE_STMT>
-		SQLHANDLE           0x00BAD890
-		SQLHANDLE *         0x0019ECD4 ( 0x04D80048)
+		SQLHANDLE           0x0000000005D149D0
+		SQLHANDLE *         0x000000000008DF50 ( 0x0000000005D16220)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10010 <SQL_ATTR_APP_ROW_DESC>
-		SQLPOINTER          0x0019EC80
+2019-05-29 18:44:28.000213 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10010 <unknown>
+		SQLPOINTER          [Unknown attribute 10010]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10010 <SQL_ATTR_APP_ROW_DESC>
-		SQLPOINTER          0x0019EC80 ( 0x04D80170)
+2019-05-29 18:44:28.000213 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10010 <unknown>
+		SQLPOINTER          [Unknown attribute 10010]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000213 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602900
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602900 (1) <SQL_DESC_ALLOC_AUTO>
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 20 <SQL_DESC_ARRAY_SIZE>
-		SQLPOINTER          0x00602900
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 20
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 20 <SQL_DESC_ARRAY_SIZE>
-		SQLPOINTER          0x00602900 (1)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 20
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602900
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602900 ( 0x00000000)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 24 <SQL_DESC_BIND_OFFSET_PTR>
-		SQLPOINTER          0x00602900
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 24
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 24 <SQL_DESC_BIND_OFFSET_PTR>
-		SQLPOINTER          0x00602900 ( 0x00000000)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 24
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000214 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 25 <SQL_DESC_BIND_TYPE>
-		SQLPOINTER          0x00602900
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 25
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT                 25 <SQL_DESC_BIND_TYPE>
-		SQLPOINTER          0x00602900 (0) <SQL_BIND_BY_COLUMN>
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 25
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT               1001 <SQL_DESC_COUNT>
-		SQLPOINTER          0x00602900
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1001
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80170
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16448
 		SQLSMALLINT                  0
-		SQLSMALLINT               1001 <SQL_DESC_COUNT>
-		SQLPOINTER          0x00602900 (0)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT               1001
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10011 <SQL_ATTR_APP_PARAM_DESC>
-		SQLPOINTER          0x0019EC80
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10011 <unknown>
+		SQLPOINTER          [Unknown attribute 10011]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10011 <SQL_ATTR_APP_PARAM_DESC>
-		SQLPOINTER          0x0019EC80 ( 0x04D80200)
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10011 <unknown>
+		SQLPOINTER          [Unknown attribute 10011]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602B78
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602B78 (1) <SQL_DESC_ALLOC_AUTO>
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000215 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 20 <SQL_DESC_ARRAY_SIZE>
-		SQLPOINTER          0x00602B78
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 20
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 20 <SQL_DESC_ARRAY_SIZE>
-		SQLPOINTER          0x00602B78 (1)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 20
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602B78
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602B78 ( 0x00000000)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 24 <SQL_DESC_BIND_OFFSET_PTR>
-		SQLPOINTER          0x00602B78
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 24
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 24 <SQL_DESC_BIND_OFFSET_PTR>
-		SQLPOINTER          0x00602B78 ( 0x00000000)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 24
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 25 <SQL_DESC_BIND_TYPE>
-		SQLPOINTER          0x00602B78
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 25
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT                 25 <SQL_DESC_BIND_TYPE>
-		SQLPOINTER          0x00602B78 (0) <SQL_BIND_BY_COLUMN>
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 25
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT               1001 <SQL_DESC_COUNT>
-		SQLPOINTER          0x00602B78
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1001
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80200
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16550
 		SQLSMALLINT                  0
-		SQLSMALLINT               1001 <SQL_DESC_COUNT>
-		SQLPOINTER          0x00602B78 (0)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT               1001
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10012 <SQL_ATTR_IMP_ROW_DESC>
-		SQLPOINTER          0x0019EC80
+2019-05-29 18:44:28.000216 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10012 <unknown>
+		SQLPOINTER          [Unknown attribute 10012]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10012 <SQL_ATTR_IMP_ROW_DESC>
-		SQLPOINTER          0x0019EC80 ( 0x04D80290)
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10012 <unknown>
+		SQLPOINTER          [Unknown attribute 10012]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80290
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16658
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code -1 (SQL_ERROR)
-		SQLHDESC            0x04D80290
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code -1 (SQL_ERROR)
+		SQLHDESC            0x0000000005D16658
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-		DIAG [HY007] [DataDirect][ODBC MongoDB driver]Associated statement is not prepared. (0)
-
-OdbcTE32        4cf8-47b0	ENTER SQLErrorW
-		HENV                0x00000000
-		HDBC                0x00000000
-		HSTMT               0x00000000
-		WCHAR *             0x0019E8DC
-		SDWORD *            0x0019E928
-		WCHAR *             0x0019E4DC
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	ENTER SQLErrorW
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008D630
+		SDWORD *            0x000000000008D624 (0)
+		WCHAR *             0x000000000008D830
 		SWORD                      512
-		SWORD *             0x0019E926
+		SWORD *             0x000000000008D620 (-10160)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLErrorW  with return code -2 (SQL_INVALID_HANDLE)
-		HENV                0x00000000
-		HDBC                0x00000000
-		HSTMT               0x00000000
-		WCHAR *             0x0019E8DC
-		SDWORD *            0x0019E928
-		WCHAR *             0x0019E4DC
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	EXIT  SQLErrorW  with return code -2 (SQL_INVALID_HANDLE)
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008D630
+		SDWORD *            0x000000000008D624 (0)
+		WCHAR *             0x000000000008D830
 		SWORD                      512
-		SWORD *             0x0019E926
+		SWORD *             0x000000000008D620 (-10160)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80290
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16658
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code -1 (SQL_ERROR)
-		SQLHDESC            0x04D80290
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code -1 (SQL_ERROR)
+		SQLHDESC            0x0000000005D16658
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-		DIAG [HY007] [DataDirect][ODBC MongoDB driver]Associated statement is not prepared. (0)
-
-OdbcTE32        4cf8-47b0	ENTER SQLErrorW
-		HENV                0x00000000
-		HDBC                0x00000000
-		HSTMT               0x00000000
-		WCHAR *             0x0019E8DC
-		SDWORD *            0x0019E928
-		WCHAR *             0x0019E4DC
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	ENTER SQLErrorW
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008D630
+		SDWORD *            0x000000000008D624 (0)
+		WCHAR *             0x000000000008D830
 		SWORD                      512
-		SWORD *             0x0019E926
+		SWORD *             0x000000000008D620 (-10160)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLErrorW  with return code -2 (SQL_INVALID_HANDLE)
-		HENV                0x00000000
-		HDBC                0x00000000
-		HSTMT               0x00000000
-		WCHAR *             0x0019E8DC
-		SDWORD *            0x0019E928
-		WCHAR *             0x0019E4DC
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	EXIT  SQLErrorW  with return code -2 (SQL_INVALID_HANDLE)
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008D630
+		SDWORD *            0x000000000008D624 (0)
+		WCHAR *             0x000000000008D830
 		SWORD                      512
-		SWORD *             0x0019E926
+		SWORD *             0x000000000008D620 (-10160)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80290
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16658
 		SQLSMALLINT                  0
-		SQLSMALLINT                 34 <SQL_DESC_ROWS_PROCESSED_PTR>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 34
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code -1 (SQL_ERROR)
-		SQLHDESC            0x04D80290
+2019-05-29 18:44:28.000217 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code -1 (SQL_ERROR)
+		SQLHDESC            0x0000000005D16658
 		SQLSMALLINT                  0
-		SQLSMALLINT                 34 <SQL_DESC_ROWS_PROCESSED_PTR>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 34
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-		DIAG [HY007] [DataDirect][ODBC MongoDB driver]Associated statement is not prepared. (0)
-
-OdbcTE32        4cf8-47b0	ENTER SQLErrorW
-		HENV                0x00000000
-		HDBC                0x00000000
-		HSTMT               0x00000000
-		WCHAR *             0x0019E8DC
-		SDWORD *            0x0019E928
-		WCHAR *             0x0019E4DC
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	ENTER SQLErrorW
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008D630
+		SDWORD *            0x000000000008D624 (0)
+		WCHAR *             0x000000000008D830
 		SWORD                      512
-		SWORD *             0x0019E926
+		SWORD *             0x000000000008D620 (-10160)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLErrorW  with return code -2 (SQL_INVALID_HANDLE)
-		HENV                0x00000000
-		HDBC                0x00000000
-		HSTMT               0x00000000
-		WCHAR *             0x0019E8DC
-		SDWORD *            0x0019E928
-		WCHAR *             0x0019E4DC
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	EXIT  SQLErrorW  with return code -2 (SQL_INVALID_HANDLE)
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008D630
+		SDWORD *            0x000000000008D624 (0)
+		WCHAR *             0x000000000008D830
 		SWORD                      512
-		SWORD *             0x0019E926
+		SWORD *             0x000000000008D620 (-10160)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10013 <SQL_ATTR_IMP_PARAM_DESC>
-		SQLPOINTER          0x0019EC80
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10013 <unknown>
+		SQLPOINTER          [Unknown attribute 10013]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER               10013 <SQL_ATTR_IMP_PARAM_DESC>
-		SQLPOINTER          0x0019EC80 ( 0x04D80320)
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER               10013 <unknown>
+		SQLPOINTER          [Unknown attribute 10013]
 		SQLINTEGER                  -4
-		SQLINTEGER *        0x00000000
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT               1099 <SQL_DESC_ALLOC_TYPE>
-		SQLPOINTER          0x00602DF0 (1) <SQL_DESC_ALLOC_AUTO>
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT               1099
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT                 21 <SQL_DESC_ARRAY_STATUS_PTR>
-		SQLPOINTER          0x00602DF0 ( 0x00000000)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 21
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT               1001 <SQL_DESC_COUNT>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT               1001
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000218 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT               1001 <SQL_DESC_COUNT>
-		SQLPOINTER          0x00602DF0 (0)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT               1001
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetDescField
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000219 pid=14488:tid=3812                	ENTER SQLGetDescFieldW
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT                 34 <SQL_DESC_ROWS_PROCESSED_PTR>
-		SQLPOINTER          0x00602DF0
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C
+		SQLSMALLINT                 34
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetDescField  with return code 0 (SQL_SUCCESS)
-		SQLHDESC            0x04D80320
+2019-05-29 18:44:28.000219 pid=14488:tid=3812                	EXIT  SQLGetDescFieldW  with return code 0 (SQL_SUCCESS)
+		SQLHDESC            0x0000000005D16760
 		SQLSMALLINT                  0
-		SQLSMALLINT                 34 <SQL_DESC_ROWS_PROCESSED_PTR>
-		SQLPOINTER          0x00602DF0 ( 0x00000000)
-		SQLINTEGER                 300
-		SQLINTEGER *        0x0019EC7C (0)
+		SQLSMALLINT                 34
+		SQLPOINTER         0x000000000015E490
+		SQLINTEGER                 600
+		SQLINTEGER *        0x000000000008DE40 (0)
 
-OdbcTE32        4cf8-47b0	ENTER SQLExecDirect
-		HSTMT               0x04D80048
-		UCHAR *             0x00570590 [      -3] "select * from test\ 0"
-		SDWORD                    -3
+2019-05-29 18:51:50.000618 pid=14488:tid=3812                	ENTER SQLPrepareW
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x0000000000175770 [      -3] "select c1 from test2296663 where length(?) = c1"
+		SDWORD                      47
 
-OdbcTE32        4cf8-47b0	EXIT  SQLExecDirect  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UCHAR *             0x00570590 [      -3] "select * from test\ 0"
-		SDWORD                    -3
+2019-05-29 18:51:50.000619 pid=14488:tid=3812                	EXIT  SQLPrepareW  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x0000000000175770
+		SDWORD                      47
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                  27 <SQL_ATTR_ROW_ARRAY_SIZE>
-		SQLPOINTER          0x0019F48C
-		SQLINTEGER                   4
-		SQLINTEGER *        0x00000000
+2019-05-29 18:51:57.000846 pid=14488:tid=3812                	ENTER SQLBindParameter
+		HSTMT               0x0000000005D16220
+		UWORD                        1
+		SWORD                        1 <SQL_PARAM_INPUT>
+		SWORD                        4 <SQL_C_LONG>
+		SWORD                        4 <SQL_INTEGER>
+		SQLULEN                     10
+		SWORD                        0
+		PTR                0x0000000002A90000
+		SQLLEN                       1
+		SQLLEN *            0x0000000002B30000 (4294967293)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                  27 <SQL_ATTR_ROW_ARRAY_SIZE>
-		SQLPOINTER          0x0019F48C (1)
-		SQLINTEGER                   4
-		SQLINTEGER *        0x00000000
+2019-05-29 18:51:57.000847 pid=14488:tid=3812                	EXIT  SQLBindParameter  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		UWORD                        1
+		SWORD                        1 <SQL_PARAM_INPUT>
+		SWORD                        4 <SQL_C_LONG>
+		SWORD                        4 <SQL_INTEGER>
+		SQLULEN                     10
+		SWORD                        0
+		PTR                0x0000000002A90000
+		SQLLEN                       1
+		SQLLEN *            0x0000000002B30000 (4294967293)
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetStmtAttr
-		SQLHSTMT            0x04D80048
+2019-05-29 18:52:01.000820 pid=14488:tid=3812                	ENTER SQLExecute
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:02.000177 pid=14488:tid=3812                	EXIT  SQLExecute  with return code -1 (SQL_ERROR)
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:04.000013 pid=14488:tid=3812                	ENTER SQLGetDiagRecW
+		SQLSMALLINT                  1
+		SQLHANDLE           0x0000000005D10AB0
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E028
+		SQLINTEGER *        0x000000000008E01C (0)
+		SQLWCHAR *          0x000000000008E560
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E010 (6030)
+
+2019-05-29 18:52:04.000013 pid=14488:tid=3812                	EXIT  SQLGetDiagRecW  with return code 100 (SQL_NO_DATA_FOUND)
+		SQLSMALLINT                  1
+		SQLHANDLE           0x0000000005D10AB0
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E028
+		SQLINTEGER *        0x000000000008E01C (0)
+		SQLWCHAR *          0x000000000008E560
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E010 (6030)
+
+2019-05-29 18:52:04.000013 pid=14488:tid=3812                	ENTER SQLErrorW
+		HENV                0x0000000000000000
+		HDBC                0x0000000005D149D0
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008E360
+		SDWORD *            0x000000000008E354 (0)
+		WCHAR *             0x000000000008E560
+		SWORD                      512
+		SWORD *             0x000000000008E350 (-6784)
+
+2019-05-29 18:52:04.000013 pid=14488:tid=3812                	EXIT  SQLErrorW  with return code 100 (SQL_NO_DATA_FOUND)
+		HENV                0x0000000000000000
+		HDBC                0x0000000005D149D0
+		HSTMT               0x0000000000000000
+		WCHAR *             0x000000000008E360
+		SDWORD *            0x000000000008E354 (0)
+		WCHAR *             0x000000000008E560
+		SWORD                      512
+		SWORD *             0x000000000008E350 (0)
+
+2019-05-29 18:52:04.000014 pid=14488:tid=3812                	ENTER SQLErrorW
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x000000000008E360
+		SDWORD *            0x000000000008E354 (0)
+		WCHAR *             0x000000000008E560
+		SWORD                      512
+		SWORD *             0x000000000008E350 (-6784)
+
+2019-05-29 18:52:04.000014 pid=14488:tid=3812                	EXIT  SQLErrorW  with return code 0 (SQL_SUCCESS)
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x000000000008E360 [      -3] "HY000"
+		SDWORD *            0x000000000008E354 (-245)
+		WCHAR *             0x000000000008E560 [     108] "[DataDirect][ODBC DB2 Wire Protocol driver][UDB DB2 fo"		SWORD                      512
+		SWORD *             0x000000000008E350 (108)
+
+2019-05-29 18:52:04.000020 pid=14488:tid=3812                	ENTER SQLErrorW
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x000000000008E360
+		SDWORD *            0x000000000008E354 (-245)
+		WCHAR *             0x000000000008E560
+		SWORD                      512
+		SWORD *             0x000000000008E350 (108)
+
+2019-05-29 18:52:04.000020 pid=14488:tid=3812                	EXIT  SQLErrorW  with return code 0 (SQL_SUCCESS)
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x000000000008E360 [      -3] "HY000"
+		SDWORD *            0x000000000008E354 (-727)
+		WCHAR *             0x000000000008E560 [     246] "[DataDirect][ODBC DB2 Wire Protocol driver][UDB DB2 for Windows, UNIX, and Linux]An error occurred during implicit system a"		SWORD                      512
+		SWORD *             0x000000000008E350 (246)
+
+2019-05-29 18:52:04.000027 pid=14488:tid=3812                	ENTER SQLErrorW
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x000000000008E360
+		SDWORD *            0x000000000008E354 (-727)
+		WCHAR *             0x000000000008E560
+		SWORD                      512
+		SWORD *             0x000000000008E350 (246)
+
+2019-05-29 18:52:04.000027 pid=14488:tid=3812                	EXIT  SQLErrorW  with return code 100 (SQL_NO_DATA_FOUND)
+		HENV                0x0000000000000000
+		HDBC                0x0000000000000000
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x000000000008E360
+		SDWORD *            0x000000000008E354 (-727)
+		WCHAR *             0x000000000008E560
+		SWORD                      512
+		SWORD *             0x000000000008E350 (0)
+
+2019-05-29 18:52:04.000027 pid=14488:tid=3812                	ENTER SQLGetDiagRecW
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16448
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (0)
+
+2019-05-29 18:52:04.000027 pid=14488:tid=3812                	EXIT  SQLGetDiagRecW  with return code 100 (SQL_NO_DATA_FOUND)
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16448
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (0)
+
+2019-05-29 18:52:04.000027 pid=14488:tid=3812                	ENTER SQLGetDiagRecW
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16550
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (0)
+
+2019-05-29 18:52:04.000027 pid=14488:tid=3812                	EXIT  SQLGetDiagRecW  with return code 100 (SQL_NO_DATA_FOUND)
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16550
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (0)
+
+2019-05-29 18:52:04.000028 pid=14488:tid=3812                	ENTER SQLGetDiagRecW
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (0)
+
+2019-05-29 18:52:04.000028 pid=14488:tid=3812                	EXIT  SQLGetDiagRecW  with return code 0 (SQL_SUCCESS)
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8 [      -3] "HY007"
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0 [      -3] "[DataDirect][ODBC DB2 Wire Protocol driver]Associated statement is not prepared."
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (80)
+
+2019-05-29 18:52:04.000028 pid=14488:tid=3812                	ENTER SQLGetDiagFieldW
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  1
+		SQLSMALLINT              -1247
+		SQLPOINTER         0x000000000008E198
+		SQLSMALLINT                  4
+		SQLSMALLINT *       0x0000000000000000
+
+2019-05-29 18:52:04.000028 pid=14488:tid=3812                	EXIT  SQLGetDiagFieldW  with return code -1 (SQL_ERROR)
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  1
+		SQLSMALLINT              -1247
+		SQLPOINTER         0x000000000008E198
+		SQLSMALLINT                  4
+		SQLSMALLINT *       0x0000000000000000
+
+2019-05-29 18:52:04.000028 pid=14488:tid=3812                	ENTER SQLGetDiagFieldW
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  1
+		SQLSMALLINT              -1248
+		SQLPOINTER         0x000000000008E194
+		SQLSMALLINT                  4
+		SQLSMALLINT *       0x0000000000000000
+
+2019-05-29 18:52:04.000028 pid=14488:tid=3812                	EXIT  SQLGetDiagFieldW  with return code -1 (SQL_ERROR)
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  1
+		SQLSMALLINT              -1248
+		SQLPOINTER         0x000000000008E194
+		SQLSMALLINT                  4
+		SQLSMALLINT *       0x0000000000000000
+
+2019-05-29 18:52:04.000042 pid=14488:tid=3812                	ENTER SQLGetDiagRecW
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  2
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (80)
+
+2019-05-29 18:52:04.000042 pid=14488:tid=3812                	EXIT  SQLGetDiagRecW  with return code 100 (SQL_NO_DATA_FOUND)
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16658
+		SQLSMALLINT                  2
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (80)
+
+2019-05-29 18:52:04.000042 pid=14488:tid=3812                	ENTER SQLGetDiagRecW
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16760
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (80)
+
+2019-05-29 18:52:04.000042 pid=14488:tid=3812                	EXIT  SQLGetDiagRecW  with return code 100 (SQL_NO_DATA_FOUND)
+		SQLSMALLINT                  4
+		SQLHANDLE           0x0000000005D16760
+		SQLSMALLINT                  1
+		SQLWCHAR *          0x000000000008E1A8
+		SQLINTEGER *        0x000000000008E19C (0)
+		SQLWCHAR *          0x000000000008E6E0
+		SQLSMALLINT                512
+		SQLSMALLINT *       0x000000000008E190 (80)
+
+2019-05-29 18:52:25.000295 pid=14488:tid=3812                	ENTER SQLExecDirectW
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x00000000001752C0 [      -3] "select c1 from test2296663 where length(1) = c1"
+		SDWORD                      -3
+
+2019-05-29 18:52:25.000625 pid=14488:tid=3812                	EXIT  SQLExecDirectW  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x00000000001752C0
+		SDWORD                      -3
+
+2019-05-29 18:52:26.000720 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27 <unknown>
+		SQLPOINTER          [Unknown attribute 27]
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
+
+2019-05-29 18:52:26.000720 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27 <unknown>
+		SQLPOINTER          [Unknown attribute 27]
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
+
+2019-05-29 18:52:26.000720 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
 		SQLINTEGER                   9 <SQL_ROWSET_SIZE>
-		SQLPOINTER          0x0019F490
-		SQLINTEGER                   4
-		SQLINTEGER *        0x00000000
+		SQLPOINTER              584392
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
+2019-05-29 18:52:26.000720 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
 		SQLINTEGER                   9 <SQL_ROWSET_SIZE>
-		SQLPOINTER          0x0019F490 (1)
-		SQLINTEGER                   4
-		SQLINTEGER *        0x00000000
+		SQLPOINTER              584392
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLSetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                  27 <SQL_ATTR_ROW_ARRAY_SIZE>
-		SQLPOINTER                 1
+2019-05-29 18:52:26.000721 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
 		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	EXIT  SQLSetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                  27 <SQL_ATTR_ROW_ARRAY_SIZE>
-		SQLPOINTER                 1
+2019-05-29 18:52:26.000721 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
 		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	ENTER SQLSetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                   9 <SQL_ROWSET_SIZE>
-		SQLPOINTER                 1
+2019-05-29 18:52:26.000721 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
 		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	EXIT  SQLSetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                   9 <SQL_ROWSET_SIZE>
-		SQLPOINTER                 1
+2019-05-29 18:52:26.000721 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
 		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	ENTER SQLGetFunctions
-		HDBC                0x00BAD890
+2019-05-29 18:52:26.000721 pid=14488:tid=3812                	ENTER SQLGetFunctions
+		HDBC                0x0000000005D149D0
 		UWORD                       61
-		UWORD *             0x0019F478
+		UWORD *             0x000000000008EAA4 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetFunctions  with return code 0 (SQL_SUCCESS)
-		HDBC                0x00BAD890
+2019-05-29 18:52:26.000721 pid=14488:tid=3812                	EXIT  SQLGetFunctions  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
 		UWORD                       61
-		UWORD *             0x0019F478 (1)
+		UWORD *             0x000000000008EAA4 (1)
 
-OdbcTE32        4cf8-47b0	ENTER SQLNumResultCols
-		HSTMT               0x04D80048
-		SWORD *             0x0019F468
+2019-05-29 18:52:26.000730 pid=14488:tid=3812                	ENTER SQLNumResultCols
+		HSTMT               0x0000000005D16220
+		SWORD *             0x000000000008EAA0 (0)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLNumResultCols  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		SWORD *             0x0019F468 (7)
+2019-05-29 18:52:26.000730 pid=14488:tid=3812                	EXIT  SQLNumResultCols  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		SWORD *             0x000000000008EAA0 (1)
 
-OdbcTE32        4cf8-47b0	ENTER SQLDescribeCol
-		HSTMT               0x04D80048
+2019-05-29 18:52:26.000730 pid=14488:tid=3812                	ENTER SQLDescribeColW
+		HSTMT               0x0000000005D16220
 		UWORD                        1
-		UCHAR *             0x005EDEB0
+		WCHAR *             0x0000000000157310 [      -3] ""
 		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EDF14
-		SQLULEN *           0x005EDF18
-		SWORD *             0x00000000
-		SWORD *             0x00000000
+		SWORD *             0x0000000000000000
+		SWORD *             0x00000000001573D8 (0)
+		UDWORD *            0x00000000001573E0 (0)
+		SWORD *             0x0000000000000000
+		SWORD *             0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
+2019-05-29 18:52:26.000730 pid=14488:tid=3812                	EXIT  SQLDescribeColW  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
 		UWORD                        1
-		UCHAR *             0x005EDEB0 [      -3] "DOB\ 0"
+		WCHAR *             0x0000000000157310
 		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EDF14 (-9)
-		SQLULEN *           0x005EDF18 (255)
-		SWORD *             0x00000000
-		SWORD *             0x00000000
+		SWORD *             0x0000000000000000
+		SWORD *             0x00000000001573D8 (4)
+		UDWORD *            0x00000000001573E0 (10)
+		SWORD *             0x0000000000000000
+		SWORD *             0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLDescribeCol
-		HSTMT               0x04D80048
-		UWORD                        2
-		UCHAR *             0x005EDF20
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EDF84
-		SQLULEN *           0x005EDF88
-		SWORD *             0x00000000
-		SWORD *             0x00000000
+2019-05-29 18:52:26.000739 pid=14488:tid=3812                	ENTER SQLFetch
+		HSTMT               0x0000000005D16220
 
-OdbcTE32        4cf8-47b0	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        2
-		UCHAR *             0x005EDF20 [      -3] "LOCATION\ 0"
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EDF84 (-9)
-		SQLULEN *           0x005EDF88 (255)
-		SWORD *             0x00000000
-		SWORD *             0x00000000
+2019-05-29 18:52:26.000739 pid=14488:tid=3812                	EXIT  SQLFetch  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
 
-OdbcTE32        4cf8-47b0	ENTER SQLDescribeCol
-		HSTMT               0x04D80048
-		UWORD                        3
-		UCHAR *             0x005EDF90
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EDFF4
-		SQLULEN *           0x005EDFF8
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        3
-		UCHAR *             0x005EDF90 [      -3] "_ID\ 0"
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EDFF4 (-9)
-		SQLULEN *           0x005EDFF8 (24)
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	ENTER SQLDescribeCol
-		HSTMT               0x04D80048
-		UWORD                        4
-		UCHAR *             0x005EE000
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE064
-		SQLULEN *           0x005EE068
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        4
-		UCHAR *             0x005EE000 [      -3] "NAME\ 0"
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE064 (-9)
-		SQLULEN *           0x005EE068 (255)
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	ENTER SQLDescribeCol
-		HSTMT               0x04D80048
-		UWORD                        5
-		UCHAR *             0x005EE070
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE0D4
-		SQLULEN *           0x005EE0D8
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        5
-		UCHAR *             0x005EE070 [      -3] "SNO\ 0"
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE0D4 (-9)
-		SQLULEN *           0x005EE0D8 (255)
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	ENTER SQLDescribeCol
-		HSTMT               0x04D80048
-		UWORD                        6
-		UCHAR *             0x005EE0E0
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE144
-		SQLULEN *           0x005EE148
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        6
-		UCHAR *             0x005EE0E0 [      -3] "WEBSITE\ 0"
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE144 (-9)
-		SQLULEN *           0x005EE148 (255)
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	ENTER SQLDescribeCol
-		HSTMT               0x04D80048
-		UWORD                        7
-		UCHAR *             0x005EE150
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE1B4
-		SQLULEN *           0x005EE1B8
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        7
-		UCHAR *             0x005EE150 [      -3] "AGE\ 0"
-		SWORD                      100
-		SWORD *             0x00000000
-		SWORD *             0x005EE1B4 (8)
-		SQLULEN *           0x005EE1B8 (53)
-		SWORD *             0x00000000
-		SWORD *             0x00000000
-
-OdbcTE32        4cf8-47b0	ENTER SQLFetch
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	EXIT  SQLFetch  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
+2019-05-29 18:52:26.000739 pid=14488:tid=3812                	ENTER SQLGetData
+		HSTMT               0x0000000005D16220
 		UWORD                        1
 		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
+		PTR                 0x0000000000176140
+		SDWORD                     100
+		SDWORD *            0x000000000008EAD0 (32704768)
 
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
+2019-05-29 18:52:26.000739 pid=14488:tid=3812                	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
 		UWORD                        1
 		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0 [      10] "24-05-1993"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (10)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0 [       9] "Hyderabad"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (9)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558
-		SQLLEN                    49
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558 [      24] "5CD29F9658F17048B08A2574"
-		SQLLEN                    49
-		SQLLEN *            0x0019F488 (24)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0 [       5] "Azhar"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (5)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800 [       1] "1"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10 <Invalid string length!> [-1]
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0
-		SQLLEN                   100
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0 <Invalid string length!> [-1]
-		SQLLEN                   100
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLFetch
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	EXIT  SQLFetch  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        1
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        1
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0 [      10] "24-05-1993"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (10)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0 [       9] "Hyderabad"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (9)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558
-		SQLLEN                    49
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558 [      24] "5CD2A0006AE30248B090C81A"
-		SQLLEN                    49
-		SQLLEN *            0x0019F488 (24)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0 [       5] "Ahmed"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (5)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800 [       1] "2"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10 <Invalid string length!> [-1]
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0
-		SQLLEN                   100
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0 <Invalid string length!> [-1]
-		SQLLEN                   100
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLFetch
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	EXIT  SQLFetch  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        1
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        1
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0 [      10] "24-05-1993"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (10)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0 [       9] "Hyderabad"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (9)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558
-		SQLLEN                    49
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558 [      24] "5CD2A00B6AE30248B090C81B"
-		SQLLEN                    49
-		SQLLEN *            0x0019F488 (24)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0 [       5] "Shaik"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (5)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800 [       1] "3"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10 <Invalid string length!> [-1]
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0
-		SQLLEN                   100
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0 <Invalid string length!> [-1]
-		SQLLEN                   100
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLFetch
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	EXIT  SQLFetch  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        1
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        1
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE1D0 <Invalid string length!> [-1]
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        2
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE3E0 <Invalid string length!> [-1]
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558
-		SQLLEN                    49
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        3
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005D0558 [      24] "5D11EA0FD911720FC7F3CFBA"
-		SQLLEN                    49
-		SQLLEN *            0x0019F488 (24)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        4
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE5F0 [       9] "Chaitanya"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (9)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        5
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EE800 <Invalid string length!> [-1]
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (-1)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10
-		SQLLEN                   511
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        6
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005EEA10 [      17] "beginnersbook.com"
-		SQLLEN                   511
-		SQLLEN *            0x0019F488 (17)
-
-OdbcTE32        4cf8-47b0	ENTER SQLGetData
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0
-		SQLLEN                   100
-		SQLLEN *            0x0019F488
-
-OdbcTE32        4cf8-47b0	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
-		UWORD                        7
-		SWORD                        1 <SQL_C_CHAR>
-		PTR                 0x005C77A0 [       2] "30"
-		SQLLEN                   100
-		SQLLEN *            0x0019F488 (2)
-
-OdbcTE32        4cf8-47b0	ENTER SQLFetch
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	EXIT  SQLFetch  with return code 100 (SQL_NO_DATA_FOUND)
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	ENTER SQLMoreResults
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	EXIT  SQLMoreResults  with return code 100 (SQL_NO_DATA_FOUND)
-		HSTMT               0x04D80048
-
-OdbcTE32        4cf8-47b0	ENTER SQLSetStmtAttr
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                  27 <SQL_ATTR_ROW_ARRAY_SIZE>
-		SQLPOINTER                 1
-		SQLINTEGER                   4
-
-OdbcTE32        4cf8-47b0	EXIT  SQLSetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
-		SQLINTEGER                  27 <SQL_ATTR_ROW_ARRAY_SIZE>
-		SQLPOINTER                 1
-		SQLINTEGER                   4
-
-OdbcTE32        4cf8-47b0	ENTER SQLSetStmtAttr
-		SQLHSTMT            0x04D80048
+		PTR                 0x0000000000176140 [       1] "4"		SDWORD                     100
+		SDWORD *            0x000000000008EAD0 (1)
+
+2019-05-29 18:52:26.000754 pid=14488:tid=3812                	ENTER SQLFetch
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:26.000754 pid=14488:tid=3812                	EXIT  SQLFetch  with return code 100 (SQL_NO_DATA_FOUND)
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:26.000764 pid=14488:tid=3812                	ENTER SQLMoreResults
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:27.000329 pid=14488:tid=3812                	EXIT  SQLMoreResults  with return code 100 (SQL_NO_DATA_FOUND)
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:27.000329 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:27.000330 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:27.000330 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:27.000330 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:42.000258 pid=14488:tid=3812                	ENTER SQLExecDirectW
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x0000000000157310 [      -3] "select c1 from test2296663 where length('string') = c1"
+		SDWORD                      -3
+
+2019-05-29 18:52:42.000645 pid=14488:tid=3812                	EXIT  SQLExecDirectW  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		WCHAR *             0x0000000000157310
+		SDWORD                      -3
+
+2019-05-29 18:52:43.000344 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27 <unknown>
+		SQLPOINTER          [Unknown attribute 27]
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
+
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27 <unknown>
+		SQLPOINTER          [Unknown attribute 27]
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
+
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	ENTER SQLGetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
 		SQLINTEGER                   9 <SQL_ROWSET_SIZE>
-		SQLPOINTER                 1
-		SQLINTEGER                   4
+		SQLPOINTER              584392
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	EXIT  SQLSetStmtAttr  with return code 0 (SQL_SUCCESS)
-		SQLHSTMT            0x04D80048
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	EXIT  SQLGetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
 		SQLINTEGER                   9 <SQL_ROWSET_SIZE>
-		SQLPOINTER                 1
-		SQLINTEGER                   4
+		SQLPOINTER              584392
+		SQLINTEGER                   8
+		SQLINTEGER *        0x0000000000000000
 
-OdbcTE32        4cf8-47b0	ENTER SQLCancel
-		HSTMT               0x04D80048
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	EXIT  SQLCancel  with return code 0 (SQL_SUCCESS)
-		HSTMT               0x04D80048
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   0
 
-OdbcTE32        4cf8-47b0	ENTER SQLFreeHandle
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   0
+
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   0
+
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	ENTER SQLGetFunctions
+		HDBC                0x0000000005D149D0
+		UWORD                       61
+		UWORD *             0x000000000008EAA4 (0)
+
+2019-05-29 18:52:43.000345 pid=14488:tid=3812                	EXIT  SQLGetFunctions  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
+		UWORD                       61
+		UWORD *             0x000000000008EAA4 (1)
+
+2019-05-29 18:52:43.000354 pid=14488:tid=3812                	ENTER SQLNumResultCols
+		HSTMT               0x0000000005D16220
+		SWORD *             0x000000000008EAA0 (0)
+
+2019-05-29 18:52:43.000355 pid=14488:tid=3812                	EXIT  SQLNumResultCols  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		SWORD *             0x000000000008EAA0 (1)
+
+2019-05-29 18:52:43.000355 pid=14488:tid=3812                	ENTER SQLDescribeColW
+		HSTMT               0x0000000005D16220
+		UWORD                        1
+		WCHAR *             0x00000000001218F0 [      -3] ""
+		SWORD                      100
+		SWORD *             0x0000000000000000
+		SWORD *             0x00000000001219B8 (0)
+		UDWORD *            0x00000000001219C0 (0)
+		SWORD *             0x0000000000000000
+		SWORD *             0x0000000000000000
+
+2019-05-29 18:52:43.000355 pid=14488:tid=3812                	EXIT  SQLDescribeColW  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		UWORD                        1
+		WCHAR *             0x00000000001218F0
+		SWORD                      100
+		SWORD *             0x0000000000000000
+		SWORD *             0x00000000001219B8 (4)
+		UDWORD *            0x00000000001219C0 (10)
+		SWORD *             0x0000000000000000
+		SWORD *             0x0000000000000000
+
+2019-05-29 18:52:43.000362 pid=14488:tid=3812                	ENTER SQLFetch
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:43.000362 pid=14488:tid=3812                	EXIT  SQLFetch  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:43.000362 pid=14488:tid=3812                	ENTER SQLGetData
+		HSTMT               0x0000000005D16220
+		UWORD                        1
+		SWORD                        1 <SQL_C_CHAR>
+		PTR                 0x00000000001752C0
+		SDWORD                     100
+		SDWORD *            0x000000000008EAD0 (32704768)
+
+2019-05-29 18:52:43.000362 pid=14488:tid=3812                	EXIT  SQLGetData  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+		UWORD                        1
+		SWORD                        1 <SQL_C_CHAR>
+		PTR                 0x00000000001752C0 [       1] "6"		SDWORD                     100
+		SDWORD *            0x000000000008EAD0 (1)
+
+2019-05-29 18:52:43.000369 pid=14488:tid=3812                	ENTER SQLFetch
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:43.000370 pid=14488:tid=3812                	EXIT  SQLFetch  with return code 100 (SQL_NO_DATA_FOUND)
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:43.000376 pid=14488:tid=3812                	ENTER SQLMoreResults
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:44.000205 pid=14488:tid=3812                	EXIT  SQLMoreResults  with return code 100 (SQL_NO_DATA_FOUND)
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:44.000205 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:44.000205 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                  27
+ QL_ATTR_ROW_ARRAY_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:44.000206 pid=14488:tid=3812                	ENTER SQLSetStmtAttrW
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:44.000206 pid=14488:tid=3812                	EXIT  SQLSetStmtAttrW  with return code 0 (SQL_SUCCESS)
+		SQLHSTMT            0x0000000005D16220
+		SQLINTEGER                   9
+ QL_ROWSET_SIZE>
+ 		SQLPOINTER                   1
+		SQLINTEGER                   8
+
+2019-05-29 18:52:48.000897 pid=14488:tid=3812                	ENTER SQLCancel
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:48.000897 pid=14488:tid=3812                	EXIT  SQLCancel  with return code 0 (SQL_SUCCESS)
+		HSTMT               0x0000000005D16220
+
+2019-05-29 18:52:48.000897 pid=14488:tid=3812                	ENTER SQLFreeHandle
 		SQLSMALLINT                  3 <SQL_HANDLE_STMT>
-		SQLHANDLE           0x04D80048
+		SQLHANDLE           0x0000000005D16220
 
-OdbcTE32        4cf8-47b0	EXIT  SQLFreeHandle  with return code 0 (SQL_SUCCESS)
+2019-05-29 18:52:48.000897 pid=14488:tid=3812                	EXIT  SQLFreeHandle  with return code 0 (SQL_SUCCESS)
 		SQLSMALLINT                  3 <SQL_HANDLE_STMT>
-		SQLHANDLE           0x04D80048
+		SQLHANDLE           0x0000000005D16220
 
-OdbcTE32        4cf8-47b0	ENTER SQLDisconnect
-		HDBC                0x00BAD890
+2019-05-29 18:52:48.000898 pid=14488:tid=3812                	ENTER SQLDisconnect
+		HDBC                0x0000000005D149D0
 
-OdbcTE32        4cf8-47b0	EXIT  SQLDisconnect  with return code 0 (SQL_SUCCESS)
-		HDBC                0x00BAD890
+2019-05-29 18:52:48.000899 pid=14488:tid=3812                	EXIT  SQLDisconnect  with return code 0 (SQL_SUCCESS)
+		HDBC                0x0000000005D149D0
 
-OdbcTE32        4cf8-47b0	ENTER SQLFreeHandle
+2019-05-29 18:52:48.000899 pid=14488:tid=3812                	ENTER SQLFreeHandle
 		SQLSMALLINT                  2 <SQL_HANDLE_DBC>
-		SQLHANDLE           0x00BAD890
+		SQLHANDLE           0x0000000005D149D0
 
-OdbcTE32        4cf8-47b0	EXIT  SQLFreeHandle  with return code 0 (SQL_SUCCESS)
+2019-05-29 18:52:48.000900 pid=14488:tid=3812                	EXIT  SQLFreeHandle  with return code 0 (SQL_SUCCESS)
 		SQLSMALLINT                  2 <SQL_HANDLE_DBC>
-		SQLHANDLE           0x00BAD890
+		SQLHANDLE           0x0000000005D149D0
 
-OdbcTE32        4cf8-47b0	ENTER SQLFreeHandle
+2019-05-29 18:52:48.000918 pid=14488:tid=3812                	ENTER SQLFreeHandle
 		SQLSMALLINT                  1 <SQL_HANDLE_ENV>
-		SQLHANDLE           0x00BAD810
+		SQLHANDLE           0x0000000005D10AB0
 
-OdbcTE32        4cf8-47b0	EXIT  SQLFreeHandle  with return code 0 (SQL_SUCCESS)
+2019-05-29 18:52:48.000918 pid=14488:tid=3812                	EXIT  SQLFreeHandle  with return code 0 (SQL_SUCCESS)
 		SQLSMALLINT                  1 <SQL_HANDLE_ENV>
-		SQLHANDLE           0x00BAD810
+		SQLHANDLE           0x0000000005D10AB0

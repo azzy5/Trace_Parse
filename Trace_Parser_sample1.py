@@ -56,11 +56,15 @@ def print_statistics(lines):
     print ("Total number of ENTER:" +str(Enter_count))
     print ("Total number of EXIT:" +str(Exit_count))
 
+
 def process_line(line):
     line.strip()
     line = line.split(' ')
     while "" in line:
         line.remove("")
+    for x in range(len(line)):
+        line[x] = line[x].replace("\n", "")
+        line[x] = line[x].replace("\t", "")
     return line
 
 def time_diff(line1, line2):
@@ -87,7 +91,7 @@ def parse_lines(lines):
         if "ENTER" in line:
             local_json = {}
             line = process_line(line)
-            print(line)
+            # print(line)
             local_json["index"] = value_at
             local_json["start_time"] = get_timestamp(line)
             local_json["function"] = line[4]
@@ -96,28 +100,32 @@ def parse_lines(lines):
             index = index + 1
             nested_array = []
             while "EXIT" not in lines[index]:
-                #print(lines[index].split(' '))
-                #print(len(lines[index].split(' ')))
-                index = index + 1
-                '''nested_json = {}
                 line = lines[index]
                 line = process_line(line)
-
-                nested_json["type"] = line[0]
-                #print(nested_json["type"])
-                nested_json["value"] = line[-1]
-                #print(nested_json["value"])
+                nested_json = {}
+                count = 0
+                for value in line:
+                    nested_json["{}".format(count)] = value
+                    count = count + 1
                 nested_array.append(nested_json)
                 index = index + 1
-            local_json["function_parameters"] = nested_array'''
-            line = lines[index]
-            line = process_line(line)
-            print(line)
-            #print(len(line))
+            local_json["pre_function_parameters"] = nested_array
+            line_e = lines[index]
+            index = index + 1
+            while "ENTER" not in lines[index]:
+                line = lines[index]
+                line = process_line(line)
+                nested_json = {}
+                for value in line:
+                    nested_json["{}".format(count)] = value
+                    count = count + 1
+                nested_array.append(nested_json)
+                index = index + 1
+            local_json["post_function_parameters"] = nested_array
+            line = process_line(line_e)
             local_json["end_time"]  =  get_timestamp(line)
             difference = datetime.datetime.strptime(local_json["end_time"], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(local_json["start_time"], '%Y-%m-%d %H:%M:%S.%f')
             local_json["duration"] = str(difference.microseconds)
-            print(difference)
             local_json["return_code"] = line[-2]
             local_json["result"] = line[-1]
             value_at = value_at + 1
@@ -141,6 +149,6 @@ def parse_lines(lines):
 '''
 if __name__ == '__main__':
     global_json = {}
-    lines = read_file("sample1.txt")
+    lines = read_file("sample2.txt")
     print_statistics(lines)
     print(json.dumps(parse_lines(lines)))
