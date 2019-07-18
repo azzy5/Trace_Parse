@@ -1,10 +1,11 @@
-#!/usr/bin/python
+
 
 import json
 import datetime
-
 line_f = ""
 line_e = ""
+
+
 
 #1. Read file and process the data
 def read_file(_fname):
@@ -31,6 +32,8 @@ def read_file(_fname):
     print("Processing completed")
     return lines
 
+
+
 #2. Print statistics
 def print_statistics(lines):
     Enter_count = 0
@@ -55,6 +58,7 @@ def print_statistics(lines):
     print ("Total number of lines:" +str(len(lines)))
     print ("Total number of ENTER:" +str(Enter_count))
     print ("Total number of EXIT:" +str(Exit_count))
+
 
 
 def process_line(line):
@@ -112,7 +116,7 @@ def parse_lines(lines):
             local_json["pre_function_parameters"] = nested_array
             line_e = lines[index]
             index = index + 1
-            while "ENTER" not in lines[index]:
+            while "ENTER" not in lines[index] and len(lines) < index:
                 line = lines[index]
                 line = process_line(line)
                 nested_json = {}
@@ -131,24 +135,18 @@ def parse_lines(lines):
             value_at = value_at + 1
             global_json.append(local_json)
         index = index + 1
-    return global_json
+    return json.dumps(global_json)
 
-
-'''
-<<< START >>>
-2019-06-17 07:21:24.000464 pid=3080:tid=4504                 	ENTER SQLAllocEnv
-		HENV *              0x000000000006E640
-
-2019-06-17 07:21:24.000465 pid=3080:tid=4504                 	EXIT  SQLAllocEnv  with return code 0 (SQL_SUCCESS)
-		HENV *              0x000000000006E640 ( 0x0000000000126B60)
-<<< END >>>
-
-
-
-
-'''
-if __name__ == '__main__':
+def execution():
     global_json = {}
-    lines = read_file("sample2.txt")
+    lines = read_file("./helpers/sample2.txt")
+    print(lines[0])
     print_statistics(lines)
-    print(json.dumps(parse_lines(lines)))
+    json = parse_lines(lines)
+    print("opening the file ....")
+    file = open('sample.json', 'w')
+    print("Writing data to file  ....")
+    file.write(json)
+    file.close()
+    print("Completed  ....")
+    return True

@@ -114,7 +114,11 @@ def parse_lines(lines):
     return global_json
 
 
-
+def execute():
+    global_json = {}
+    lines = read_file("sample1.txt")
+    print_statistics(lines)
+    return json.dumps(parse_lines(lines))
 
 '''
 ['2019-07-11', '04:23:01.992958', 'ppid=13631576:pid=14024888:1:', '\tENTER', 'SQLGetInfo', 'called', 'by', 'Progress', 'DataDirect', 'trace', 'library\n']

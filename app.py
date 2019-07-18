@@ -30,31 +30,26 @@ except ImportError:
     print(' urllib : library not found.  ')
 
 sys.path.append('./helpers')
+from helpers.Trace_Parser_7 import *
 
 data = []
 app = Flask(__name__)
 app.secret_key = 'Let it be a secrete'
 
-''' The index page should only have the Search bar and the search button '''
-
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    with open('sample.json') as json_file:
-        data = json.load(json_file)
-
+    #with open('sample.json') as json_file:
+    #    data = json.load(json_file)
+    #result =  execution()
+    result = True
+    if result:
+        file  = open('./helpers/sample.json','r')
+        data = json.load(file)
+        file.close()
+    else:
+        data = None
     return render_template('index.html', data=data)
 
-
-''' /string page should do the following
-
-'''
-
-
-@app.route("/<string:search>", methods=['GET', 'POST'])
-def searchEmbed(search):
-    return render_template('index.html')
-
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
