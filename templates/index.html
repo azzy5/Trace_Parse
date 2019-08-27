@@ -1,32 +1,3 @@
 {% extends 'layout.html' %} {% block body %}
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-kftd{background-color:#efefef;text-align:left;vertical-align:top}
-.tg .tg-ah3a{background-color:#ffffff;border-color:#efefef;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-
-</style>
-<table class="table" width="50%">
-    <tr>
-        <th class="tg-ah3a">Sno.</th>
-        <th class="tg-ah3a">Function</th>
-        <th class="tg-kftd">Start</th>
-        <th class="tg-0lax">End</th>
-        <th class="tg-kftd">Duration</th>
-        <th class="tg-0lax">Result</th>
-    </tr>
-    {% for line in data %}
-    <tr>
-        <th class="tg-ah3a">{{ line["index"] }}</th>
-        <th class="tg-kftd">{{ line["function"] }}</th>
-        <th class="tg-0lax">{{ line["start_time"] }}</th>
-        <th class="tg-kftd">{{ line["end_time"] }}</th>
-        <th class="tg-0lax">{{ line["duration"] }}</th>
-        <th class="tg-0lax">{{ line["result"] }}</th>
-    </tr>
-    {% endfor %}
-</table>
 
 {% endblock %}

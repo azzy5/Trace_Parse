@@ -36,20 +36,52 @@ data = []
 app = Flask(__name__)
 app.secret_key = 'Let it be a secrete'
 
+'''
+Routes :
+
+1. POST TraceOption=1 Json
+    --> \traceoptin1\{file.log, traceoption}
+    - Validate the TraceOption=1
+    - Parse log to JSON
+    - Process JSON ?????
+    - Log the log into MongoDB
+    <-- Json equelent of log file
+    
+2. POST TraceOption=2 Json
+    --> \traceoptin1\{file.log, traceoption}
+    - Validate the TraceOption=2
+    - Parse log to JSON
+    - Process JSON ?????
+    - Log the log into MongoDB
+    <-- Json equelent of log file
+    
+3. POST TraceOption=3 Json
+       --> \traceoptin1\{file.log, traceoption}
+    - Validate the TraceOption=3
+    - Parse log to JSON
+    - Process JSON ?????
+    - Log the log into MongoDB
+    <-- Json equelent of log file
+    
+4. 
+
+'''
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    #with open('sample.json') as json_file:
-    #    data = json.load(json_file)
-    #result =  execution()
-    result = True
+    return render_template('index.html')
+    '''  
+    result = execution()
     if result:
-        file  = open('./helpers/sample.json','r')
-        data = json.load(file)
-        file.close()
-    else:
-        data = None
-    return render_template('index.html', data=data)
+        try:
+            file = open('sample.json','r')
+            data = json.load(file)
+            file.close()
+        except FileNotFoundError:
+            print("the file not found, exiting...")
+            data= []
+    '''
+
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

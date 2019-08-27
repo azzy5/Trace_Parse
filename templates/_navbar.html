@@ -1,26 +1,13 @@
-<nav class="navbar navbar-inverse" style="height:55px;">
+<nav class="navbar alert-success" >
     <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/"><img src={{ url_for('static',filename="assets/ooo-logo.png")}}
-                style="width:170px; height:32px;"></img></a>
+        <div class="d-inline align-left"><a href="/"><img  src={{ url_for('static',filename="assets/ooo-logo.png")}}
+                style="width:185px; height:43px;"></img></a>
+              <p class="d-inline alert-heading text-center ">Trace parser</p>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li><h3 style="color: #f0ed3f"> | Trace parser </h2></li>
-                <li>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </li>
-                {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
-                {% for category, message in messages %}
-                <li class="{{ category }} navbar-center">{{ message }}</li>
-                {% endfor %}
-                {% endif %} {% endwith %}
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
+        <div class="d-inline-block align-right">
+            Test
         </div>
     </div>
 </nav>
+
+
