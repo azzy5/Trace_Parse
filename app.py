@@ -5,6 +5,7 @@ try:
     import sys
 except ImportError:
     print('sys : Module not found.  ')
+
 try:
     import os
 except ImportError:
@@ -32,9 +33,8 @@ except ImportError:
 
 sys.path.append('./helpers')
 from helpers.FormsCheck import TraceInputs
-from helpers.Trace_Parser_7 import *
+from werkzeug.utils import secure_filename
 
-data = []
 app = Flask(__name__)
 app.secret_key = 'Let it be a secrete'
 
@@ -68,22 +68,25 @@ Routes :
     <-- Json equelent of log file
     
 4. 
-
+https://www.programcreek.com/python/example/51528/flask.request.files
 '''
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    
-    return render_template('index.html')
+    form = TraceInputs()
+    return render_template('index.html',form=form)
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
-    form = TraceInputs()
-    print("\n\nOption : "+ str(form.trace_option))
-    if form.validate_on_submit():
-        return "Success"
-    else:
-        return "failed"
+    if request.method == 'POST' and 'trace_file' in request.files:
+        f = request.files['trace_file']
+        fname = os.path.splitext(f.filename)
+        dirname = os.getcwd()
+
+        f.save(secure_filename(f.filename))
+        return render_template("index.html", )
+
+
     '''  
     result = execution()
     if result:

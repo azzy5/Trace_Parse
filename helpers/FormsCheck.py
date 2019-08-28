@@ -4,7 +4,7 @@ from wtforms.validators import DataRequired,NumberRange, EqualTo
 
 
 class TraceInputs(FlaskForm):
-    trace_option = SelectField('TraceOption', validators=(DataRequired(),EqualTo(1) ))
+    trace_option = SelectField('Trace Option', choices=[1,2,3], id='trace_option')
 
 
 

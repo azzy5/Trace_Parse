@@ -1,43 +1,42 @@
-{% extends 'layout.html' %} 
+{% extends 'layout.html' %}
 {% block body %}
 
 <div class="container-fluid ">
-        <p class="text-center strong mb-1 text-secondary bg-light">Please select the operation</p>
-        <div class="container-fluid d-flex justify-content-center">
-          <div class="row" style="height: 600px; width: 70%;">
-            <div class="col-sm-4 border rounded" style="background-color:rgba(92, 140, 236, 0.37);">
-                <h3 class="text-center mt-3 text-secondary"> Analyse ODBC Trace file</h1>
-                <hr size="30">
-                <form action="/register"  method="POST">
-                    <div class="form-group mt-3">
-                            <label class="strong"for="sel1">Select the trace option the lot generated with:</label>
-                            <select class="form-control w-50 mt-1" id="trace_option">
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                            </select>
-                    
-                    </div>
-                    <div class="custom-file mt-2">
-                            <input type="file" class="custom-file-input" id="">
-                            <label class="custom-file-label" for="customFile">Choose file</label>
-                    </div>
-                    <button type="submit" class="btn btn-dark mt-3 bg-secondery">Submit</button>
-                </form>
+  <p class="text-center strong mb-1 text-secondary bg-light">Please select the operation</p>
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="row" style="height: 600px; width: 70%;">
+      <div class="col-sm-4 border rounded" style="background-color:rgba(92, 140, 236, 0.37);">
+        <h3 class="text-center mt-3 text-secondary"> Analyse ODBC Trace file</h1>
+          <hr size="30">
+          <form action="/register" method="POST" name ="trace_only" enctype="multipart/form-data">
+            <div class="form-group mt-3">
+              <label class="strong" for="sel1">Select the trace option the lot generated with:</label>
+              <select class="form-control mt-1" name="trace_option2">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
             </div>
-            <div class="col-sm-4 border rounded" style="background-color:rgba(243, 113, 104, 0.363);">
-                    <h3 class="text-center mt-3 text-secondary"> Analyse Snoop log file</h1>
-                        <hr size="30">
+            <div class="custom-file mt-2">
+              <input type="file" class="custom-file-input" name="trace_file">
+              <label class="custom-file-label" for="customFile">Choose file</label>
             </div>
-            <div class="col-sm-4 border rounded" style="background-color:rgba(115, 241, 122, 0.521);">
-                    <h3 class="text-center mt-2 text-secondary "> Compare Trace & Snoop (Pending) </h1>
-                        <hr size="30">
-            </div>
-          </div>
-          <br>
-        </div>
+            <button type="submit" class="btn btn-dark mt-3 bg-secondery">Submit</button>
+          </form>
       </div>
-    
+      <div class="col-sm-4 border rounded" style="background-color:rgba(243, 113, 104, 0.363);">
+        <h3 class="text-center mt-3 text-secondary"> Analyse Snoop log file</h1>
+          <hr size="30">
+      </div>
+      <div class="col-sm-4 border rounded" style="background-color:rgba(115, 241, 122, 0.521);">
+        <h3 class="text-center mt-2 text-secondary "> Compare Trace & Snoop (Pending) </h1>
+          <hr size="30">
+      </div>
+    </div>
+    <br>
+  </div>
+</div>
 
-    {% endblock %}
+
+{% endblock %}
