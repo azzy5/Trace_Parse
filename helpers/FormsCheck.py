@@ -1,5 +1,13 @@
-# from flask_wtf import FlaskForm
-# from wtforms import StringField, validators, SelectField, SubmitField
+from flask_wtf import FlaskForm
+from wtforms import StringField, validators, SelectField, SubmitField
+from wtforms.validators import DataRequired,NumberRange, EqualTo
+
+
+class TraceInputs(FlaskForm):
+    trace_option = SelectField('TraceOption', validators=(DataRequired(),EqualTo(1) ))
+
+
+
 
 # class EmbedSearch(FlaskForm):
 #     embedcode = StringField('embedcode', validators=[validators.InputRequired(),validators.length(max=200),validators.Optional(strip_whitespace=True)])

@@ -1,5 +1,6 @@
 import flask as Flask
 
+
 try:
     import sys
 except ImportError:
@@ -30,11 +31,14 @@ except ImportError:
     print(' urllib : library not found.  ')
 
 sys.path.append('./helpers')
+from helpers.FormsCheck import TraceInputs
 from helpers.Trace_Parser_7 import *
 
 data = []
 app = Flask(__name__)
 app.secret_key = 'Let it be a secrete'
+
+
 
 '''
 Routes :
@@ -69,7 +73,17 @@ Routes :
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
+    
     return render_template('index.html')
+
+@app.route("/register", methods=['GET', 'POST'])
+def register():
+    form = TraceInputs()
+    print("\n\nOption : "+ str(form.trace_option))
+    if form.validate_on_submit():
+        return "Success"
+    else:
+        return "failed"
     '''  
     result = execution()
     if result:
