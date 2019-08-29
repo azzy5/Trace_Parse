@@ -4,6 +4,17 @@
                 style="width:185px; height:43px;"></img></a>
               <p class="d-inline alert-heading text-center ">Trace parser</p>
         </div>
+        <div class="container d-inline justify-content-center mb-0 px-2">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <ul class="flashes ">
+            {% for category, message in messages %}
+              <li class="{{ category }}"><p class="d-inline alert-heading text-center">{{ message }}</p></li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        {% endwith %}
+        </div>
         <form class="form-inline ml-auto">
                 <input type="text" class="form-control mr-3" placeholder="Search">
                 <button class="btn btn-primary">Search</button>

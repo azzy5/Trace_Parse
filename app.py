@@ -1,4 +1,5 @@
 import flask as Flask
+from flask import flash
 
 
 try:
@@ -32,6 +33,7 @@ except ImportError:
     print(' urllib : library not found.  ')
 
 sys.path.append('./helpers')
+from utils import *
 from helpers.FormsCheck import TraceInputs
 from werkzeug.utils import secure_filename
 
@@ -41,40 +43,31 @@ app.secret_key = 'Let it be a secrete'
 
 
 '''
-Routes :
+API Routes :
 
-1. POST TraceOption=1 Json
-    --> \traceoptin1\{file.log, traceoption}
-    - Validate the TraceOption=1
-    - Parse log to JSON
-    - Process JSON ?????
+1. POST \trace_only\{file.log, traceoption}
+    - Readfile locally and move it to 
+    - Validate the 'TraceOption'
+    - Parse log to JSON based on the Trace option value
+    - Process JSON ????? (maeybe exctract useful info?)
     - Log the log into MongoDB
     <-- Json equelent of log file
     
-2. POST TraceOption=2 Json
-    --> \traceoptin1\{file.log, traceoption}
-    - Validate the TraceOption=2
-    - Parse log to JSON
-    - Process JSON ?????
+
+1. POST \snoop_only\{file.log, traceoption}
+    - Readfile locally and move it to 
+    - Validate the 'TraceOption'
+    - Parse log to JSON based on the Trace option value
+    - Process JSON ????? (maeybe exctract useful info?)
     - Log the log into MongoDB
     <-- Json equelent of log file
-    
-3. POST TraceOption=3 Json
-       --> \traceoptin1\{file.log, traceoption}
-    - Validate the TraceOption=3
-    - Parse log to JSON
-    - Process JSON ?????
-    - Log the log into MongoDB
-    <-- Json equelent of log file
-    
-4. 
-https://www.programcreek.com/python/example/51528/flask.request.files
+
+Tracker : https://trello.com/b/gVSNGEOf/trace-parser
 '''
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
-    form = TraceInputs()
-    return render_template('index.html',form=form)
+    return render_template('index.html')
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
@@ -82,7 +75,7 @@ def register():
         f = request.files['trace_file']
         fname = os.path.splitext(f.filename)
         dirname = os.getcwd()
-
+        print(dirname)
         f.save(secure_filename(f.filename))
         return render_template("index.html", )
 
