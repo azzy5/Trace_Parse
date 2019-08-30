@@ -33,7 +33,7 @@ except ImportError:
     print(' urllib : library not found.  ')
 
 sys.path.append('./helpers')
-from utils import *
+from helpers.utils import  error_class, success_class
 from helpers.FormsCheck import TraceInputs
 from werkzeug.utils import secure_filename
 
