@@ -10,21 +10,27 @@
     </style>
     <table class="table" width="50%">
         <tr>
-            <th class="tg-ah3a">Sno.</th>
-            <th class="tg-ah3a">Function</th>
-            <th class="tg-kftd">Start</th>
-            <th class="tg-0lax">End</th>
-            <th class="tg-kftd">Duration</th>
-            <th class="tg-0lax">Result</th>
+            <th >Index</th>
+            <th >Function</th>
+            <th >Start</th>
+            <th >End</th>
+            <th >Duration</th>
+            <th >Result</th>
         </tr>
         {% for line in data %}
         <tr>
-            <th class="tg-ah3a">{{ line["index"] }}</th>
-            <th class="tg-kftd">{{ line["function"] }}</th>
-            <th class="tg-0lax">{{ line["start_time"] }}</th>
-            <th class="tg-kftd">{{ line["end_time"] }}</th>
-            <th class="tg-0lax">{{ line["duration"] }}</th>
-            <th class="tg-0lax">{{ line["result"] }}</th>
+            <th >{{ line["index"] }}</th>
+            <th {% if line["function_s"] != line["function_e"] %} class="bg-danger" {% endif %}>{{ line["function_s"] }}</th>
+            <th >{{ line["start_time"] }}</th>
+            <th >{{ line["end_time"] }}</th>
+            <th {% if line["duration"] != '0' %} class="bg-danger" {% endif %} >{{ line["duration"] }}</th>
+            {% if line["result"] == "(SQL_ERROR)" or line["result"] =="(SQL_INVALID_HANDLE)" %} 
+            <th class="bg-danger"> {{ line["result"] }} </th>
+            {% elif line["result"] == "(SQL_NO_DATA_FOUND)" %} 
+            <th class="bg-warning"> {{ line["result"] }} </th>
+            {% else %}
+            <th> {{ line["result"] }} </th>  
+            {% endif %}
         </tr>
         {% endfor %}
     </table>

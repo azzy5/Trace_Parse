@@ -95,12 +95,11 @@ def parse_lines(lines):
     while index < len(lines):
         line = lines[index]
         if "ENTER" in line:
-            print(line)
             local_json = {}
             line = process_line(line)
             local_json["index"] = value_at
             local_json["start_time"] = get_timestamp(line)
-            local_json["function"] = line[4]
+            local_json["function_s"] = line[4]
             local_json["ppid"] = line[2]
             local_json["info"] = ' '.join(line[5:])
             index = index + 1
@@ -121,7 +120,6 @@ def parse_lines(lines):
                 nested_array = []
                 line_e = lines[index]
                 index = index + 1
-                print(lines[index])
             except IndexError:
                 print(index)
             try:
@@ -141,6 +139,7 @@ def parse_lines(lines):
                 local_json["end_time"]  =  get_timestamp(line)
                 difference = datetime.datetime.strptime(local_json["end_time"], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(local_json["start_time"], '%Y-%m-%d %H:%M:%S.%f')
                 local_json["duration"] = str(difference.microseconds)
+                local_json["function_e"] = line[4]
                 local_json["return_code"] = line[-2]
                 local_json["result"] = line[-1]
                 value_at = value_at + 1
@@ -151,12 +150,22 @@ def parse_lines(lines):
         index = index + 1
     return json.dumps(global_json)
 
+'''
+1 = Trace Option One
+2 = Trace Option Two
+3 = Trace Option Tree
+4 = Unknown format
+'''
 def validate(lines):
     index = 0
-    while index < len(lines):
+    while "ENTER" not in lines[index] and index < len(lines):
         line = lines[index]
         if "ENTER" in line:
             line = process_line(line)
+
+        index = index + 1
+    return 5
+
             
 
 def execution():
