@@ -2,7 +2,8 @@
 
 import json
 import datetime
-
+line_f = ""
+line_e = ""
 
 
 #1. Read file and process the data
@@ -19,14 +20,14 @@ def read_file(_fname):
     index = 0
     lines = []
     print("Processing file ...")
-    #if(len(lines) < 2):
-     #   print("File too small to process")
-     #   exit(0)
     while ( index < len(lines_temp)):
         line = lines_temp[index]
         if(line != '\n'):
             lines.append(line)
         index = index + 1
+    if 2 > len(lines):
+        print("File too small to process")
+        exit(0)
     print("Processing completed")
     return lines
 
@@ -36,12 +37,18 @@ def print_statistics(lines):
     Exit_count =0
     for line in lines:
         if "ENTER" in line:
-            Enter_count= Enter_count +1
+            Enter_count= Enter_count + 1
     for line in lines:
         if "EXIT" in line:
-            Exit_count= Exit_count +1
+            Exit_count= Exit_count + 1
     line_f = lines[0]
-    line_e = lines[-1]
+    index = len(lines) - 1
+    while index >= 0:
+        line = lines[index]
+        index = index - 1
+        if "EXIT" in line:
+            line_e = line
+            break
     print ("Start time : " + line_f.split()[0] + " "+line_f.split()[1])
     print ("End time : " + line_e.split()[0] + " "+line_e.split()[1])
     print ("Total time : " + time_diff(line_e.split()[0] + " "+line_e.split()[1], line_f.split()[0] + " "+line_f.split()[1]))
@@ -53,6 +60,11 @@ def process_line(line):
     line = line.split(' ')
     while "" in line:
         line.remove("")
+    for x in range(len(line)):
+        line[x] = line[x].replace("\n", "")
+        line[x] = line[x].replace("\t", "")
+        line[x] = line[x].replace("\\x00", "")
+        line[x] = line[x].replace("\"", "")
     return line
 
 def time_diff(line1, line2):
@@ -76,7 +88,7 @@ def parse_lines(lines):
     value_at = 0
     while index < len(lines):
         line =  lines[index]
-        if "ENTER" in line:
+        if "ENTER" in line and index < len(lines):
             local_json = {}
             line = process_line(line)
             local_json["index"] = value_at
@@ -86,19 +98,16 @@ def parse_lines(lines):
             local_json["info"] = ' '.join(line[5:])
             index = index + 1
             nested_array = []
-            while "EXIT" not in lines[index]:
+            while "EXIT" not in lines[index] and index < len(lines):
                 nested_json = {}
                 line = lines[index]
                 line = process_line(line)
-                nested_json["timestamp"] =  get_timestamp(line)
-                nested_json["ppid"] = line[2]
-                nested_json["type"] = line[3]
-                nested_json["value"] = line[4]
-                if len(line) == 6:
-                    nested_json["sql_const"] = line[5]
-                else:
-                    nested_json["type"] = ''
+                count = 0
+                for value in line:
+                    nested_json["{}".format(count)] = value
+                    count = count + 1
                 nested_array.append(nested_json)
+                nested_json = {}
                 index = index + 1
             local_json["function_parameters"] = nested_array
             line = lines[index]
@@ -111,29 +120,16 @@ def parse_lines(lines):
             value_at = value_at + 1
             global_json.append(local_json)
         index = index + 1
-    return global_json
+    return json.dumps(global_json)
 
 
 def execute():
     global_json = {}
-    lines = read_file("sample1.txt")
+    lines = read_file("./helpers/TraceOptions=2.out")
     print_statistics(lines)
     return json.dumps(parse_lines(lines))
 
 '''
-['2019-07-11', '04:23:01.992958', 'ppid=13631576:pid=14024888:1:', '\tENTER', 'SQLGetInfo', 'called', 'by', 'Progress', 'DataDirect', 'trace', 'library\n']
-['2019-07-11', '04:23:01.996347', 'ppid=13631576:pid=14024888:1:', '\tENTER', 'SQLGetInfo', '\n']
-
-['2019-07-11', '05:27:39.982952', '(Time', 'elapsed', 'in', 'microseconds', ':', '34)', 'ppid=13631576:pid=14024888:1:', '\tEXIT', 'SQLRowCount', 'with', 'return', 'code', '0', '(SQL_SUCCESS)\n']
-16
-['2019-07-11', '04:23:01.992506', '(Time', 'elapsed', 'in', 'microseconds', ':', '62)', 'ppid=13631576:pid=14024888:1:', '\tEXIT', 'SQLGetInfo', 'called', 'by', 'Progress', 'DataDirect', 'trace', 'library', 'with', 'return', 'code', '0', '(SQL_SUCCESS)\n']
-22
-
-['2019-07-11', '04:22:59.432795', 'ppid=13631576:pid=14024888:1:', '\tHENV', '00000001102cfe10\n']
-5
-['2019-07-11', '04:23:00.622628', 'ppid=13631576:pid=14024888:1:', '\tSQLSMALLINT', '1', '<SQL_HANDLE_ENV>\n']
-6
-
 
 2. Lterate through each line and if the line contains "ENTER" then start parsing
 3. Start a new JSON object
@@ -146,6 +142,12 @@ def execute():
 
 if __name__ == '__main__':
     global_json = {}
-    lines = read_file("test.txt")
-    #print_statistics(lines)
-    print(json.dumps(parse_lines(lines)))
+    lines = read_file("./helpers/TraceOptions=2.out")
+    print_statistics(lines)
+    json = parse_lines(lines)
+    print("opening the file ....")
+    file = open('./helpers/sample_3.json', 'w')
+    print("Writing data to file  ....")
+    file.write(json)
+    file.close()
+    print("Completed  ....")
