@@ -19,7 +19,7 @@
         </tr>
         {% for line in data %}
         <tr>
-            <th >{{ line["index"] }}</th>
+            <th >{{ line["index"] + 1 }}</th>
             <th {% if line["function_s"] != line["function_e"] %} class="bg-danger" {% endif %}>{{ line["function_s"] }}</th>
             <th >{{ line["start_time"] }}</th>
             <th >{{ line["end_time"] }}</th>

@@ -39,7 +39,7 @@ from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 app.secret_key = 'Let it be a secrete'
-
+FILE_EXT = ['log','out','pkt']
 
 
 '''
@@ -73,7 +73,7 @@ def index():
 @app.route("/show_trace_logs", methods=['GET', 'POST'])
 def show_trace_logs():
     try:
-        file = open('./helpers/sample_1.json','r')
+        file = open('./helpers/sample_3.json','r')
         data = json.load(file)
         file.close()
     except FileNotFoundError:
@@ -85,7 +85,7 @@ def show_trace_logs():
 def show_snoop_logs():
     if request.method == 'POST':
         f = request.files['snoop_file']
-        fname = f.filename
+        fname  = secure_filename(f.name)
         dirname = os.getcwd()
         print(dirname)
         if fname == '':
@@ -93,7 +93,7 @@ def show_snoop_logs():
             return render_template("index.html")
         else:
             try:
-                f.save(secure_filename(f.filename))
+                f.save('temp/',f.filename)
             except expression as identifier:
                 flash("Are you sure that's correct file?",error_class)
                 return render_template("index.html")
@@ -110,14 +110,12 @@ def trace_only():
     if request.method == 'POST':
         f = request.files['trace_file']
         fname = f.filename
-        dirname = os.getcwd()
-        print(dirname)
         if fname == '':
             flash("Are you sure that's correct file?",error_class)
             return render_template("index.html")
         else:
             try:
-                f.save(secure_filename(f.filename))
+                f.save(secure_filename(fname))
             except expression as identifier:
                 flash("Are you sure that's correct file?",error_class)
                 return render_template("index.html")

@@ -80,7 +80,7 @@ def get_timestamp(line):
 
 def get_timestamp_with_string(line):
     return str(datetime.datetime.strptime(line[0] + " " + line[1], '%Y-%m-%d %H:%M:%S.%f'))
-
+'''
 def parse_lines(lines):
     lines = lines
     global_json = []
@@ -88,27 +88,29 @@ def parse_lines(lines):
     value_at = 0
     while index < len(lines):
         line =  lines[index]
-        if "ENTER" in line and index < len(lines):
-            local_json = {}
-            line = process_line(line)
-            local_json["index"] = value_at
-            local_json["start_time"] = get_timestamp(line)
-            local_json["function"] = line[4]
-            local_json["ppid"] = line[2]
-            local_json["info"] = ' '.join(line[5:])
-            index = index + 1
-            nested_array = []
-            while "EXIT" not in lines[index] and index < len(lines):
-                nested_json = {}
-                line = lines[index]
+        try:
+            if "ENTER" in line and index < len(lines):
+                local_json = {}
                 line = process_line(line)
-                count = 0
-                for value in line:
-                    nested_json["{}".format(count)] = value
-                    count = count + 1
-                nested_array.append(nested_json)
-                nested_json = {}
+                local_json["index"] = value_at
+                local_json["start_time"] = get_timestamp(line)
+                local_json["function"] = line[4]
+                local_json["ppid"] = line[2]
+                local_json["info"] = ' '.join(line[5:])
                 index = index + 1
+                nested_array = []
+                while "EXIT" not in lines[index] and index < len(lines):
+                    nested_json = {}
+                    line = lines[index]
+                    line = process_line(line)
+                    count = 0
+                    for value in line:
+                        nested_json["{}".format(count)] = value
+                        count = count + 1
+                    nested_array.append(nested_json)
+                    nested_json = {}
+                    index = index + 1
+            exep
             local_json["function_parameters"] = nested_array
             line = lines[index]
             line = process_line(line)
@@ -121,13 +123,81 @@ def parse_lines(lines):
             global_json.append(local_json)
         index = index + 1
     return json.dumps(global_json)
+'''
 
+def parse_lines(lines):
+    global_json = []
+    index = 0
+    value_at = 0
+    while index < len(lines):
+        line = lines[index]
+        if "ENTER" in line:
+            local_json = {}
+            line = process_line(line)
+            local_json["index"] = value_at
+            local_json["start_time"] = get_timestamp(line)
+            local_json["function_s"] = line[4]
+            local_json["ppid"] = line[2]
+            local_json["info"] = ' '.join(line[5:])
+            index = index + 1
+            nested_array = []
+            try:
+                while "EXIT" not in lines[index] and index < len(lines):
+                    line = lines[index]
+                    line = process_line(line)
+                    nested_json = {}
+                    count = 0
+                    for value in line:
+                        nested_json["{}".format(count)] = value
+                        count = count + 1
+                    nested_array.append(nested_json)
+                    nested_json = {}
+                    index = index + 1
+                local_json["pre_function_parameters"] = nested_array
+                nested_array = []
+                line_e = lines[index]
+                index = index + 1
+            except IndexError:
+                print(index)
+            try:
+                while "ENTER" not in lines[index] and index < len(lines):
+                    line = lines[index]
+                    line = process_line(line)
+                    nested_json = {}
+                    for value in line:
+                        nested_json["{}".format(count)] = value
+                        count = count + 1
+                    nested_array.append(nested_json)
+                    nested_json = {}
+                    index = index + 1
+                local_json["post_function_parameters"] = nested_array
+                nested_array = []
+                line = process_line(line_e)
+                local_json["end_time"]  =  get_timestamp(line)
+                difference = datetime.datetime.strptime(local_json["end_time"], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(local_json["start_time"], '%Y-%m-%d %H:%M:%S.%f')
+                local_json["duration"] = str(difference.microseconds)
+                local_json["function_e"] = line[10]
+                local_json["return_code"] = line[-2]
+                local_json["result"] = line[-1]
+                value_at = value_at + 1
+                index = index - 1
+                global_json.append(local_json)
+            except IndexError:
+                print(index)
+        index = index + 1
+    return json.dumps(global_json)
 
 def execute():
     global_json = {}
-    lines = read_file("./helpers/TraceOptions=2.out")
+    lines = read_file("./helpers/TraceOption=3.out")
     print_statistics(lines)
-    return json.dumps(parse_lines(lines))
+    json = parse_lines(lines)
+    print("opening the file ....")
+    file = open('./helpers/sample_3.json', 'w')
+    print("Writing data to file  ....")
+    file.write(json)
+    file.close()
+    print("Completed  ....")
 
 '''
 
@@ -141,13 +211,16 @@ def execute():
 '''
 
 if __name__ == '__main__':
-    global_json = {}
-    lines = read_file("./helpers/TraceOptions=2.out")
-    print_statistics(lines)
+    execute()
+
+'''
     json = parse_lines(lines)
-    print("opening the file ....")
-    file = open('./helpers/sample_3.json', 'w')
-    print("Writing data to file  ....")
-    file.write(json)
-    file.close()
-    print("Completed  ....")
+    print(json)
+    index = 0
+    value_at = 0
+    while index < len(lines):
+        line = process_line(lines[index])
+        print(str(index) + str(line))
+        index = index + 1
+'''
+  
