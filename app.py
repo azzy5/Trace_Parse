@@ -73,13 +73,34 @@ def index():
 @app.route("/show_trace_logs", methods=['GET', 'POST'])
 def show_trace_logs():
     try:
-        file = open('./helpers/sample_3.json','r')
+        file = open('./helpers/sample_1.json','r')
         data = json.load(file)
         file.close()
     except FileNotFoundError:
         print("the file not found, exiting...")
         data= []
     return render_template('traceview.html', data=data)
+
+'''
+1. Save the file
+2. Pass the location of file to OP1 and catch the output
+3. Pass the output to tarceview 
+
+Record Example:
+{
+"_id": id
+"name" : f_name
+"f_size": f_size
+"comment" : comment_text
+"created_at" : created_at
+"t_start" : total_starts
+"t_exit" : total_exists
+"t_duraion" : totol_durations
+"s_time" : start_time
+"e_time" : end_time
+"data" : [...]
+}
+'''
 
 @app.route("/show_snoop_logs", methods=['GET', 'POST'])
 def show_snoop_logs():
