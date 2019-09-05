@@ -168,33 +168,31 @@ def validate(lines):
 
             
 
-def execution():
+def execution(file_name):
     global_json = {}
-    lines = read_file("./helpers/TraceOption=1.out")
+    lines = read_file(file_name)
     print_statistics(lines)
-    json = parse_lines(lines)
+    data_json = parse_lines(lines)
     print("opening the file ....")
-    file = open('./helpers/sample_1.json', 'w')
+    file = open('./helpers/'+file_name+'.json', 'w')
     print("Writing data to file  ....")
-    file.write(json)
+    file.write(data_json)
     file.close()
     print("Completed  ....")
     return True
 
-
+'''
 if __name__ == '__main__':
     execution()
 
-''' To print all lines
+ To print all lines
     index = 0
     value_at = 0
     while index < len(lines):
         line = process_line(lines[index])
         print(str(index) + str(line))
         index = index + 1
-'''
 
-'''
     line = process_line(lines[141])
     print(line)
     count = 0

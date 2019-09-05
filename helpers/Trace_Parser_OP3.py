@@ -187,17 +187,23 @@ def parse_lines(lines):
         index = index + 1
     return json.dumps(global_json)
 
-def execute():
+def execution(file_name):
     global_json = {}
-    lines = read_file("./helpers/TraceOption=3.out")
+    lines = read_file(file_name)
     print_statistics(lines)
-    json = parse_lines(lines)
+    data_json = parse_lines(lines)
     print("opening the file ....")
-    file = open('./helpers/sample_3.json', 'w')
+    file = open('./helpers/'+file_name+'.json', 'w')
     print("Writing data to file  ....")
-    file.write(json)
+    file.write(data_json)
     file.close()
     print("Completed  ....")
+    if len(data_json) < 3:
+        print("less than one"+ str(len(data_json)))
+        return False
+    else:
+        print("More than one"+ str(len(data_json)))
+        return True
 
 '''
 
@@ -210,10 +216,12 @@ def execute():
 
 '''
 
+
+'''
+
 if __name__ == '__main__':
     execute()
 
-'''
     json = parse_lines(lines)
     print(json)
     index = 0

@@ -33,7 +33,7 @@
       <div class="col-sm-4 border rounded" style="background-color:rgba(243, 113, 104, 0.363);">
         <h3 class="text-center mt-3 text-secondary"> Analyse Snoop log file</h1>
         <hr size="30">
-        <form action="/show_snoop_logs" method="POST" name ="snoop_only" enctype="multipart/form-data">
+        <form action="/snoop_only" method="POST" name ="snoop_only" enctype="multipart/form-data">
           <div class="form-group mt-3">
             <label class="strong" for="sel1">Select the snoop option :</label>
             <select class="form-control mt-1" name="snoop_option">
@@ -61,7 +61,7 @@
       <div class="col-sm-4 border rounded" style="background-color:rgba(115, 241, 122, 0.521);">
         <h3 class="text-center mt-2 text-secondary "> Compare Trace & Snoop (Pending) </h1>
           <hr size="30">
-          <form action="/snoop_only" method="POST" name ="snoop_only" enctype="multipart/form-data">
+          <form action="/snoop_trace" method="POST" name ="snoop_trace" enctype="multipart/form-data">
             <div class="form-group mt-3">
               <label class="strong" for="sel1">Select the trace option (default:3):</label>
               <select class="form-control mt-1" name="trace_option2">
@@ -69,12 +69,20 @@
                 <option>1</option>
               </select>
             </div>
+            <div class="custom-file mt-2">
+              <input type="file" class="custom-file-input" name="trace_file">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
             <div class="form-group mt-3">
               <label class="strong" for="sel1">Select the snoop option :</label>
               <select class="form-control mt-1" name="snoop_option">
                 <option>With Timestamps</option>
                 <option>Without Timestamps</option>
               </select>
+            </div>
+            <div class="custom-file mt-2">
+              <input type="file" class="custom-file-input" name="snoop_file">
+              <label class="custom-file-label" for="customFile">Choose file</label>
             </div>
             <div class="form-group mt-2">
               <label for="usr">Custom ID:</label>
@@ -84,11 +92,7 @@
               <label for="comment">Comment:</label>
               <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
             </div>
-            <div class="custom-file mt-2">
-              <input type="file" class="custom-file-input" name="snoop_file">
-              <label class="custom-file-label" for="customFile">Choose file</label>
-            </div>
-            <button type="submit" class="btn btn-dark mt-3 bg-secondery">Submit</button>
+            <button type="submit" class="btn btn-dark mt-1 mb-2 bg-secondery">Submit</button>
           </form>
       </div>
     </div>
