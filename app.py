@@ -162,7 +162,7 @@ def trace_only():
                 except FileNotFoundError:
                     print("the file not found, exiting...")
                     data = []
-                    flash("Something went wrong while parsing the log...", error_class)
+                    flash("Invalid file format for TraceOption:" + trace_option, error_class)
                     return render_template('traceview.html', data=data)
             else:
                 flash("Something went wrong while parsing the log...", error_class)
@@ -179,9 +179,13 @@ def allowed_file(filename):
 
 def execute(fname, trace_option):
     if trace_option=='3':
-        return Trace_Parser_OP3.execution(fname)
+        [result,stats ] =  Trace_Parser_OP3.execution(fname)
+        print(stats)
+        return result
     if trace_option=='1':
-        return Trace_Parser_OP1.execution(fname)
+        [result,stats ] =  Trace_Parser_OP1.execution(fname)
+        print(stats)
+        return result
     
 if __name__ == '__main__':
     app.run(debug=True)
