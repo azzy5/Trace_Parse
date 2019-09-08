@@ -1,0 +1,360 @@
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLAllocConnect 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC *              0x007ffdbf625f00
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLAllocConnect  with return code 0 (SQL_SUCCESS)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC *              0x007ffdbf625f00 ( 0x00000000daa4b0)
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLConnect 
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	UCHAR *             0x007ffdbf625e70 [4294967293] "MG2\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007ffdbf625ed0 [4294967293] "\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007f66ff50a424 [4294967293] "******\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLConnect  with return code -1 (SQL_ERROR)
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	UCHAR *             0x007ffdbf625e70 [4294967293] "MG2\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007ffdbf625ed0 [4294967293] "\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007f66ff50a424 [4294967293] "******\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLError 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLError  with return code 0 (SQL_SUCCESS)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 [  5] "IM002"
+
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac (0)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 [      81] "[DataDirect][ODBC lib] Data source name not found and no default driver specified"
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa (81)
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLError 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLError  with return code 100 (SQL_NO_DATA_FOUND)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLConnect 
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	UCHAR *             0x007ffdbf625e70 [4294967293] "MG2\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007ffdbf625ed0 [4294967293] "\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007f66ff50a424 [4294967293] "******\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLConnect  with return code -1 (SQL_ERROR)
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	UCHAR *             0x007ffdbf625e70 [4294967293] "MG2\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007ffdbf625ed0 [4294967293] "\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007f66ff50a424 [4294967293] "******\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLError 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLError  with return code 0 (SQL_SUCCESS)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 [  5] "IM002"
+
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac (0)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 [      81] "[DataDirect][ODBC lib] Data source name not found and no default driver specified"
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa (81)
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLError 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLError  with return code 100 (SQL_NO_DATA_FOUND)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLConnect 
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	UCHAR *             0x007ffdbf625e70 [4294967293] "MG2\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007ffdbf625ed0 [4294967293] "\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007f66ff50a424 [4294967293] "******\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLConnect  with return code -1 (SQL_ERROR)
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	UCHAR *             0x007ffdbf625e70 [4294967293] "MG2\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007ffdbf625ed0 [4294967293] "\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+@wsÿf                         	UCHAR *             0x007f66ff50a424 [4294967293] "******\x00"
+
+@wsÿf                         	SWORD                       -3 
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLError 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLError  with return code 0 (SQL_SUCCESS)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 [  5] "IM002"
+
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac (0)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 [      81] "[DataDirect][ODBC lib] Data source name not found and no default driver specified"
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa (81)
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLError 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLError  with return code 100 (SQL_NO_DATA_FOUND)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	ENTER SQLError 
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
+
+ppid=16121:pid=17364:tid=14008 	EXIT  SQLError  with return code 100 (SQL_NO_DATA_FOUND)
+
+@wsÿf                         	HENV                0x00000000da7850
+
+@wsÿf                         	HDBC                0x00000000daa4b0
+
+@wsÿf                         	HSTMT                          (nil)
+
+@wsÿf                         	UCHAR *             0x007ffdbf6257b0 (NYI) 
+ 
+@wsÿf                         	SDWORD *            0x007ffdbf6255ac
+
+@wsÿf                         	UCHAR *             0x007ffdbf6255b0 
+
+@wsÿf                         	SWORD                      511 
+
+@wsÿf                         	SWORD *             0x007ffdbf6255aa
