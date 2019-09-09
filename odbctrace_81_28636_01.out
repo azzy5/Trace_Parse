@@ -1,0 +1,636 @@
+
+2019-05-14 07:35:42.684716 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLAllocConnect 
+
+2019-05-14 07:35:42.684716 ppid=17117:pid=28636:tid=139805880321856                                        	HENV                0x00000001361a20
+
+2019-05-14 07:35:42.684716 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC *              0x007ffffef438a8
+
+2019-05-14 07:35:42.684810 (Time elapsed in microseconds :       94) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLAllocConnect  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:42.684810 (Time elapsed in microseconds :       94) ppid=17117:pid=28636:tid=139805880321 	HENV                0x00000001361a20
+
+2019-05-14 07:35:42.684810 (Time elapsed in microseconds :       94) ppid=17117:pid=28636:tid=139805880321 	HDBC *              0x007ffffef438a8 ( 0x00000001365aa0)
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLConnect 
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef43810 [4294967293] "ORA81\x00"
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                       -3 
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef43870 [4294967293] "TEST01\x00"
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                       -3 
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007f2717b2a424 [4294967293] "******\x00"
+
+2019-05-14 07:35:42.684826 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                       -3 
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLConnect  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef43810 [4294967293] "ORA81\x00"
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	SWORD                       -3 
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef43870 [4294967293] "TEST01\x00"
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	SWORD                       -3 
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007f2717b2a424 [4294967293] "******\x00"
+
+2019-05-14 07:35:43.494062 (Time elapsed in microseconds :   809236) ppid=17117:pid=28636:tid=139805880321 	SWORD                       -3 
+
+2019-05-14 07:35:43.494248 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLGetInfo 
+
+2019-05-14 07:35:43.494248 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494248 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                       17 <SQL_DBMS_NAME>
+
+2019-05-14 07:35:43.494248 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                 0x007ffffef42bb0 
+
+2019-05-14 07:35:43.494248 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                     1029 
+
+2019-05-14 07:35:43.494248 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494311 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:43.494311 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494311 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	UWORD                       17 <SQL_DBMS_NAME>
+
+2019-05-14 07:35:43.494311 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	PTR                 0x007ffffef42bb0 [  6] "Oracle"
+
+2019-05-14 07:35:43.494311 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	SWORD                     1029 
+
+2019-05-14 07:35:43.494311 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494433 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLGetInfo 
+
+2019-05-14 07:35:43.494433 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494433 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                       18 <SQL_DBMS_VER>
+
+2019-05-14 07:35:43.494433 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                 0x007ffffef42bb0 
+
+2019-05-14 07:35:43.494433 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                     1029 
+
+2019-05-14 07:35:43.494433 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494465 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:43.494465 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494465 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	UWORD                       18 <SQL_DBMS_VER>
+
+2019-05-14 07:35:43.494465 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	PTR                 0x007ffffef42bb0 [ 28] "12.02.0000 Oracle 12.2.0.1.0"
+
+2019-05-14 07:35:43.494465 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	SWORD                     1029 
+
+2019-05-14 07:35:43.494465 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494522 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLGetInfo 
+
+2019-05-14 07:35:43.494522 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494522 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        6 <SQL_DRIVER_NAME>
+
+2019-05-14 07:35:43.494522 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                 0x007ffffef42bb0 
+
+2019-05-14 07:35:43.494522 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                     1029 
+
+2019-05-14 07:35:43.494522 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494549 (Time elapsed in microseconds :       27) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:43.494549 (Time elapsed in microseconds :       27) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494549 (Time elapsed in microseconds :       27) ppid=17117:pid=28636:tid=139805880321 	UWORD                        6 <SQL_DRIVER_NAME>
+
+2019-05-14 07:35:43.494549 (Time elapsed in microseconds :       27) ppid=17117:pid=28636:tid=139805880321 	PTR                 0x007ffffef42bb0 [ 10] "ddora28.so"
+
+2019-05-14 07:35:43.494549 (Time elapsed in microseconds :       27) ppid=17117:pid=28636:tid=139805880321 	SWORD                     1029 
+
+2019-05-14 07:35:43.494549 (Time elapsed in microseconds :       27) ppid=17117:pid=28636:tid=139805880321 	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494603 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLGetInfo 
+
+2019-05-14 07:35:43.494603 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494603 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        7 <SQL_DRIVER_VER>
+
+2019-05-14 07:35:43.494603 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                 0x007ffffef42bb0 
+
+2019-05-14 07:35:43.494603 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                     1029 
+
+2019-05-14 07:35:43.494603 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494626 (Time elapsed in microseconds :       23) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:43.494626 (Time elapsed in microseconds :       23) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494626 (Time elapsed in microseconds :       23) ppid=17117:pid=28636:tid=139805880321 	UWORD                        7 <SQL_DRIVER_VER>
+
+2019-05-14 07:35:43.494626 (Time elapsed in microseconds :       23) ppid=17117:pid=28636:tid=139805880321 	PTR                 0x007ffffef42bb0 [ 25] "08.02.2208 (B0436, U0298)"
+
+2019-05-14 07:35:43.494626 (Time elapsed in microseconds :       23) ppid=17117:pid=28636:tid=139805880321 	SWORD                     1029 
+
+2019-05-14 07:35:43.494626 (Time elapsed in microseconds :       23) ppid=17117:pid=28636:tid=139805880321 	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494671 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLGetInfo 
+
+2019-05-14 07:35:43.494671 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494671 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                       26 <SQL_DEFAULT_TXN_ISOLATION>
+
+2019-05-14 07:35:43.494671 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                 140737470802864
+
+2019-05-14 07:35:43.494671 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                     1029 
+
+2019-05-14 07:35:43.494671 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494688 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:43.494688 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494688 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	UWORD                       26 <SQL_DEFAULT_TXN_ISOLATION>
+
+2019-05-14 07:35:43.494688 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	PTR                 140737470802864
+
+2019-05-14 07:35:43.494688 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	SWORD                     1029 
+
+2019-05-14 07:35:43.494688 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	SWORD *                        (nil)
+
+2019-05-14 07:35:43.494714 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLAllocStmt 
+
+2019-05-14 07:35:43.494714 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494714 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT *             0x007ffffef43898
+
+2019-05-14 07:35:43.494789 (Time elapsed in microseconds :       75) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLAllocStmt  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:43.494789 (Time elapsed in microseconds :       75) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:43.494789 (Time elapsed in microseconds :       75) ppid=17117:pid=28636:tid=139805880321 	HSTMT *             0x007ffffef43898 ( 0x00000001382340)
+
+2019-05-14 07:35:49.915313 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLExecDirect 
+
+2019-05-14 07:35:49.915313 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.915313 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef43410 [4294967293] "select * from test\x00"
+
+2019-05-14 07:35:49.915313 ppid=17117:pid=28636:tid=139805880321856                                        	SDWORD                    -3
+
+2019-05-14 07:35:49.990725 (Time elapsed in microseconds :    75412) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLExecDirect  with return code -1 (SQL_ERROR)
+
+2019-05-14 07:35:49.990725 (Time elapsed in microseconds :    75412) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.990725 (Time elapsed in microseconds :    75412) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef43410 [4294967293] "select * from test\x00"
+
+2019-05-14 07:35:49.990725 (Time elapsed in microseconds :    75412) ppid=17117:pid=28636:tid=139805880321 	SDWORD                    -3
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLError 
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	HENV                0x00000001361a20
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef431a0 (NYI) 
+ 
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	SDWORD *            0x007ffffef42f9c
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef42fa0 
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                      511 
+
+2019-05-14 07:35:49.990775 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x007ffffef42f9a
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLError  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	HENV                0x00000001361a20
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef431a0 [  5] "S0002"
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	SDWORD *            0x007ffffef42f9c (942)
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef42fa0 [      93] "[DataDirect][ODBC Oracle Wire Protocol driver][Oracle]ORA-00942: table or view does not exist"
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	SWORD                      511 
+
+2019-05-14 07:35:49.990815 (Time elapsed in microseconds :       40) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x007ffffef42f9a (93)
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLError 
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	HENV                0x00000001361a20
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef431a0 (NYI) 
+ 
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	SDWORD *            0x007ffffef42f9c
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef42fa0 
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                      511 
+
+2019-05-14 07:35:49.990864 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x007ffffef42f9a
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLError  with return code 100 (SQL_NO_DATA_FOUND)
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	HENV                0x00000001361a20
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef431a0 (NYI) 
+ 
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	SDWORD *            0x007ffffef42f9c
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef42fa0 
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	SWORD                      511 
+
+2019-05-14 07:35:49.990896 (Time elapsed in microseconds :       32) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x007ffffef42f9a
+
+2019-05-14 07:35:49.990918 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFreeStmt 
+
+2019-05-14 07:35:49.990918 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.990918 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        0 <SQL_CLOSE>
+
+2019-05-14 07:35:49.990944 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFreeStmt  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:35:49.990944 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:35:49.990944 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	UWORD                        0 <SQL_CLOSE>
+
+2019-05-14 07:36:43.387798 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLExecDirect 
+
+2019-05-14 07:36:43.387798 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:36:43.387798 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef43410 [4294967293] "CREATE TABLE test (col1 INT, name VARCHAR(255))\x00"
+
+2019-05-14 07:36:43.387798 ppid=17117:pid=28636:tid=139805880321856                                        	SDWORD                    -3
+
+2019-05-14 07:36:43.538638 (Time elapsed in microseconds :   150840) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLExecDirect  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:36:43.538638 (Time elapsed in microseconds :   150840) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:36:43.538638 (Time elapsed in microseconds :   150840) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef43410 [4294967293] "CREATE TABLE test (col1 INT, name VARCHAR(255))\x00"
+
+2019-05-14 07:36:43.538638 (Time elapsed in microseconds :   150840) ppid=17117:pid=28636:tid=139805880321 	SDWORD                    -3
+
+2019-05-14 07:36:43.538694 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLNumResultCols 
+
+2019-05-14 07:36:43.538694 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:36:43.538694 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x007ffffef4320e
+
+2019-05-14 07:36:43.538709 (Time elapsed in microseconds :       15) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLNumResultCols  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:36:43.538709 (Time elapsed in microseconds :       15) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:36:43.538709 (Time elapsed in microseconds :       15) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x007ffffef4320e (0)
+
+2019-05-14 07:37:06.268464 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLExecDirect 
+
+2019-05-14 07:37:06.268464 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:06.268464 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef43410 [4294967293] "INSERT INTO test VALUES (1, 'Azhar')\x00"
+
+2019-05-14 07:37:06.268464 ppid=17117:pid=28636:tid=139805880321856                                        	SDWORD                    -3
+
+2019-05-14 07:37:06.321306 (Time elapsed in microseconds :    52842) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLExecDirect  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:06.321306 (Time elapsed in microseconds :    52842) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:06.321306 (Time elapsed in microseconds :    52842) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef43410 [4294967293] "INSERT INTO test VALUES (1, 'Azhar')\x00"
+
+2019-05-14 07:37:06.321306 (Time elapsed in microseconds :    52842) ppid=17117:pid=28636:tid=139805880321 	SDWORD                    -3
+
+2019-05-14 07:37:06.321357 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLNumResultCols 
+
+2019-05-14 07:37:06.321357 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:06.321357 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x007ffffef4320e
+
+2019-05-14 07:37:06.321370 (Time elapsed in microseconds :       13) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLNumResultCols  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:06.321370 (Time elapsed in microseconds :       13) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:06.321370 (Time elapsed in microseconds :       13) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x007ffffef4320e (0)
+
+2019-05-14 07:37:11.900483 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLExecDirect 
+
+2019-05-14 07:37:11.900483 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.900483 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x007ffffef43410 [4294967293] "select * from test\x00"
+
+2019-05-14 07:37:11.900483 ppid=17117:pid=28636:tid=139805880321856                                        	SDWORD                    -3
+
+2019-05-14 07:37:11.981456 (Time elapsed in microseconds :    80973) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLExecDirect  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981456 (Time elapsed in microseconds :    80973) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981456 (Time elapsed in microseconds :    80973) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x007ffffef43410 [4294967293] "select * from test\x00"
+
+2019-05-14 07:37:11.981456 (Time elapsed in microseconds :    80973) ppid=17117:pid=28636:tid=139805880321 	SDWORD                    -3
+
+2019-05-14 07:37:11.981503 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLNumResultCols 
+
+2019-05-14 07:37:11.981503 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981503 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x007ffffef4320e
+
+2019-05-14 07:37:11.981516 (Time elapsed in microseconds :       13) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLNumResultCols  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981516 (Time elapsed in microseconds :       13) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981516 (Time elapsed in microseconds :       13) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x007ffffef4320e (2)
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLDescribeCol 
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        1 
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x00000000544320 
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                      255 
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x00000000544420
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x00000000544422
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	SQLULEN *           0x00000000544428
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x00000000544430
+
+2019-05-14 07:37:11.981538 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x00000000544432
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	UWORD                        1 
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x00000000544320 [       4] "COL1"
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	SWORD                      255 
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x00000000544420 (4)
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x00000000544422 (3)
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	SQLULEN *           0x00000000544428 (38)
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x00000000544430 (0)
+
+2019-05-14 07:37:11.981575 (Time elapsed in microseconds :       37) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x00000000544432 (1)
+
+2019-05-14 07:37:11.981610 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLBindCol 
+
+2019-05-14 07:37:11.981610 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981610 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        1 
+
+2019-05-14 07:37:11.981610 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                        1 <SQL_C_CHAR>
+
+2019-05-14 07:37:11.981610 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                0x00000000502320
+
+2019-05-14 07:37:11.981610 ppid=17117:pid=28636:tid=139805880321856                                        	SQLLEN                               255
+
+2019-05-14 07:37:11.981610 ppid=17117:pid=28636:tid=139805880321856                                        	SQLLEN *            0x00000000502420
+
+2019-05-14 07:37:11.981632 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLBindCol  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981632 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981632 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	UWORD                        1 
+
+2019-05-14 07:37:11.981632 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SWORD                        1 <SQL_C_CHAR>
+
+2019-05-14 07:37:11.981632 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	PTR                0x00000000502320
+
+2019-05-14 07:37:11.981632 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SQLLEN                               255
+
+2019-05-14 07:37:11.981632 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SQLLEN *            0x00000000502420 (0)
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLColAttributes 
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        1 
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        6 <SQL_COLUMN_DISPLAY_SIZE>
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                           (nil)
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                        0 
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *                        (nil)
+
+2019-05-14 07:37:11.981650 ppid=17117:pid=28636:tid=139805880321856                                        	SQLLEN *            0x00000000502420
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLColAttributes  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	UWORD                        1 
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	UWORD                        6 <SQL_COLUMN_DISPLAY_SIZE>
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	PTR                           (nil)
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	SWORD                        0 
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	SWORD *                        (nil)
+
+2019-05-14 07:37:11.981676 (Time elapsed in microseconds :       26) ppid=17117:pid=28636:tid=139805880321 	SQLLEN *            0x00000000502420 (39)
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLDescribeCol 
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        2 
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	UCHAR *             0x00000000544438 
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                      255 
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x00000000544538
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x0000000054453a
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	SQLULEN *           0x00000000544540
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x00000000544548
+
+2019-05-14 07:37:11.981695 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *             0x0000000054454a
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLDescribeCol  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	UWORD                        2 
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	UCHAR *             0x00000000544438 [       4] "NAME"
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SWORD                      255 
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x00000000544538 (4)
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x0000000054453a (12)
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SQLULEN *           0x00000000544540 (255)
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x00000000544548 (0)
+
+2019-05-14 07:37:11.981717 (Time elapsed in microseconds :       22) ppid=17117:pid=28636:tid=139805880321 	SWORD *             0x0000000054454a (1)
+
+2019-05-14 07:37:11.981740 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLBindCol 
+
+2019-05-14 07:37:11.981740 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981740 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        2 
+
+2019-05-14 07:37:11.981740 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                        1 <SQL_C_CHAR>
+
+2019-05-14 07:37:11.981740 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                0x00000000502428
+
+2019-05-14 07:37:11.981740 ppid=17117:pid=28636:tid=139805880321856                                        	SQLLEN                               255
+
+2019-05-14 07:37:11.981740 ppid=17117:pid=28636:tid=139805880321856                                        	SQLLEN *            0x00000000502528
+
+2019-05-14 07:37:11.981756 (Time elapsed in microseconds :       16) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLBindCol  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981756 (Time elapsed in microseconds :       16) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981756 (Time elapsed in microseconds :       16) ppid=17117:pid=28636:tid=139805880321 	UWORD                        2 
+
+2019-05-14 07:37:11.981756 (Time elapsed in microseconds :       16) ppid=17117:pid=28636:tid=139805880321 	SWORD                        1 <SQL_C_CHAR>
+
+2019-05-14 07:37:11.981756 (Time elapsed in microseconds :       16) ppid=17117:pid=28636:tid=139805880321 	PTR                0x00000000502428
+
+2019-05-14 07:37:11.981756 (Time elapsed in microseconds :       16) ppid=17117:pid=28636:tid=139805880321 	SQLLEN                               255
+
+2019-05-14 07:37:11.981756 (Time elapsed in microseconds :       16) ppid=17117:pid=28636:tid=139805880321 	SQLLEN *            0x00000000502528 (0)
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLColAttributes 
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        2 
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        6 <SQL_COLUMN_DISPLAY_SIZE>
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	PTR                           (nil)
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD                        0 
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	SWORD *                        (nil)
+
+2019-05-14 07:37:11.981771 ppid=17117:pid=28636:tid=139805880321856                                        	SQLLEN *            0x00000000502528
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLColAttributes  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	UWORD                        2 
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	UWORD                        6 <SQL_COLUMN_DISPLAY_SIZE>
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	PTR                           (nil)
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	SWORD                        0 
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	SWORD *                        (nil)
+
+2019-05-14 07:37:11.981788 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	SQLLEN *            0x00000000502528 (255)
+
+2019-05-14 07:37:11.981810 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFetch 
+
+2019-05-14 07:37:11.981810 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.019972 (Time elapsed in microseconds :    38162) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFetch  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:12.019972 (Time elapsed in microseconds :    38162) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.020019 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFetch 
+
+2019-05-14 07:37:12.020019 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.020036 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFetch  with return code 100 (SQL_NO_DATA_FOUND)
+
+2019-05-14 07:37:12.020036 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.020045 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFreeStmt 
+
+2019-05-14 07:37:12.020045 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.020045 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        2 <SQL_UNBIND>
+
+2019-05-14 07:37:12.020059 (Time elapsed in microseconds :       14) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFreeStmt  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:12.020059 (Time elapsed in microseconds :       14) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.020059 (Time elapsed in microseconds :       14) ppid=17117:pid=28636:tid=139805880321 	UWORD                        2 <SQL_UNBIND>
+
+2019-05-14 07:37:12.020068 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFreeStmt 
+
+2019-05-14 07:37:12.020068 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.020068 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        0 <SQL_CLOSE>
+
+2019-05-14 07:37:12.020085 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFreeStmt  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:12.020085 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:12.020085 (Time elapsed in microseconds :       17) ppid=17117:pid=28636:tid=139805880321 	UWORD                        0 <SQL_CLOSE>
+
+2019-05-14 07:37:14.139696 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFreeStmt 
+
+2019-05-14 07:37:14.139696 ppid=17117:pid=28636:tid=139805880321856                                        	HSTMT               0x00000001382340
+
+2019-05-14 07:37:14.139696 ppid=17117:pid=28636:tid=139805880321856                                        	UWORD                        2 <SQL_UNBIND>
+
+2019-05-14 07:37:14.139772 (Time elapsed in microseconds :       76) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFreeStmt  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:14.139772 (Time elapsed in microseconds :       76) ppid=17117:pid=28636:tid=139805880321 	HSTMT               0x00000001382340
+
+2019-05-14 07:37:14.139772 (Time elapsed in microseconds :       76) ppid=17117:pid=28636:tid=139805880321 	UWORD                        2 <SQL_UNBIND>
+
+2019-05-14 07:37:14.139789 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLDisconnect 
+
+2019-05-14 07:37:14.139789 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:37:14.178902 (Time elapsed in microseconds :    39113) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLDisconnect  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:14.178902 (Time elapsed in microseconds :    39113) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:37:14.178938 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFreeConnect 
+
+2019-05-14 07:37:14.178938 ppid=17117:pid=28636:tid=139805880321856                                        	HDBC                0x00000001365aa0
+
+2019-05-14 07:37:14.179001 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFreeConnect  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:14.179001 (Time elapsed in microseconds :       63) ppid=17117:pid=28636:tid=139805880321 	HDBC                0x00000001365aa0
+
+2019-05-14 07:37:14.179014 ppid=17117:pid=28636:tid=139805880321856                                        	ENTER SQLFreeEnv 
+
+2019-05-14 07:37:14.179014 ppid=17117:pid=28636:tid=139805880321856                                        	HENV                0x00000001361a20
+
+2019-05-14 07:37:14.179109 (Time elapsed in microseconds :       95) ppid=17117:pid=28636:tid=139805880321 	EXIT  SQLFreeEnv  with return code 0 (SQL_SUCCESS)
+
+2019-05-14 07:37:14.179109 (Time elapsed in microseconds :       95) ppid=17117:pid=28636:tid=139805880321 	HENV                0x00000001361a20

@@ -155,13 +155,14 @@ def trace_only():
             except expression:
                 flash("Something went wrong", error_class)
                 return render_template("index.html")
-            [result, stats] = execute(fname, trace_option)
+            [result, meta["stats"]] = execute(fname, trace_option)
+            print(meta)
             if  result:
                 try:
                     file = open('./helpers/temp.json', 'r')
                     data = json.load(file)
                     file.close()
-                    return render_template('traceview.html', data=data, stats=stats)
+                    return render_template('traceview.html', data=data, meta=meta)
                 except FileNotFoundError:
                     print("the file not found, exiting...")
                     data = []

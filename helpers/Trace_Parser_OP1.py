@@ -65,6 +65,7 @@ def print_statistics(lines):
     #print ("Total number of ENTER:" +str(return_json["enter_count"]))
     return_json["exit_count"] = Exit_count
     #print ("Total number of EXIT:" +str(return_json["exit_count"]))
+    return_json["uploaded_at"] = datetime.datetime.now()
     return return_json
 
 
