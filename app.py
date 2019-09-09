@@ -142,14 +142,16 @@ def trace_only():
     if request.method == 'GET':
         flash('Looks like you\'re lost, let\'s try again', error_class)
         return render_template("index.html")
-
+        
     if 'trace_file' not in request.files or request.files['trace_file'].name == '':
         flash('Invalid file to be uploaded..', error_class)
         return render_template("index.html")
     else:
+        meta={}
         file = request.files['trace_file']
+        meta["file_name"] = file.filename
+        meta["comment"] = request.form['comment']
         trace_option = request.form['trace_option2']
-        print(trace_option)
         if file and allowed_file(file.filename):
             try:
                 fname = secure_filename(file.filename)
@@ -157,16 +159,18 @@ def trace_only():
             except expression:
                 flash("Something went wrong", error_class)
                 return render_template("index.html")
-            if execute(fname, trace_option):  
+            [result, meta["stats"]] = execute(fname, trace_option)
+            print(meta)
+            if  result:
                 try:
-                    file = open('./helpers/'+fname+'.json', 'r')
+                    file = open('./helpers/temp.json', 'r')
                     data = json.load(file)
                     file.close()
-                    return render_template('traceview.html', data=data)
+                    return render_template('traceview.html', data=data, meta=meta)
                 except FileNotFoundError:
                     print("the file not found, exiting...")
                     data = []
-                    flash("Something went wrong while parsing the log...", error_class)
+                    flash("Invalid file format for TraceOption:" + trace_option, error_class)
                     return render_template('traceview.html', data=data)
             else:
                 flash("Something went wrong while parsing the log...", error_class)
@@ -183,9 +187,11 @@ def allowed_file(filename):
 
 def execute(fname, trace_option):
     if trace_option=='3':
-        return Trace_Parser_OP3.execution(fname)
+        return   Trace_Parser_OP3.execution(fname)
+
     if trace_option=='1':
         return Trace_Parser_OP1.execution(fname)
+
     
 if __name__ == '__main__':
     app.run(debug=True)

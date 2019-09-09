@@ -36,6 +36,7 @@ def read_file(_fname):
 
 #2. Print statistics
 def print_statistics(lines):
+    return_json = {}
     Enter_count = 0
     Exit_count =0
     for line in lines:
@@ -52,12 +53,20 @@ def print_statistics(lines):
         if "EXIT" in line:
             line_e = line
             break
-    print ("Start time : " + line_f.split()[0] + " "+line_f.split()[1])
-    print ("End time : " + line_e.split()[0] + " "+line_e.split()[1])
-    print ("Total time : " + time_diff(line_e.split()[0] + " "+line_e.split()[1], line_f.split()[0] + " "+line_f.split()[1]))
-    print ("Total number of lines:" +str(len(lines)))
-    print ("Total number of ENTER:" +str(Enter_count))
-    print ("Total number of EXIT:" +str(Exit_count))
+    return_json["start_time"] = line_f.split()[0] + " "+line_f.split()[1]
+    #print ("Start time : "+ return_json["start_time"])
+    return_json["end_time"] = line_e.split()[0] + " "+line_e.split()[1]
+    #print ("End time : " + return_json["end_time"])
+    return_json["total_duration"] = time_diff(line_e.split()[0] + " "+line_e.split()[1], line_f.split()[0] + " "+line_f.split()[1])
+    #print ("Total time : " + return_json["total_duration"])
+    return_json["line_count"] = len(lines)
+    #print ("Total number of lines:" +str(return_json["line_count"]))
+    return_json["enter_count"] = Enter_count
+    #print ("Total number of ENTER:" +str(return_json["enter_count"]))
+    return_json["exit_count"] = Exit_count
+    #print ("Total number of EXIT:" +str(return_json["exit_count"]))
+    return_json["uploaded_at"] = datetime.datetime.now()
+    return return_json
 
 
 
@@ -121,7 +130,7 @@ def parse_lines(lines):
                 line_e = lines[index]
                 index = index + 1
             except IndexError:
-                print(index)
+                pass
             try:
                 while "ENTER" not in lines[index] and index < len(lines):
                     line = lines[index]
@@ -138,7 +147,7 @@ def parse_lines(lines):
                 line = process_line(line_e)
                 local_json["end_time"]  =  get_timestamp(line)
                 difference = datetime.datetime.strptime(local_json["end_time"], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(local_json["start_time"], '%Y-%m-%d %H:%M:%S.%f')
-                local_json["duration"] = str(difference.microseconds)
+                local_json["duration"] = str(difference)
                 local_json["function_e"] = line[4]
                 local_json["return_code"] = line[-2]
                 local_json["result"] = line[-1]
@@ -146,7 +155,7 @@ def parse_lines(lines):
                 index = index - 1
                 global_json.append(local_json)
             except IndexError:
-                print(index)
+                pass
         index = index + 1
     return json.dumps(global_json)
 
@@ -169,17 +178,17 @@ def validate(lines):
             
 
 def execution(file_name):
-    global_json = {}
+    global_json = []
     lines = read_file(file_name)
-    print_statistics(lines)
+    statistics = print_statistics(lines)
     data_json = parse_lines(lines)
     print("opening the file ....")
-    file = open('./helpers/'+file_name+'.json', 'w')
+    file = open('./helpers/temp.json', 'w')
     print("Writing data to file  ....")
     file.write(data_json)
     file.close()
     print("Completed  ....")
-    return True
+    return True,statistics
 
 '''
 if __name__ == '__main__':
