@@ -5,7 +5,16 @@ import datetime
 line_f = ""
 line_e = ""
 
+'''
 
+2. Lterate through each line and if the line contains "ENTER" then start parsing
+3. Start a new JSON object
+3. Parse the first line and Append <Date>, <Timestamp>, <PID, PPID>, <Lable>, <Function Name> to local JSON
+4. Start parsing the next lines for parameters and create a nested JSON 
+5. Keep repeating the step 4 and add the nested JSON to local JSON  until "EXIT" Encountered
+6. IF "EXIT" Encountered parse the 
+
+'''
 
 #1. Read file and process the data
 def read_file(_fname):
