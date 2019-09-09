@@ -99,7 +99,7 @@
         </th>
         <th>{{ line["start_time"] }}</th>
         <th>{{ line["end_time"] }}</th>
-        <th {% if line["duration"] != '0' %} class="bg-danger" {% endif %}>{{ line["duration"] }}</th>
+        <th  class={{ line["function_cc"] }}>{{ line["duration"] }}</th>
         {% if line["result"] == "(SQL_ERROR)" or line["result"] =="(SQL_INVALID_HANDLE)" %}
         <th class="bg-danger"> {{ line["result"] }} </th>
         {% elif line["result"] == "(SQL_NO_DATA_FOUND)" %}

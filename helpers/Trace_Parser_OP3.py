@@ -195,6 +195,7 @@ def parse_lines(lines):
                 line = process_line(line_e)
                 local_json["end_time"]  =  get_timestamp(line)
                 difference = datetime.datetime.strptime(local_json["end_time"], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(local_json["start_time"], '%Y-%m-%d %H:%M:%S.%f')
+                local_json["function_cc"] =  "" if difference < datetime.timedelta(days=0, seconds=1, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0) else "bg-warning"
                 local_json["duration"] = str(difference)
                 local_json["function_e"] = line[10]
                 local_json["return_code"] = line[-2]
