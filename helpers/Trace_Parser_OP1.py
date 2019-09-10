@@ -145,6 +145,7 @@ def parse_lines(lines):
                     line = lines[index]
                     line = process_line(line)
                     nested_json = {}
+                    count = 0
                     for value in line:
                         nested_json["{}".format(count)] = value
                         count = count + 1
