@@ -64,18 +64,21 @@ def parse_lines(lines):
             local_json["time_stamp"] = get_timestamp(previous_line)
             nested_data=[]
             index = index + 1
+
             try:
-                while ("Read:" not in lines[index] or "Send:" not in lines[index]) and index < len(lines):
+                while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
                     if len(line) > 1:
                         nested_data.append(line[1])
                     #nested_data.append(line[1] if len(line) > 0 else None)
+                    #continue_ = True if "Read:" not in lines[index] and "Send:" not in lines[index] else False
+                    #if continue_:
                     index = index + 1
                 local_json["data"] = nested_data
                 value_at = value_at + 1
+                index = index - 1
             except:
                 pass
-            index = index - 1
             global_json.append(local_json)
         if "Send:" in line:
             local_json = {}
@@ -88,19 +91,22 @@ def parse_lines(lines):
             local_json["time_stamp"] = get_timestamp(previous_line)
             nested_data=[]
             index = index + 1
+            #continue_ = True
             try:
-                while ("Read:" not in lines[index] or "Send:" not in lines[index]) and index < len(lines):
+                while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
                     if len(line) > 1:
                         nested_data.append(line[1])
                     #nested_data.append(line[1] if len(line) > 0 else None)
+                    #continue_ = True if "Read:" not in lines[index] and "Send:" not in lines[index] else False
+                    #if continue_:
                     index = index + 1
                 local_json["data"] = nested_data
+                index = index - 1
                 value_at = value_at + 1
             except:
                 pass
             global_json.append(local_json)
-            index = index - 1
         index = index + 1
     return global_json
 
@@ -113,5 +119,7 @@ def execution(file_name):
 
 
 if __name__ == '__main__':
-    #execution("test.out")
-    test = process_line( ['1567527218348', 'Read:', '1448', 'bytes'])
+    #fname = "./helpers/test_snoop_2.out"
+    fname = "test_snoop_.out"
+    execution(fname)
+    #test = process_line( ['1567527218348', 'Read:', '1448', 'bytes'])
