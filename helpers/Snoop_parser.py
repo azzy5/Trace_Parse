@@ -67,6 +67,7 @@ def parse_lines(lines):
             try:
                 while ("Read:" not in lines[index] or "Send:" not in lines[index]) and index < len(lines):
                     line = process_line(lines[index])
+                    print(line)
                     if len(line) > 1:
                         nested_data.append(line[1])
                     #nested_data.append(line[1] if len(line) > 0 else None)
@@ -91,6 +92,7 @@ def parse_lines(lines):
             try:
                 while ("Read:" not in lines[index] or "Send:" not in lines[index]) and index < len(lines):
                     line = process_line(lines[index])
+                    print(line)
                     if len(line) > 1:
                         nested_data.append(line[1])
                     #nested_data.append(line[1] if len(line) > 0 else None)
@@ -113,5 +115,5 @@ def execution(file_name):
 
 
 if __name__ == '__main__':
-    #execution("test.out")
-    test = process_line( ['1567527218348', 'Read:', '1448', 'bytes'])
+    execution("test.out")
+   # test = process_line( ['1567527218348', 'Read:', '1448', 'bytes'])

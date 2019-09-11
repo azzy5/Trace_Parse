@@ -9,3 +9,5 @@ snoop_file
 helpers/*.json
 helpers/*.out
 
+.idea/workspace.xml
+.idea/inspectionProfiles/Project_Default.xml
