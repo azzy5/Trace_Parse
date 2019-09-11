@@ -4,7 +4,10 @@ import datetime
 
 
 def process_line(line):
-    line = line.split('  ')
+    if '  ' in line:
+        line = line.split('  ')
+    else:
+        line = line.split('\t')
     while "" in line:
         line.remove("")
     for x in range(len(line)):
@@ -119,7 +122,7 @@ def execution(file_name):
 
 
 if __name__ == '__main__':
-    #fname = "./helpers/test_snoop_2.out"
-    fname = "test_snoop_.out"
+    fname = "./helpers/test_snoop_1.out"
+    #fname = "test_snoop_.out"
     execution(fname)
     #test = process_line( ['1567527218348', 'Read:', '1448', 'bytes'])
