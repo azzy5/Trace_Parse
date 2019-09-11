@@ -120,6 +120,7 @@ def parse_lines(lines):
 
 def execution(file_name):
     lines = read_file(file_name)
+    #statistics = get_statistics(lines)
     json_obj = parse_lines(lines)
     print(json_obj)
 
