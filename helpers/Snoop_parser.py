@@ -125,16 +125,7 @@ def execution(file_name):
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
-
-    execution("test.out")
-   # test = process_line( ['1567527218348', 'Read:', '1448', 'bytes'])
-
-    #fname = "./helpers/test_snoop_1.out"
-    fname = "test_snoop_.out"
-=======
     fname = "./helpers/test_snoop_1.out"
     #fname = "test_snoop_.out"
->>>>>>> b81fc5eb23bfc8e35ec7eca043e44ffe2255de3d
     execution(fname)
 
