@@ -1,0 +1,434 @@
+
+2019-08-20 12:05:23.583226 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLAllocConnect 
+
+2019-08-20 12:05:23.583226 ppid=1006:pid=14407:tid=140591854524224                                         	HENV                0x0000000139c010
+
+2019-08-20 12:05:23.583226 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC *              0x007ffce9e36370
+
+2019-08-20 12:05:23.583304 (Time elapsed in microseconds :       78) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLAllocConnect  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.583304 (Time elapsed in microseconds :       78) ppid=1006:pid=14407:tid=1405918545242 	HENV                0x0000000139c010
+
+2019-08-20 12:05:23.583304 (Time elapsed in microseconds :       78) ppid=1006:pid=14407:tid=1405918545242 	HDBC *              0x007ffce9e36370 ( 0x000000013ab440)
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLConnect 
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	UCHAR *             0x000000005044c0  0x000000005044c0
+[4294967293] "Sqlsvr_NPSPL_PROD"
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       -3 
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	UCHAR *             0x000000005043c0  0x000000005043c0
+[4294967293] "EDRETLAppUser"
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       -3 
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	UCHAR *             0x007fde1769ada4  0x007fde1769ada4
+[4294967293] "******"
+
+2019-08-20 12:05:23.583322 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       -3 
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLConnect  with return code 1 (SQL_SUCCESS_WITH_INFO)
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	UCHAR *             0x000000005044c0  0x000000005044c0
+[4294967293] "Sqlsvr_NPSPL_PROD"
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       -3 
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	UCHAR *             0x000000005043c0  0x000000005043c0
+[4294967293] "EDRETLAppUser"
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       -3 
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	UCHAR *             0x007fde1769ada4  0x007fde1769ada4
+[4294967293] "******"
+
+2019-08-20 12:05:23.887814 (Time elapsed in microseconds :   304492) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       -3 
+
+2019-08-20 12:05:23.888104 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.888104 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888104 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                       17 <SQL_DBMS_NAME>
+
+2019-08-20 12:05:23.888104 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e14fe0  0x007ffce9e14fe0
+
+
+2019-08-20 12:05:23.888104 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                     1029 
+
+2019-08-20 12:05:23.888104 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *                        (nil)
+
+2019-08-20 12:05:23.888157 (Time elapsed in microseconds :       53) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.888157 (Time elapsed in microseconds :       53) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888157 (Time elapsed in microseconds :       53) ppid=1006:pid=14407:tid=1405918545242 	UWORD                       17 <SQL_DBMS_NAME>
+
+2019-08-20 12:05:23.888157 (Time elapsed in microseconds :       53) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e14fe0 [ 20] "Microsoft SQL Server"
+
+2019-08-20 12:05:23.888157 (Time elapsed in microseconds :       53) ppid=1006:pid=14407:tid=1405918545242 	SWORD                     1029 
+
+2019-08-20 12:05:23.888157 (Time elapsed in microseconds :       53) ppid=1006:pid=14407:tid=1405918545242 	SWORD *                        (nil)
+
+2019-08-20 12:05:23.888375 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.888375 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888375 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                       18 <SQL_DBMS_VER>
+
+2019-08-20 12:05:23.888375 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e14fe0  0x007ffce9e14fe0
+
+
+2019-08-20 12:05:23.888375 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                     1029 
+
+2019-08-20 12:05:23.888375 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *                        (nil)
+
+2019-08-20 12:05:23.888400 (Time elapsed in microseconds :       25) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.888400 (Time elapsed in microseconds :       25) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888400 (Time elapsed in microseconds :       25) ppid=1006:pid=14407:tid=1405918545242 	UWORD                       18 <SQL_DBMS_VER>
+
+2019-08-20 12:05:23.888400 (Time elapsed in microseconds :       25) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e14fe0 [ 10] "13.00.4001"
+
+2019-08-20 12:05:23.888400 (Time elapsed in microseconds :       25) ppid=1006:pid=14407:tid=1405918545242 	SWORD                     1029 
+
+2019-08-20 12:05:23.888400 (Time elapsed in microseconds :       25) ppid=1006:pid=14407:tid=1405918545242 	SWORD *                        (nil)
+
+2019-08-20 12:05:23.888597 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.888597 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888597 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                        6 <SQL_DRIVER_NAME>
+
+2019-08-20 12:05:23.888597 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e14fe0  0x007ffce9e14fe0
+
+
+2019-08-20 12:05:23.888597 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                     1029 
+
+2019-08-20 12:05:23.888597 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *                        (nil)
+
+2019-08-20 12:05:23.888625 (Time elapsed in microseconds :       28) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.888625 (Time elapsed in microseconds :       28) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888625 (Time elapsed in microseconds :       28) ppid=1006:pid=14407:tid=1405918545242 	UWORD                        6 <SQL_DRIVER_NAME>
+
+2019-08-20 12:05:23.888625 (Time elapsed in microseconds :       28) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e14fe0 [ 11] "DWsqls27.so"
+
+2019-08-20 12:05:23.888625 (Time elapsed in microseconds :       28) ppid=1006:pid=14407:tid=1405918545242 	SWORD                     1029 
+
+2019-08-20 12:05:23.888625 (Time elapsed in microseconds :       28) ppid=1006:pid=14407:tid=1405918545242 	SWORD *                        (nil)
+
+2019-08-20 12:05:23.888827 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.888827 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888827 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                        7 <SQL_DRIVER_VER>
+
+2019-08-20 12:05:23.888827 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e14fe0  0x007ffce9e14fe0
+
+
+2019-08-20 12:05:23.888827 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                     1029 
+
+2019-08-20 12:05:23.888827 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *                        (nil)
+
+2019-08-20 12:05:23.888851 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.888851 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.888851 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	UWORD                        7 <SQL_DRIVER_VER>
+
+2019-08-20 12:05:23.888851 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e14fe0 [ 25] "07.16.0395 (B0407, U0268)"
+
+2019-08-20 12:05:23.888851 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD                     1029 
+
+2019-08-20 12:05:23.888851 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD *                        (nil)
+
+2019-08-20 12:05:23.889045 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.889045 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889045 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                       26 <SQL_DEFAULT_TXN_ISOLATION>
+
+2019-08-20 12:05:23.889045 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 140724232343520
+
+2019-08-20 12:05:23.889045 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                     1029 
+
+2019-08-20 12:05:23.889045 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *                        (nil)
+
+2019-08-20 12:05:23.889066 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889066 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889066 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	UWORD                       26 <SQL_DEFAULT_TXN_ISOLATION>
+
+2019-08-20 12:05:23.889066 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	PTR                 140724232343520
+
+2019-08-20 12:05:23.889066 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	SWORD                     1029 
+
+2019-08-20 12:05:23.889066 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	SWORD *                        (nil)
+
+2019-08-20 12:05:23.889100 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLSetConnectOption 
+
+2019-08-20 12:05:23.889100 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889100 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                     1041 
+ nknown>
+ 
+2019-08-20 12:05:23.889100 ppid=1006:pid=14407:tid=140591854524224                                         	UDWORD               4206251
+
+2019-08-20 12:05:23.889129 (Time elapsed in microseconds :       29) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLSetConnectOption  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889129 (Time elapsed in microseconds :       29) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889129 (Time elapsed in microseconds :       29) ppid=1006:pid=14407:tid=1405918545242 	UWORD                     1041 
+ nknown>
+ 
+2019-08-20 12:05:23.889129 (Time elapsed in microseconds :       29) ppid=1006:pid=14407:tid=1405918545242 	UDWORD               4206251
+
+2019-08-20 12:05:23.889142 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLSetConnectOption 
+
+2019-08-20 12:05:23.889142 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889142 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                     1042 
+ nknown>
+ 
+2019-08-20 12:05:23.889142 ppid=1006:pid=14407:tid=140591854524224                                         	UDWORD               4206260
+
+2019-08-20 12:05:23.889155 (Time elapsed in microseconds :       13) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLSetConnectOption  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889155 (Time elapsed in microseconds :       13) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889155 (Time elapsed in microseconds :       13) ppid=1006:pid=14407:tid=1405918545242 	UWORD                     1042 
+ nknown>
+ 
+2019-08-20 12:05:23.889155 (Time elapsed in microseconds :       13) ppid=1006:pid=14407:tid=1405918545242 	UDWORD               4206260
+
+2019-08-20 12:05:23.889198 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.889198 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889198 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                       10 <SQL_ODBC_VER>
+
+2019-08-20 12:05:23.889198 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e15680  0x007ffce9e15680
+
+
+2019-08-20 12:05:23.889198 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       51 
+
+2019-08-20 12:05:23.889198 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *             0x007ffce9e1567e
+
+2019-08-20 12:05:23.889222 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889222 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889222 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	UWORD                       10 <SQL_ODBC_VER>
+
+2019-08-20 12:05:23.889222 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e15680  0x007ffce9e15680
+[      10] "03.52.0000"
+
+2019-08-20 12:05:23.889222 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       51 
+
+2019-08-20 12:05:23.889222 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD *             0x007ffce9e1567e (10)
+
+2019-08-20 12:05:23.889249 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.889249 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889249 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                       17 <SQL_DBMS_NAME>
+
+2019-08-20 12:05:23.889249 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e15680  0x007ffce9e15680
+
+
+2019-08-20 12:05:23.889249 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       51 
+
+2019-08-20 12:05:23.889249 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *             0x007ffce9e1567e
+
+2019-08-20 12:05:23.889270 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889270 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889270 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	UWORD                       17 <SQL_DBMS_NAME>
+
+2019-08-20 12:05:23.889270 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e15680  0x007ffce9e15680
+[      20] "Microsoft SQL Server"
+
+2019-08-20 12:05:23.889270 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       51 
+
+2019-08-20 12:05:23.889270 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	SWORD *             0x007ffce9e1567e (20)
+
+2019-08-20 12:05:23.889304 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.889304 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889304 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                       18 <SQL_DBMS_VER>
+
+2019-08-20 12:05:23.889304 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e15680  0x007ffce9e15680
+
+
+2019-08-20 12:05:23.889304 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       51 
+
+2019-08-20 12:05:23.889304 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *             0x007ffce9e1567e
+
+2019-08-20 12:05:23.889328 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889328 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889328 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	UWORD                       18 <SQL_DBMS_VER>
+
+2019-08-20 12:05:23.889328 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e15680  0x007ffce9e15680
+[      10] "13.00.4001"
+
+2019-08-20 12:05:23.889328 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       51 
+
+2019-08-20 12:05:23.889328 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD *             0x007ffce9e1567e (10)
+
+2019-08-20 12:05:23.889356 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.889356 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889356 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                        6 <SQL_DRIVER_NAME>
+
+2019-08-20 12:05:23.889356 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e15680  0x007ffce9e15680
+
+
+2019-08-20 12:05:23.889356 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       51 
+
+2019-08-20 12:05:23.889356 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *             0x007ffce9e1567e
+
+2019-08-20 12:05:23.889398 (Time elapsed in microseconds :       42) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889398 (Time elapsed in microseconds :       42) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889398 (Time elapsed in microseconds :       42) ppid=1006:pid=14407:tid=1405918545242 	UWORD                        6 <SQL_DRIVER_NAME>
+
+2019-08-20 12:05:23.889398 (Time elapsed in microseconds :       42) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e15680  0x007ffce9e15680
+[      11] "DWsqls27.so"
+
+2019-08-20 12:05:23.889398 (Time elapsed in microseconds :       42) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       51 
+
+2019-08-20 12:05:23.889398 (Time elapsed in microseconds :       42) ppid=1006:pid=14407:tid=1405918545242 	SWORD *             0x007ffce9e1567e (11)
+
+2019-08-20 12:05:23.889426 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.889426 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889426 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                        7 <SQL_DRIVER_VER>
+
+2019-08-20 12:05:23.889426 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e15680  0x007ffce9e15680
+
+
+2019-08-20 12:05:23.889426 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       51 
+
+2019-08-20 12:05:23.889426 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *             0x007ffce9e1567e
+
+2019-08-20 12:05:23.889447 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889447 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889447 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	UWORD                        7 <SQL_DRIVER_VER>
+
+2019-08-20 12:05:23.889447 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e15680  0x007ffce9e15680
+[      25] "07.16.0395 (B0407, U0268)"
+
+2019-08-20 12:05:23.889447 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       51 
+
+2019-08-20 12:05:23.889447 (Time elapsed in microseconds :       21) ppid=1006:pid=14407:tid=1405918545242 	SWORD *             0x007ffce9e1567e (25)
+
+2019-08-20 12:05:23.889475 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLGetInfo 
+
+2019-08-20 12:05:23.889475 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889475 ppid=1006:pid=14407:tid=140591854524224                                         	UWORD                       77 <SQL_DRIVER_ODBC_VER>
+
+2019-08-20 12:05:23.889475 ppid=1006:pid=14407:tid=140591854524224                                         	PTR                 0x007ffce9e15680  0x007ffce9e15680
+
+
+2019-08-20 12:05:23.889475 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                       51 
+
+2019-08-20 12:05:23.889475 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *             0x007ffce9e1567e
+
+2019-08-20 12:05:23.889499 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLGetInfo  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889499 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889499 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	UWORD                       77 <SQL_DRIVER_ODBC_VER>
+
+2019-08-20 12:05:23.889499 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	PTR                 0x007ffce9e15680  0x007ffce9e15680
+[       5] "03.52"
+
+2019-08-20 12:05:23.889499 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD                       51 
+
+2019-08-20 12:05:23.889499 (Time elapsed in microseconds :       24) ppid=1006:pid=14407:tid=1405918545242 	SWORD *             0x007ffce9e1567e (5)
+
+2019-08-20 12:05:23.889528 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLAllocStmt 
+
+2019-08-20 12:05:23.889528 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889528 ppid=1006:pid=14407:tid=140591854524224                                         	HSTMT *             0x007ffce9e36368
+
+2019-08-20 12:05:23.889573 (Time elapsed in microseconds :       45) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLAllocStmt  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:23.889573 (Time elapsed in microseconds :       45) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:23.889573 (Time elapsed in microseconds :       45) ppid=1006:pid=14407:tid=1405918545242 	HSTMT *             0x007ffce9e36368 ( 0x000000013db9a0)
+
+2019-08-20 12:05:31.701617 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLExecDirect 
+
+2019-08-20 12:05:31.701617 ppid=1006:pid=14407:tid=140591854524224                                         	HSTMT               0x000000013db9a0
+
+2019-08-20 12:05:31.701617 ppid=1006:pid=14407:tid=140591854524224                                         	UCHAR *             0x007ffce9e16260  0x007ffce9e16260
+[4294967293] "select count(*) from tab"
+
+2019-08-20 12:05:31.701617 ppid=1006:pid=14407:tid=140591854524224                                         	SDWORD                    -3
+
+2019-08-20 12:05:31.703215 (Time elapsed in microseconds :     1598) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLExecDirect  with return code -1 (SQL_ERROR)
+
+2019-08-20 12:05:31.703215 (Time elapsed in microseconds :     1598) ppid=1006:pid=14407:tid=1405918545242 	HSTMT               0x000000013db9a0
+
+2019-08-20 12:05:31.703215 (Time elapsed in microseconds :     1598) ppid=1006:pid=14407:tid=1405918545242 	UCHAR *             0x007ffce9e16260  0x007ffce9e16260
+[4294967293] "select count(*) from tab"
+
+2019-08-20 12:05:31.703215 (Time elapsed in microseconds :     1598) ppid=1006:pid=14407:tid=1405918545242 	SDWORD                    -3
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	ENTER SQLError 
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	HENV                0x0000000139c010
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	HDBC                0x000000013ab440
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	HSTMT               0x000000013db9a0
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	UCHAR *             0x007ffce9e14d80 (NYI) 
+ 
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	SDWORD *            0x007ffce9e14d78
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	UCHAR *             0x007ffce9e14570  0x007ffce9e14570
+
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD                     2048 
+
+2019-08-20 12:05:31.703253 ppid=1006:pid=14407:tid=140591854524224                                         	SWORD *             0x007ffce9e1456e
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	EXIT  SQLError  with return code 0 (SQL_SUCCESS)
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	HENV                0x0000000139c010
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	HDBC                0x000000013ab440
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	HSTMT               0x000000013db9a0
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	UCHAR *             0x007ffce9e14d80 [  5] "S1000"
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	SDWORD *            0x007ffce9e14d78 (6091)
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	UCHAR *             0x007ffce9e14570  0x007ffce9e14570
+[     398] "[Informatica][ODBC SQL Server Wire Protocol driver]The DataDirect product you are attempting to access has been provided to you by Informatica for exclusive use with PowerCenter.  You are not licensed to use this product with any application other than PowerCenter.   If you would like to purchase this product for some other use, please call 800-876-3101 or visit DataDirect at www.datadirect.com "
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	SWORD                     2048 
+
+2019-08-20 12:05:31.703305 (Time elapsed in microseconds :       52) ppid=1006:pid=14407:tid=1405918545242 	SWORD *             0x007ffce9e1456e (398)
