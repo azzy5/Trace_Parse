@@ -1,3 +1,4 @@
+#!/usr/bin/python
 
 import json
 import datetime
@@ -17,6 +18,7 @@ def process_line(line):
         line[x] = line[x].replace("\"", "")
     return line
 
+
 def process_line_2(line):
     line = line.split(' ')
     while "" in line:
@@ -27,6 +29,7 @@ def process_line_2(line):
         line[x] = line[x].replace("\\x00", "")
         line[x] = line[x].replace("\"", "")
     return line
+
 
 def read_file(_fname):
     try:
@@ -66,18 +69,17 @@ def parse_lines(lines):
             local_json["packet_id"] = current_line[0]
             local_json["time_stamp"] = get_timestamp(previous_line)
             nested_data=[]
+            data_string = ""
             index = index + 1
-
             try:
                 while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
                     if len(line) > 1:
+                        data_string = data_string + line[1] + " , "
                         nested_data.append(line[1])
-                    #nested_data.append(line[1] if len(line) > 0 else None)
-                    #continue_ = True if "Read:" not in lines[index] and "Send:" not in lines[index] else False
-                    #if continue_:
                     index = index + 1
-                local_json["data"] = nested_data
+                local_json["data_string"] = data_string
+                local_json["data_array"] = nested_data
                 value_at = value_at + 1
                 index = index - 1
             except:
@@ -93,18 +95,17 @@ def parse_lines(lines):
             local_json["packet_id"] = current_line[0]
             local_json["time_stamp"] = get_timestamp(previous_line)
             nested_data=[]
+            data_string = ""
             index = index + 1
-            #continue_ = True
             try:
                 while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
                     if len(line) > 1:
+                        data_string = data_string + line[1] + " , "
                         nested_data.append(line[1])
-                    #nested_data.append(line[1] if len(line) > 0 else None)
-                    #continue_ = True if "Read:" not in lines[index] and "Send:" not in lines[index] else False
-                    #if continue_:
                     index = index + 1
-                local_json["data"] = nested_data
+                local_json["data_string"] = data_string
+                local_json["data_array"] = nested_data
                 index = index - 1
                 value_at = value_at + 1
             except:
@@ -125,4 +126,4 @@ if __name__ == '__main__':
     fname = "./helpers/test_snoop_1.out"
     #fname = "test_snoop_.out"
     execution(fname)
-    #test = process_line( ['1567527218348', 'Read:', '1448', 'bytes'])
+
