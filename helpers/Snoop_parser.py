@@ -74,7 +74,6 @@ def parse_lines(lines):
             try:
                 while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
-                    print(line)
                     if len(line) > 1:
                         data_string = data_string + line[1] + " , "
                         nested_data.append(line[1])
@@ -101,7 +100,6 @@ def parse_lines(lines):
             try:
                 while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
-                    print(line)
                     if len(line) > 1:
                         data_string = data_string + line[1] + " , "
                         nested_data.append(line[1])
@@ -114,19 +112,26 @@ def parse_lines(lines):
                 pass
             global_json.append(local_json)
         index = index + 1
-    return global_json
+    return json.dumps(global_json)
 
 
 
 def execution(file_name):
     lines = read_file(file_name)
     #statistics = get_statistics(lines)
-    json_obj = parse_lines(lines)
-    print(json_obj)
+    data_json = parse_lines(lines)
+    print(data_json)
+    print("opening the file ....")
+    file = open('./helpers/temp_snoop.json', 'w')
+    print("Writing data to file  ....")
+    file.write(data_json)
+    file.close()
+    print("Completed  ....")
+    return True
 
-
+'''
 if __name__ == '__main__':
     fname = "./helpers/test_snoop_1.out"
     #fname = "test_snoop_.out"
     execution(fname)
-
+'''
