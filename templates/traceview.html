@@ -1,4 +1,4 @@
-`{% extends 'layout.html' %}
+{% extends 'layout.html' %}
 {% block body %}
 <div class="container-fluid mt-2">
     <div class="container-fluid d-flex justify-content-center">
@@ -83,31 +83,88 @@
         </div>
     </div>
 </div>
-<table class="table mt-3" width="50%">
-    <tr class="alert-success">
-        <th>Index</th>
-        <th>Function</th>
-        <th>Start</th>
-        <th>End</th>
-        <th>Duration</th>
-        <th>Result</th>
-    </tr>
-    {% for line in data %}
-    <tr>
-        <th>{{ line["index"] + 1 }}</th>
-        <th {% if line["function_s"] != line["function_e"] %} class="bg-danger" {% endif %}>{{ line["function_s"] }}
-        </th>
-        <th>{{ line["start_time"] }}</th>
-        <th>{{ line["end_time"] }}</th>
-        <th  class={{ line["function_cc"] }}>{{ line["duration"] }}</th>
-        {% if line["result"] == "(SQL_ERROR)" or line["result"] =="(SQL_INVALID_HANDLE)" %}
-        <th class="bg-danger"> {{ line["result"] }} </th>
-        {% elif line["result"] == "(SQL_NO_DATA_FOUND)" %}
-        <th class="bg-warning"> {{ line["result"] }} </th>
-        {% else %}
-        <th> {{ line["result"] }} </th>
-        {% endif %}
-    </tr>
-    {% endfor %}
+<table class="table mt-3 table-hover">
+    <thead>
+        <tr class="alert-success">
+            <th>Index</th>
+            <th>Function</th>
+            <th>Start</th>
+            <th>End</th>
+            <th>Duration</th>
+            <th>Result</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for line in data %}
+        <tr>
+            <th>{{ line["index"] + 1 }}</th>
+            <th {% if line["function_s"] != line["function_e"] %} class="bg-danger" {% endif %}>{{ line["function_s"] }}
+            </th>
+            <th>{{ line["start_time"] }}</th>
+            <th>{{ line["end_time"] }}</th>
+            <th class={{ line["function_cc"] }}>{{ line["duration"] }}</th>
+            {% if line["result"] == "(SQL_ERROR)" or line["result"] =="(SQL_INVALID_HANDLE)" %}
+            <th class="bg-danger"> {{ line["result"] }} </th>
+            {% elif line["result"] == "(SQL_NO_DATA_FOUND)" %}
+            <th class="bg-warning"> {{ line["result"] }} </th>
+            {% else %}
+            <th> {{ line["result"] }} </th>
+            {% endif %}
+            <th> <button class="btn-info" data-toggle="collapse" data-target=#{{ line["index"] + 1 }}>Expand</button>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="7" style="margin: 0%;padding:0%">
+                <div id={{ line["index"] + 1 }} class="collapse justify-content-center">
+                    <div class="container-fluid d-flex justify-content-center">
+                        <div class="row" style="width: 100%;">
+                            <div class="col-sm-6">
+                                <table class="table table-sm mt-3 ">
+                                    <thead>
+                                        <tr class="alert-success">
+                                            <th colspan="3">Pre Function parameters</th>
+                                        </tr>
+                                        {% for input in line["pre_function_parameters"] %}
+                                        <tr>
+                                            {% for key, value in input.items()  %}
+                                            <th class="m-0 p-0">
+                                                <p class="font-weight-light text-monospace text-break"> {{ value }}</p>
+                                            </th>
+                                            {% endfor %}
+                                        </tr>
+                                        {% endfor %}
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-6">
+                                <table class="table table-sm mt-3 ">
+                                    <thead>
+                                        <tr class="alert-success">
+                                            <th colspan="3">Post Function parameters</th>
+                                        </tr>
+                                        {% for input in line["post_function_parameters"] %}
+                                        <tr>
+                                            {% for key, value in input.items()  %}
+                                            <th class="m-0 p-0">
+                                                <p class="font-weight-light  text-monospace text-break"> {{ value }}</p>
+                                            </th>
+                                            {% endfor %}
+                                        </tr>
+                                        {% endfor %}
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </th>
+        </tr>
+        {% endfor %}
+    </tbody>
 </table>
 {% endblock %}

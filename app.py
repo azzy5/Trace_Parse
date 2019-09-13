@@ -92,13 +92,13 @@ def index():
 @app.route("/show_trace_logs", methods=['GET', 'POST'])
 def show_trace_logs():
     try:
-        file = open('./helpers/sample_1.json', 'r')
+        file = open('./helpers/temp.json', 'r')
         data = json.load(file)
         file.close()
     except FileNotFoundError:
         print("the file not found, exiting...")
         data = []
-    return render_template('traceview.html', data=data)
+    return render_template('test.html', data=data)
 
 
 '''
