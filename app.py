@@ -1,9 +1,6 @@
 from werkzeug.utils import secure_filename
 import flask as Flask
 from flask import flash
-from helpers import Trace_Parser_OP1
-from helpers import Trace_Parser_OP3
-
 
 try:
     import sys
@@ -35,10 +32,11 @@ try:
 except ImportError:
     print(' urllib : library not found.  ')
 
+from helpers import Trace_Parser_OP1
+from helpers import Trace_Parser_OP3
+from helpers import Snoop_parser
+
 sys.path.append('./helpers')
-from helpers.utils import  error_class, success_class
-from helpers.FormsCheck import TraceInputs
-from werkzeug.utils import secure_filename
 ALLOWED_EXTENSIONS = {'log', 'out', 'pkt'}
 
 sys.path.append('./helpers')
@@ -60,14 +58,12 @@ API Routes :
 
 
 1. POST \snoop_only\{file.log, traceoption}
-    - Readfile locally and move it to
-    - Validate the 'TraceOption'
-    - Parse log to JSON based on the Trace option value
-    - Process JSON ????? (maeybe exctract useful info?)
+    - Readfile locally and move it to memory
+    - Process JSON 
     - Log the log into MongoDB
     <-- Json equelent of log file
 
-Record Example:
+Trace Record Example:
 {
 "_id": id
 "name" : f_name
@@ -79,6 +75,7 @@ Record Example:
 "t_duraion" : totol_durations
 "s_time" : start_time
 "e_time" : end_time
+"function_cc" : Color Code for duration
 "md5" : file_md5
 "data" : [...]
 }
@@ -95,13 +92,13 @@ def index():
 @app.route("/show_trace_logs", methods=['GET', 'POST'])
 def show_trace_logs():
     try:
-        file = open('./helpers/sample_1.json', 'r')
+        file = open('./helpers/temp.json', 'r')
         data = json.load(file)
         file.close()
     except FileNotFoundError:
         print("the file not found, exiting...")
         data = []
-    return render_template('traceview.html', data=data)
+    return render_template('test.html', data=data)
 
 
 '''
@@ -116,31 +113,50 @@ def show_trace_logs():
 @app.route("/snoop_only", methods=['GET', 'POST'])
 def show_snoop_logs():
     if request.method == 'GET':
-        flash('Looks like you\'re lost, let\'s try again', error_class)
+        flash('Wrong request to view the Snoop Parser, let\'s try again', error_class)
         return render_template("index.html")
+        
     if 'snoop_file' not in request.files or request.files['snoop_file'].name == '':
-        flash('Invalid file to be uploaded..', error_class)
+        flash('Invalid file ..', error_class)
         return render_template("index.html")
     else:
+        meta={}
         file = request.files['snoop_file']
+        meta["file_name"] = file.filename
+        meta["comment"] = request.form['comment']
         if file and allowed_file(file.filename):
             try:
-                fname = secure_filename(file.name)
-                file.save(fname)
-                flash("File Saved", success_class)
-                return render_template("index.html")
+                fname = secure_filename(file.filename)
+                file.save("temp_snoop.out")
             except expression:
-                flash("Are you sure that's correct file?", error_class)
+                flash("Something went wrong", error_class)
                 return render_template("index.html")
+            result = Snoop_parser.execution("temp_snoop.out")
+            if result:
+                try:
+                    file = open('./helpers/temp_snoop.json', 'r')
+                    data = json.load(file)
+                    file.close()
+                    return render_template('snoopview.html', data=data ,meta=meta)
+                except FileNotFoundError:
+                    print("the file not found, exiting...")
+                    data = []
+                    flash("Invalid file format " , error_class)
+                    return render_template('snoopview.html', data=data,meta=meta)
+            else:
+                flash("Something went wrong while parsing the log...", error_class)
+                data = []
+                return render_template('snoopview.html', data=data)
         else:
             flash("Are you sure that's correct file?", error_class)
             return render_template("index.html")
 
+            
 # Trace
 @app.route("/trace_only", methods=['GET', 'POST'])
 def trace_only():
     if request.method == 'GET':
-        flash('Looks like you\'re lost, let\'s try again', error_class)
+        flash('Wrong request to view the Trace Parser, let\'s try again', error_class)
         return render_template("index.html")
         
     if 'trace_file' not in request.files or request.files['trace_file'].name == '':
