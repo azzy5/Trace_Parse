@@ -12,3 +12,5 @@ helpers/*.out
 .idea/workspace.xml
 .idea/inspectionProfiles/Project_Default.xml
 .idea/workspace.xml
+odbctrace_10616_01.out
+odbctrace01.out
