@@ -7,15 +7,4 @@ helpers/*.json
 helpers/*.out
 .idea/*
 
-<<<<<<< HEAD
-=======
-.idea/workspace.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/workspace.xml
-temp_snoop.out
-temp_snoop.out
-trace_ShowSelectableTables1.LOG
-traceIBM_0049252901.LOG
-temp_snoop.out
-temp_snoop.out
->>>>>>> 3cb20e28db1e8143b8a684f8b0fc3a2d167c76a9
+*.out
