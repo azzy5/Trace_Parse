@@ -20,26 +20,18 @@ line_e = ""
 #1. Read file and process the data
 def read_file(_fname):
     try:
-        print("Opening file :" + _fname)
         file = open(_fname , "r")
         lines_temp = file.readlines()
         file.close()
-        print("File reading completed ...")
     except FileNotFoundError:
-        print("the file not found, exiting...")
         exit(0)
     index = 0
     lines = []
-    print("Processing file ...")
     while ( index < len(lines_temp)):
         line = lines_temp[index]
         if(line != '\n'):
             lines.append(line)
         index = index + 1
-    if 2 > len(lines):
-        print("File too small to process")
-        exit(0)
-    print("Processing completed")
     return lines
 
 #2. Print statistics
@@ -76,6 +68,7 @@ def print_statistics(lines):
     return_json["uploaded_at"] = datetime.datetime.now()
     return return_json
 
+
 def process_line(line):
     line = line.split(' ')
     while "" in line:
@@ -87,8 +80,10 @@ def process_line(line):
         line[x] = line[x].replace("\"", "")
     return line
 
+
 def time_diff(line1, line2):
     return str(datetime.datetime.strptime(line1.split()[0] + " "+line1.split()[1], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(line2.split()[0] + " "+line2.split()[1], '%Y-%m-%d %H:%M:%S.%f'))
+
 
 def time_diff_with_string(time_s, time_e):
     return str(datetime.datetime.strptime(time_e, '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(time_s, '%Y-%m-%d %H:%M:%S.%f'))
@@ -100,50 +95,7 @@ def get_timestamp(line):
 
 def get_timestamp_with_string(line):
     return str(datetime.datetime.strptime(line[0] + " " + line[1], '%Y-%m-%d %H:%M:%S.%f'))
-'''
-def parse_lines(lines):
-    lines = lines
-    global_json = []
-    index = 0
-    value_at = 0
-    while index < len(lines):
-        line =  lines[index]
-        try:
-            if "ENTER" in line and index < len(lines):
-                local_json = {}
-                line = process_line(line)
-                local_json["index"] = value_at
-                local_json["start_time"] = get_timestamp(line)
-                local_json["function"] = line[4]
-                local_json["ppid"] = line[2]
-                local_json["info"] = ' '.join(line[5:])
-                index = index + 1
-                nested_array = []
-                while "EXIT" not in lines[index] and index < len(lines):
-                    nested_json = {}
-                    line = lines[index]
-                    line = process_line(line)
-                    count = 0
-                    for value in line:
-                        nested_json["{}".format(count)] = value
-                        count = count + 1
-                    nested_array.append(nested_json)
-                    nested_json = {}
-                    index = index + 1
-            exep
-            local_json["function_parameters"] = nested_array
-            line = lines[index]
-            line = process_line(line)
-            local_json["end_time"]  =  get_timestamp(line)
-            difference = datetime.datetime.strptime(local_json["end_time"], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(local_json["start_time"], '%Y-%m-%d %H:%M:%S.%f')
-            local_json["duration"] = str(difference.microseconds)
-            local_json["return_code"] = line[-2]
-            local_json["result"] = line[-1]
-            value_at = value_at + 1
-            global_json.append(local_json)
-        index = index + 1
-    return json.dumps(global_json)
-'''
+
 
 def parse_lines(lines):
     global_json = []
@@ -167,6 +119,7 @@ def parse_lines(lines):
                     line = process_line(line)
                     nested_json = {}
                     count = 0
+                    line = line[3:]
                     for value in line:
                         nested_json["{}".format(count)] = value
                         count = count + 1
@@ -185,6 +138,8 @@ def parse_lines(lines):
                     line = process_line(line)
                     nested_json = {}
                     count = 0
+                    line = line[9:] 
+                    print(line)
                     for value in line:
                         nested_json["{}".format(count)] = value
                         count = count + 1
@@ -214,12 +169,9 @@ def execution(file_name):
     lines = read_file(file_name)
     statistics = print_statistics(lines)
     data_json = parse_lines(lines)
-    print("opening the file ....")
     file = open('./helpers/temp.json', 'w')
-    print("Writing data to file  ....")
     file.write(data_json)
     file.close()
-    print("Completed  ....")
     return True,statistics
 
 
