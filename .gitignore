@@ -2,24 +2,8 @@
 /lib
 /scripts
 /includes
-.idea/workspace.xml
-.idea/encodings.xml
-.idea/workspace.xml
 snoop_file
 helpers/*.json
 helpers/*.out
+.idea/*
 
-.idea/workspace.xml
-.idea/inspectionProfiles/Project_Default.xml
-.idea/workspace.xml
-<<<<<<< HEAD
-odbctrace_10616_01.out
-odbctrace01.out
-=======
-temp_snoop.out
-temp_snoop.out
-trace_ShowSelectableTables1.LOG
-traceIBM_0049252901.LOG
-temp_snoop.out
-temp_snoop.out
->>>>>>> 1c14bc3ab2728e1fccdbc62cc33316e54ae35a16
