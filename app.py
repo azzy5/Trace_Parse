@@ -176,7 +176,6 @@ def trace_only():
                 flash("Something went wrong", error_class)
                 return render_template("index.html")
             [result, meta["stats"]] = execute(fname, trace_option)
-            print(meta)
             if  result:
                 try:
                     file = open('./helpers/temp.json', 'r')
