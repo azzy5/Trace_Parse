@@ -19,17 +19,14 @@ line_e = ""
 #1. Read file and process the data
 def read_file(_fname):
     try:
-        print("Opening file :" + _fname)
         file = open(_fname , "r")
         lines_temp = file.readlines()
         file.close()
-        print("File reading completed ...")
     except FileNotFoundError:
-        print("the file not found, exiting...")
-        exit(0)
+        pass
     index = 0
     lines = []
-    print("Processing file ...")
+    
     while ( index < len(lines_temp)):
         line = lines_temp[index]
         if(line != '\n'):
@@ -51,9 +48,27 @@ def print_statistics(lines):
     for line in lines:
         if "ENTER" in line:
             Enter_count= Enter_count + 1
-    for line in lines:
+    for x,line in enumerate(lines):
         if "EXIT" in line:
             Exit_count= Exit_count + 1
+            if  "SQLGetInfo" in line or "SQLGetInfoW" in line:
+            #if process_line(line)[4] == "SQLGetInfo" or process_line(line)[4] = "SQLGetInfoW":
+                d_line = process_line(lines[x+2])[1]
+                d_value = lines[x+3].split(']')[-1]
+                if len(d_value.split(' ')) > 7:
+                    pass
+                else:
+                    if d_line == '17':
+                        return_json["db_name"] = lines[x+3].split(']')[-1]
+                        #print("For GetInfo {0} the value is : {1}".format(d_line,lines[x+3].split(']')[-1]))
+                    if d_line == '18':
+                        return_json["db_ver"] = lines[x+3].split(']')[-1]
+                        #print("For GetInfo {0} the value is : {1}".format(d_line,lines[x+3].split(']')[-1]))
+                    if d_line == '6':
+                        return_json["diver_file"] = lines[x+3].split(']')[-1]
+                        #print("For GetInfo {0} the value is : {1}".format(d_line,lines[x+3].split(']')[-1]))
+                    if d_line == '7':
+                        return_json["diver_ver"] = lines[x+3].split(']')[-1]
     line_f = lines[0]
     index = len(lines) - 1
     while index >= 0:
@@ -158,6 +173,7 @@ def parse_lines(lines):
                 local_json["end_time"]  =  get_timestamp(line)
                 difference = datetime.datetime.strptime(local_json["end_time"], '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(local_json["start_time"], '%Y-%m-%d %H:%M:%S.%f')
                 local_json["duration"] = str(difference)
+                local_json["function_cc"] =  function_hilighter(difference)
                 local_json["function_e"] = line[4]
                 local_json["return_code"] = line[-2]
                 local_json["result"] = line[-1]
@@ -169,6 +185,16 @@ def parse_lines(lines):
         index = index + 1
     return json.dumps(global_json)
 
+def function_hilighter(difference):
+    print(difference)
+    if difference > datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=10, hours=0, weeks=0):
+        return "bg-danger"
+    if difference > datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=1, hours=0, weeks=0):
+        return "bg-warning"
+    if difference > datetime.timedelta(days=0, seconds=1, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0):
+        return "bg-info"
+    if difference < datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0):
+        return "bg-danger"
 '''
 1 = Trace Option One
 2 = Trace Option Two
@@ -202,8 +228,10 @@ def execution(file_name):
 
 '''
 if __name__ == '__main__':
-    execution()
-
+    difference = datetime.datetime.strptime("2019-06-17 07:21:26.000996", '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime("2019-06-17 07:21:11.000676", '%Y-%m-%d %H:%M:%S.%f')
+    print(function_hilighter(difference))
+'''
+'''
  To print all lines
     index = 0
     value_at = 0
