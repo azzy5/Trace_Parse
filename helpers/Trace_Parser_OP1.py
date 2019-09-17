@@ -26,16 +26,11 @@ def read_file(_fname):
         pass
     index = 0
     lines = []
-    
     while ( index < len(lines_temp)):
         line = lines_temp[index]
         if(line != '\n'):
             lines.append(line)
         index = index + 1
-    if 2 > len(lines):
-        print("File too small to process")
-        exit(0)
-    print("Processing completed")
     return lines
 
 
@@ -186,7 +181,6 @@ def parse_lines(lines):
     return json.dumps(global_json)
 
 def function_hilighter(difference):
-    print(difference)
     if difference > datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=10, hours=0, weeks=0):
         return "bg-danger"
     if difference > datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=1, hours=0, weeks=0):
@@ -218,12 +212,9 @@ def execution(file_name):
     lines = read_file(file_name)
     statistics = print_statistics(lines)
     data_json = parse_lines(lines)
-    print("opening the file ....")
     file = open('./helpers/temp.json', 'w')
-    print("Writing data to file  ....")
     file.write(data_json)
     file.close()
-    print("Completed  ....")
     return True,statistics
 
 '''
