@@ -36,49 +36,31 @@
                 <p class="d-inline strong text-info ">Total Duration : </p>
                 <p class="d-inline">{{ meta["stats"]["total_duration"] }}</p>
             </div>
-            <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Max Duraton :</p>
-                <p class="d-inline"> - </p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid d-flex justify-content-center ">
-        <div class="row" style="width: 100%;">
-            <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Database Ver : </p>
-                <p class="d-inline"> </p>
-            </div>
-            <div class="col-sm-3 border rounded ">
-                <p class="d-inline strong text-info ">Driver ver : </p>
-                <p class="d-inline"> </p>
-            </div>
-            <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Driver File : </p>
-                <p class="d-inline"> </p>
-            </div>
-            <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">DSN name :</p>
-                <p class="d-inline"> </p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid d-flex justify-content-center ">
-        <div class="row" style="width: 100%;">
-            <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Total 'ENTER's : </p>
+            <div class="col-sm-3 border rounded" {% if meta["stats"]["enter_count"] != meta["stats"]["exit_count"] %} class="bg-danger" {% endif %}>
+                <p class="d-inline strong text-info ">Total 'ENTER's & 'EXIT's : </p>
                 <p class="d-inline">{{ meta["stats"]["enter_count"] }}</p>
-            </div>
-            <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Total 'EXIT's : </p>
+                <p class="d-inline strong text-info ">,</p>
                 <p class="d-inline">{{ meta["stats"]["exit_count"] }}</p>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center ">
+        <div class="row" style="width: 100%;">
             <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">- :</p>
-                <p class="d-inline"> -</p>
+                <p class="d-inline strong text-info ">Database Name : </p>
+                <p class="d-inline">{{ meta["stats"]["db_name"] }} </p>
             </div>
             <div class="col-sm-3 border rounded ">
-                <p class="d-inline strong text-info ">- :</p>
-                <p class="d-inline"> - </p>
+                <p class="d-inline strong text-info ">Database ver : </p>
+                <p class="d-inline"> {{ meta["stats"]["db_ver"] }} </p>
+            </div>
+            <div class="col-sm-3 border rounded">
+                <p class="d-inline strong text-info ">Driver ver : </p>
+                <p class="d-inline">{{ meta["stats"]["diver_ver"] }}  </p>
+            </div>
+            <div class="col-sm-3 border rounded">
+                <p class="d-inline strong text-info ">Driver name :</p>
+                <p class="d-inline">{{ meta["stats"]["diver_file"] }}  </p>
             </div>
         </div>
     </div>

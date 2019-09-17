@@ -171,11 +171,11 @@ def trace_only():
         if file and allowed_file(file.filename):
             try:
                 fname = secure_filename(file.filename)
-                file.save(fname)
+                file.save("test_trace.out")
             except expression:
                 flash("Something went wrong", error_class)
                 return render_template("index.html")
-            [result, meta["stats"]] = execute(fname, trace_option)
+            [result, meta["stats"]] = execute("test_trace.out", trace_option)
             if  result:
                 try:
                     file = open('./helpers/temp.json', 'r')
