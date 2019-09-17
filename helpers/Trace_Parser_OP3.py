@@ -139,7 +139,6 @@ def parse_lines(lines):
                     nested_json = {}
                     count = 0
                     line = line[9:] 
-                    print(line)
                     for value in line:
                         nested_json["{}".format(count)] = value
                         count = count + 1

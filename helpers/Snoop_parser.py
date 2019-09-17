@@ -120,7 +120,6 @@ def execution(file_name):
     lines = read_file(file_name)
     #statistics = get_statistics(lines)
     data_json = parse_lines(lines)
-    print(data_json)
     print("opening the file ....")
     file = open('./helpers/temp_snoop.json', 'w')
     print("Writing data to file  ....")
