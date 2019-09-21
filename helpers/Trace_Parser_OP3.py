@@ -42,9 +42,25 @@ def print_statistics(lines):
     for line in lines:
         if "ENTER" in line:
             Enter_count= Enter_count + 1
-    for line in lines:
+    for x,line in enumerate(lines):
         if "EXIT" in line:
             Exit_count= Exit_count + 1
+            if  "SQLGetInfo" in line or "SQLGetInfoW" in line:
+                d_line = process_line(lines[x+2])[10]
+                d_value = lines[x+3].split(']')[-1]
+                if len(d_value.split(' ')) > 7:
+                    pass
+                else:
+                    print("Line: {1}, Value :{0},".format(d_value,d_line))
+                    if d_line == '17' and d_value != "":
+                        return_json["db_name"] = d_value
+                    if d_line == '18':
+                        return_json["db_ver"] = d_value
+                    if d_line == '6':
+                        return_json["diver_file"] = d_value
+                    if d_line == '7':
+                        return_json["diver_ver"] = d_value
+       
     line_f = lines[0]
     index = len(lines) - 1
     while index >= 0:

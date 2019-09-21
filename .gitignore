@@ -6,5 +6,4 @@ snoop_file
 helpers/*.json
 helpers/*.out
 .idea/*
-
 *.out

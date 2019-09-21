@@ -47,23 +47,21 @@ def print_statistics(lines):
         if "EXIT" in line:
             Exit_count= Exit_count + 1
             if  "SQLGetInfo" in line or "SQLGetInfoW" in line:
-            #if process_line(line)[4] == "SQLGetInfo" or process_line(line)[4] = "SQLGetInfoW":
                 d_line = process_line(lines[x+2])[1]
                 d_value = lines[x+3].split(']')[-1]
                 if len(d_value.split(' ')) > 7:
                     pass
                 else:
-                    if d_line == '17':
-                        return_json["db_name"] = lines[x+3].split(']')[-1]
-                        #print("For GetInfo {0} the value is : {1}".format(d_line,lines[x+3].split(']')[-1]))
-                    if d_line == '18':
-                        return_json["db_ver"] = lines[x+3].split(']')[-1]
-                        #print("For GetInfo {0} the value is : {1}".format(d_line,lines[x+3].split(']')[-1]))
-                    if d_line == '6':
-                        return_json["diver_file"] = lines[x+3].split(']')[-1]
-                        #print("For GetInfo {0} the value is : {1}".format(d_line,lines[x+3].split(']')[-1]))
-                    if d_line == '7':
-                        return_json["diver_ver"] = lines[x+3].split(']')[-1]
+                    t_data = lines[x+3].split(']')[-1]
+                    print("test :{0},".format(t_data))
+                    if d_line == '17' and t_data != "":
+                        return_json["db_name"] = t_data
+                    if d_line == '18'and t_data != "":
+                        return_json["db_ver"] = t_data
+                    if d_line == '6' and t_data != "":
+                        return_json["diver_file"] = t_data
+                    if d_line == '7' and t_data != "":
+                        return_json["diver_ver"] = t_data
     line_f = lines[0]
     index = len(lines) - 1
     while index >= 0:
