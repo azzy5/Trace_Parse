@@ -9,7 +9,7 @@
             <th>End</th>
             <th>Duration</th>
             <th>Result</th>
-            <th></th>
+
         </tr>
     </thead>
     <tbody>
@@ -29,8 +29,6 @@
             {% else %}
             <th> {{ line["result"] }} </th>
             {% endif %}
-            <th> <button class="btn-info" data-toggle="collapse" data-target=#{{ line["index"] + 1 }}>Expand</button>
-            </th>
         </tr>
 
         {% endfor %}
