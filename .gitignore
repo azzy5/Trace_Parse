@@ -7,3 +7,5 @@ helpers/*.json
 helpers/*.out
 .idea/*
 *.out
+.vscode/settings.json
+test_trace.out
