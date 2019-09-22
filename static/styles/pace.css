@@ -204,6 +204,3 @@
   0%   { -o-transform: rotate(0deg) }
   100% { -o-transform: rotate(359deg) }
 }
-@keyframes pace-theme-center-atom-spin {
-  0%   { transform: rotate(0deg) }
-  100% { transform: rotate(359deg) }
