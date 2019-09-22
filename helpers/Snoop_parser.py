@@ -135,6 +135,7 @@ def extract_meta(lines):
     meta["read_count"] = read_count
     meta["bytes_sent"] = bytes_sent
     meta["bytes_read"] = bytes_read
+    meta["uploaded_at"] = datetime.datetime.now()
     return meta
 
     
