@@ -51,7 +51,7 @@ def print_statistics(lines):
                 if len(d_value.split(' ')) > 7:
                     pass
                 else:
-                    print("Line: {1}, Value :{0},".format(d_value,d_line))
+                    #print("Line: {1}, Value :{0},".format(d_value,d_line))
                     if d_line == '17' and d_value != "":
                         return_json["db_name"] = d_value
                     if d_line == '18':
@@ -179,15 +179,42 @@ def parse_lines(lines):
         index = index + 1
     return json.dumps(global_json)
 
+
+'''
+1 = Trace Option One
+2 = Trace Option Two
+3 = Trace Option Tree
+4 = Unknown format
+'''
+def validate(lines):
+    index = 0
+    while index < len(lines):
+        line = lines[index]
+        if "ENTER" in line:
+            #print(lines[index+1])
+            if "pid" in lines[index+1]:
+                return 3
+            elif "@ws" in lines[index+1]:
+                return 2
+            else:
+                return 1
+        index = index + 1
+    return 4
+
 def execution(file_name):
     global_json = {}
     lines = read_file(file_name)
-    statistics = print_statistics(lines)
-    data_json = parse_lines(lines)
-    file = open('./helpers/temp.json', 'w')
-    file.write(data_json)
-    file.close()
-    return True,statistics
+    valdation = validate(lines)
+    #print(valdation)
+    if valdation == 3:
+        statistics = print_statistics(lines)
+        data_json = parse_lines(lines)
+        file = open('./helpers/temp.json', 'w')
+        file.write(data_json)
+        file.close()
+        return True,statistics
+    else:
+        return False, "File not formatted for TraceOption=3, try again"
 
 
 
