@@ -17,7 +17,7 @@
             </div>
             <div class="col-sm-3 border  ">
                 <p class="d-inline strong text-info ">Created At :</p>
-                <p class="d-inline">Pending</p>
+                <p class="d-inline"></p>
             </div>
         </div>
     </div>
@@ -25,20 +25,20 @@
     <div class="container-fluid d-flex justify-content-center ">
         <div class="row" style="width: 100%;">
             <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Start Time : </p>
-                <p class="d-inline">Pending</p>
+                <p class="d-inline strong text-info ">Sent count</p>
+                <p class="d-inline">{{ meta["stats"]["send_count"] }}</p>
             </div>
             <div class="col-sm-3 border rounded ">
-                <p class="d-inline strong text-info ">End Time : </p>
-                <p class="d-inline">Pending</p>
+                <p class="d-inline strong text-info ">Read count</p>
+                <p class="d-inline">{{ meta["stats"]["read_count"] }}</p>
             </div>
             <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Total Duration : </p>
-                <p class="d-inline">Pending</p>
+                <p class="d-inline strong text-info ">Total bytes sent</p>
+                <p class="d-inline">{{ meta["stats"]["bytes_sent"] }} (avg  {{ meta["stats"]["bytes_sent"]/meta["stats"]["send_count"] }}) </p>
             </div>
             <div class="col-sm-3 border rounded">
-                <p class="d-inline strong text-info ">Max Duraton :</p>
-                <p class="d-inline"> Pending </p>
+                <p class="d-inline strong text-info ">Total bytes read</p>
+                <p class="d-inline"> {{ meta["stats"]["bytes_read"] }} (avg {{ meta["stats"]["bytes_read"]/meta["stats"]["read_count"] }}) </p>
             </div>
         </div>
     </div>

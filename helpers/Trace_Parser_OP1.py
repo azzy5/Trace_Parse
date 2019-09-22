@@ -53,7 +53,7 @@ def print_statistics(lines):
                     pass
                 else:
                     t_data = lines[x+3].split(']')[-1]
-                    print("test :{0},".format(t_data))
+                    #print("test :{0},".format(t_data))
                     if d_line == '17' and t_data != "":
                         return_json["db_name"] = t_data
                     if d_line == '18'and t_data != "":
@@ -195,40 +195,51 @@ def function_hilighter(difference):
 '''
 def validate(lines):
     index = 0
-    while "ENTER" not in lines[index] and index < len(lines):
+    while index < len(lines):
         line = lines[index]
         if "ENTER" in line:
-            line = process_line(line)
-
+            #print(lines[index+1])
+            if "pid" in lines[index+1]:
+                return 3
+            elif "@ws" in lines[index+1]:
+                return 2
+            else:
+                return 1
         index = index + 1
-    return 5
+    return 4
 
             
 
 def execution(file_name):
     global_json = []
     lines = read_file(file_name)
-    statistics = print_statistics(lines)
-    data_json = parse_lines(lines)
-    file = open('./helpers/temp.json', 'w')
-    file.write(data_json)
-    file.close()
-    return True,statistics
+    valdation = validate(lines)
+    if valdation == 1:
+        statistics = print_statistics(lines)
+        data_json = parse_lines(lines)
+        file = open('./helpers/temp.json', 'w')
+        file.write(data_json)
+        file.close()
+        return True,statistics
+    else:
+        return False, "File not formatted for TraceOption=1, try again"
 
-'''
+    '''
 if __name__ == '__main__':
+    lines = read_file('./helpers/TraceOption=2.out')
+    validation = validate(lines)
+    print("validation : {}".format(validation))
+
+
     difference = datetime.datetime.strptime("2019-06-17 07:21:26.000996", '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime("2019-06-17 07:21:11.000676", '%Y-%m-%d %H:%M:%S.%f')
     print(function_hilighter(difference))
-'''
-'''
- To print all lines
     index = 0
     value_at = 0
     while index < len(lines):
         line = process_line(lines[index])
         print(str(index) + str(line))
         index = index + 1
-
+    
     line = process_line(lines[141])
     print(line)
     count = 0
@@ -237,4 +248,5 @@ if __name__ == '__main__':
         nested_json["{}".format(count)] = value
         count = count + 1
     print(nested_json)
-'''
+    '''
+

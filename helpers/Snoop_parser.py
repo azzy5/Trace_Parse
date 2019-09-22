@@ -105,7 +105,7 @@ def parse_lines(lines):
                         nested_data.append(line[1])
                     index = index + 1
                 local_json["data_string"] = data_string
-                local_json["data_array"] = nested_data
+                local_json["data_array"] = ""
                 index = index - 1
                 value_at = value_at + 1
             except:
@@ -114,23 +114,48 @@ def parse_lines(lines):
         index = index + 1
     return json.dumps(global_json)
 
+def extract_meta(lines):
+    meta = {}
+    send_count = 0
+    read_count = 0
+    bytes_sent = 0
+    bytes_read = 0
+    if "Server" in lines[0]:
+        meta["server"] = lines[0].split('=')[-1]
+    index = 0
+    for x, line in enumerate(lines):
+        if "Read:" in line or "Send:" in line:
+            if "Read:" in line:
+                bytes_read = bytes_read + int(process_line_2(line)[2])
+                read_count = read_count + 1
+            if "Send:" in line:
+                bytes_sent = bytes_sent + int(process_line_2(line)[2])
+                send_count = send_count + 1
+    meta["send_count"] = send_count
+    meta["read_count"] = read_count
+    meta["bytes_sent"] = bytes_sent
+    meta["bytes_read"] = bytes_read
+    return meta
 
+    
 
 def execution(file_name):
     lines = read_file(file_name)
-    #statistics = get_statistics(lines)
+    statistics = extract_meta(lines)
     data_json = parse_lines(lines)
-    print("opening the file ....")
+    #print("opening the file ....")
     file = open('./helpers/temp_snoop.json', 'w')
-    print("Writing data to file  ....")
+    #print("Writing data to file  ....")
     file.write(data_json)
     file.close()
-    print("Completed  ....")
-    return True
+    #print("Completed  ....")
+    return True, statistics
 
 '''
 if __name__ == '__main__':
-    fname = "./helpers/test_snoop_1.out"
+    fname = "./helpers/test_snoop_2.out"
     #fname = "test_snoop_.out"
-    execution(fname)
+    #execution(fname)
+    lines = read_file(fname)
+    print(extract_meta(lines))
 '''

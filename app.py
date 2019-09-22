@@ -114,8 +114,7 @@ def show_trace_logs():
 def show_snoop_logs():
     if request.method == 'GET':
         flash('Wrong request to view the Snoop Parser, let\'s try again', error_class)
-        return render_template("index.html")
-        
+        return render_template("index.html")  
     if 'snoop_file' not in request.files or request.files['snoop_file'].name == '':
         flash('Invalid file ..', error_class)
         return render_template("index.html")
@@ -131,7 +130,7 @@ def show_snoop_logs():
             except expression:
                 flash("Something went wrong", error_class)
                 return render_template("index.html")
-            result = Snoop_parser.execution("temp_snoop.out")
+            result,meta['stats'] = Snoop_parser.execution("temp_snoop.out")
             if result:
                 try:
                     file = open('./helpers/temp_snoop.json', 'r')
@@ -156,11 +155,11 @@ def show_snoop_logs():
 @app.route("/trace_only", methods=['GET', 'POST'])
 def trace_only():
     if request.method == 'GET':
-        flash('Wrong request to view the Trace Parser, let\'s try again', error_class)
+        flash('Redirecting to index page', error_class)
         return render_template("index.html")
         
     if 'trace_file' not in request.files or request.files['trace_file'].name == '':
-        flash('Invalid file to be uploaded..', error_class)
+        flash('Somthing wrong with the file ..', error_class)
         return render_template("index.html")
     else:
         meta={}
@@ -186,11 +185,11 @@ def trace_only():
                     print("the file not found, exiting...")
                     data = []
                     flash("Invalid file format for TraceOption:" + trace_option, error_class)
-                    return render_template('traceview.html', data=data)
+                    return render_template('traceview.html', data=data,meta=meta)
             else:
-                flash("Something went wrong while parsing the log...", error_class)
+                flash("Please validate the log file reupload ..", error_class)
                 data = []
-                return render_template('traceview.html', data=data)
+                return render_template('traceview.html', data=data,  meta=meta)
         else:
             flash("Are you sure that's correct file?", error_class)
             return render_template("index.html")
@@ -202,10 +201,12 @@ def allowed_file(filename):
 
 def execute(fname, trace_option):
     if trace_option=='3':
-        return   Trace_Parser_OP3.execution(fname)
+        return  Trace_Parser_OP3.execution(fname)
+     
 
     if trace_option=='1':
-        return Trace_Parser_OP1.execution(fname)
+        return  Trace_Parser_OP1.execution(fname)
+
 
     
 if __name__ == '__main__':

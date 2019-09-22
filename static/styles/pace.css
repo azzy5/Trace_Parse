@@ -192,10 +192,10 @@
   border-radius: 10px;
 }
 
-@-webkit-keyframes pace-theme-center-atom-spin {
-  0%   { -webkit-transform: rotate(0deg) }
-  100% { -webkit-transform: rotate(359deg) }
+.pace.pace-inactive {
+  display: none;
 }
+<<<<<<< HEAD
 @-moz-keyframes pace-theme-center-atom-spin {
   0%   { -moz-transform: rotate(0deg) }
   100% { -moz-transform: rotate(359deg) }
@@ -204,3 +204,5 @@
   0%   { -o-transform: rotate(0deg) }
   100% { -o-transform: rotate(359deg) }
 }
+=======
+>>>>>>> 4a334e62495c2176dabaa3d5564274d74cd6659c
