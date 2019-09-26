@@ -9,3 +9,7 @@ helpers/*.out
 *.out
 .vscode/settings.json
 test_trace.out
+.idea/misc.xml
+.idea/Trace_Parse.iml
+.idea/workspace.xml
+.idea/inspectionProfiles/Project_Default.xml
