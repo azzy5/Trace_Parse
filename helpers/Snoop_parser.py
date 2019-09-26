@@ -56,8 +56,15 @@ def get_timestamp(line):
 def time_diff_with_string(time_s, time_e):
     return str(datetime.datetime.strptime(time_e, '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(time_s, '%Y-%m-%d %H:%M:%S.%f'))
 
+def time_diff_with_string_2(time_s, time_e):
+    return datetime.datetime.strptime(time_e, '%Y-%m-%d %H:%M:%S.%f') - datetime.datetime.strptime(time_s, '%Y-%m-%d %H:%M:%S.%f')
+
 def time_add_with_string(time_s, time_e):
-    return str(datetime.datetime.strptime(time_e, '%Y-%m-%d %H:%M:%S.%f') + datetime.datetime.strptime(time_s, '%Y-%m-%d %H:%M:%S.%f'))
+    return str(datetime.datetime.strptime(time_e, '%H:%M:%S.%f') + datetime.datetime.strptime(time_s, '%H:%M:%S.%f'))
+
+def delta_addition(time_p, time_c):
+    return (datetime.datetime.combine(datetime.date(1,1,1),time_p) + time_c).time()
+
 
 def parse_lines(lines):
     global_json =[]
@@ -81,10 +88,10 @@ def parse_lines(lines):
                 while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
                     if len(line) > 1:
-                        data_string = data_string + line[1] + " , "
-                        nested_data.append(line[1])
+                        data_string = data_string + line[1].strip().replace('.','')
+                        #nested_data.append(line[1])
                     index = index + 1
-                local_json["data_string"] = data_string
+                local_json["data_string"] = data_string.strip().replace('.','')
                 local_json["data_array"] = nested_data
                 value_at = value_at + 1
                 index = index - 1
@@ -107,10 +114,10 @@ def parse_lines(lines):
                 while "Read:" not in lines[index] and "Send:" not in lines[index] and index < len(lines):
                     line = process_line(lines[index])
                     if len(line) > 1:
-                        data_string = data_string + line[1] + " , "
-                        nested_data.append(line[1])
+                        data_string = data_string + line[1]
+                        #nested_data.append(line[1])
                     index = index + 1
-                local_json["data_string"] = data_string
+                local_json["data_string"] = data_string.strip().replace('.','')
                 local_json["data_array"] = ""
                 index = index - 1
                 value_at = value_at + 1
@@ -126,50 +133,53 @@ def extract_meta(_data):
     read_count = 0
     bytes_sent = 0
     bytes_read = 0
-    server_time = ""
-    client_time = ""
+    server_time = datetime.datetime.strptime("00:00:00.0000", '%H:%M:%S.%f').time()
+    client_time = datetime.datetime.strptime("00:00:00.0000", '%H:%M:%S.%f').time()
     previous_packet = ""
     previous_timestamp = ""
-    for packet in _data:
-        #print("Packet type: {}, Bytes: {}, TimeStamp: {}".format(packet["packet_type"], packet["packet_size"],packet["time_stamp"]))
-        if packet["packet_type"] == "Send:":
-            send_count = send_count + 1
-            bytes_sent = bytes_sent + int(packet["packet_size"])
-        if packet["packet_type"] == "Read:":
-            bytes_read = bytes_read + int(packet["packet_size"])
-            read_count = read_count + 1
     for x,packet in enumerate(_data):
         if x == 0:
             previous_packet = _data[0]["packet_type"]
             previous_timestamp = _data[0]["time_stamp"]
-            print("First Packe: {0}, first Timestamp : {1}".format(previous_packet,previous_timestamp))
+            if previous_packet == "Send:":
+                send_count = send_count + 1
+                bytes_sent = bytes_sent + int(packet["packet_size"])
+            if previous_packet == "Read:":
+                bytes_read = bytes_read + int(packet["packet_size"])
+                read_count = read_count + 1
         else:
             if packet["packet_type"] == "Send:":
+                send_count = send_count + 1
+                bytes_sent = bytes_sent + int(packet["packet_size"])
                 if previous_packet == "Send:":
-                    client_time = client_time + time_diff_with_string(previous_timestamp,packet["time_stamp"]) +","
-                    #print(type(time_diff_with_string(previous_timestamp,packet["time_stamp"])))
-                    #print(time_add_with_string(client_time,time_diff_with_string(previous_timestamp,packet["time_stamp"] )))
+                    difference = time_diff_with_string_2(previous_timestamp,packet["time_stamp"])
+                    client_time = delta_addition(client_time,difference)
                     previous_timestamp = packet["time_stamp"]
                     previous_packet = "Send:"
                     continue
                 if previous_packet == "Read:":
-                    server_time = server_time +","+ time_diff_with_string(previous_timestamp,packet["time_stamp"])
+                    difference = time_diff_with_string_2(previous_timestamp,packet["time_stamp"])
+                    server_time = delta_addition(server_time,difference)
                     previous_timestamp = packet["time_stamp"]
                     previous_packet = "Send:"
                     continue
             if packet["packet_type"] == "Read:":
+                bytes_read = bytes_read + int(packet["packet_size"])
+                read_count = read_count + 1
                 if previous_packet == "Read:":
-                    server_time = server_time +","+ time_diff_with_string(previous_timestamp,packet["time_stamp"])
+                    difference = time_diff_with_string_2(previous_timestamp,packet["time_stamp"])
+                    server_time = delta_addition(server_time,difference)
                     previous_timestamp = packet["time_stamp"]
                     previous_packet = "Read:"
                     continue
                 if previous_packet == "Send:":
-                    client_time = client_time +","+ time_diff_with_string(previous_timestamp,packet["time_stamp"])
+                    difference = time_diff_with_string_2(previous_timestamp,packet["time_stamp"])
+                    client_time = delta_addition(client_time,difference)
                     previous_timestamp = packet["time_stamp"]
                     previous_packet = "Read:"
                     continue
-    meta["client_time"] = client_time 
-    meta["server_time"] = server_time
+    meta["client_time"] = str(client_time)
+    meta["server_time"] = str(server_time)
     meta["send_count"] = send_count
     meta["read_count"] = read_count
     meta["bytes_sent"] = bytes_sent
@@ -177,49 +187,37 @@ def extract_meta(_data):
     meta["start_time"] = _data[0]["time_stamp"]
     meta["end_time"] = _data[-1]["time_stamp"]
     meta["total_duration"] = time_diff_with_string(meta["start_time"],meta["end_time"])
-    meta["uploaded_at"] = datetime.datetime.now()
+    meta["uploaded_at"] = str(datetime.datetime.now())
+    #print("Server time:{} Client time: {} Total time: {}".format(server_time,client_time,meta["total_duration"]))
     return meta
-
-    '''
-    for x,packet in enumerate(_data):
-        if x == 0:
-            previous_packet = first_packet
-            previous_timestamp = first_timestamp
-        else:
-            if packet["packet_type"] == "Send:":
-                if previous_packet == "Send:":
-                    client_time = time_add_with_string(client_time, time_diff_with_string(previous_timestamp,packet["time_stamp"]))
-                    previous_timestamp = packet["time_stamp"]
-                    previous_packet = "Send:"
-            if packet["packet_type"] == "Read:":
-                if previous_packet == "Read:":
-                    server_time = time_add_with_string(server_time,time_diff_with_string(previous_timestamp,packet["time_stamp"]))
-                    previous_timestamp = packet["time_stamp"]
-                    previous_packet = "Read:"
-    meta["client_time"] = client_time 
-    meta["server_time"] = server_time
-''' 
 
 def execution(file_name):
     lines = read_file(file_name)
     data_json = parse_lines(lines)
     statistics = extract_meta(data_json)
-    #print("opening the file ....")
+    f_line = lines[0]
+    lines=""
+    if "=" and ":" in f_line:
+        statistics["server_url"]= f_line.split('=')[-1].split(':')[0]
+        statistics["port_number"]= f_line.split('=')[-1].split(':')[-1]
     file = open('./helpers/temp_snoop.json', 'w')
-    #print("Writing data to file  ....")
     file.write(json.dumps(data_json))
     file.close()
-    #print("Completed  ....")
     return True, statistics
 
-
+'''
 if __name__ == '__main__':
     #fname = "./helpers/test_snoop_1.out"
-    fname = "test_snoop_2.out"
+    fname = "test_snoop_1.out"
     #execution(fname)
     lines = read_file(fname)
+
     data_json = parse_lines(lines)
     statistics = extract_meta(data_json)
+    f_line = lines[0]
+    lines =""
+    if "=" and ":" in f_line:
+        statistics["server_url"]= f_line.split('=')[-1].split(':')[0]
+        statistics["port_number"]= f_line.split('=')[-1].split(':')[-1]
     print(statistics)
-
-
+'''
