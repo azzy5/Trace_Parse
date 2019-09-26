@@ -98,7 +98,7 @@ def show_trace_logs():
     except FileNotFoundError:
         print("the file not found, exiting...")
         data = []
-    return render_template('test_filtering.html', data=data)
+    return render_template('test.html', data=data)
 
 
 '''

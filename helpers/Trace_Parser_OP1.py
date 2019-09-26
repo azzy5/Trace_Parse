@@ -185,8 +185,7 @@ def function_hilighter(difference):
         return "bg-warning"
     if difference > datetime.timedelta(days=0, seconds=1, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0):
         return "bg-info"
-    if difference < datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0):
-        return "bg-danger"
+
 '''
 1 = Trace Option One
 2 = Trace Option Two

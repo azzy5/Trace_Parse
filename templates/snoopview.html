@@ -62,22 +62,26 @@
             </div>
         </div>
     </div>
-    <table class="table table-sm mt-3">
-        <tr class="alert-success">
-            <th>Index</th>
-            <th>Packet Type</th>
-            <th>Packet Size</th>
-            <th>TimeStamp</th>
-            <th>Data (ASCII)</th>
-        </tr>
-        {% for line in data %}
-        <tr>
-            <th>{{ line["index"] + 1 }}</th>
-            <th>{{ line["packet_type"] }}</th>
-            <th>{{ line["packet_size"] }}</th>
-            <th>{{ line["time_stamp"] }}</th>
-            <th><p class="font-weight-light text-monospace text-break bg-light">{{ line["data_string"] }} </p></th>
-        </tr>
-        {% endfor %}
+    <table class="table table-sm mt-3" id="example">
+        <thead>
+            <tr class="alert-success">
+                <th>Index</th>
+                <th>Packet Type</th>
+                <th>Packet Size</th>
+                <th>TimeStamp</th>
+                <th>Data (ASCII)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for line in data %}
+            <tr>
+                <th>{{ line["index"] + 1 }}</th>
+                <th>{{ line["packet_type"] }}</th>
+                <th>{{ line["packet_size"] }}</th>
+                <th>{{ line["time_stamp"] }}</th>
+                <th><p class="font-weight-light text-monospace text-break bg-light">{{ line["data_string"] }} </p></th>
+            </tr>
+            {% endfor %}
+        </tbody>
     </table>
 {% endblock %}
