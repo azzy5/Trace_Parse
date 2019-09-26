@@ -126,8 +126,6 @@ def extract_meta(_data):
     read_count = 0
     bytes_sent = 0
     bytes_read = 0
-    first_timestamp = _data[0]["time_stamp"]
-    first_packet = _data[0]["packet_type"]
     server_time = ""
     client_time = ""
     previous_packet = ""
@@ -140,6 +138,38 @@ def extract_meta(_data):
         if packet["packet_type"] == "Read:":
             bytes_read = bytes_read + int(packet["packet_size"])
             read_count = read_count + 1
+    for x,packet in enumerate(_data):
+        if x == 0:
+            previous_packet = _data[0]["packet_type"]
+            previous_timestamp = _data[0]["time_stamp"]
+            print("First Packe: {0}, first Timestamp : {1}".format(previous_packet,previous_timestamp))
+        else:
+            if packet["packet_type"] == "Send:":
+                if previous_packet == "Send:":
+                    client_time = client_time + time_diff_with_string(previous_timestamp,packet["time_stamp"]) +","
+                    #print(type(time_diff_with_string(previous_timestamp,packet["time_stamp"])))
+                    #print(time_add_with_string(client_time,time_diff_with_string(previous_timestamp,packet["time_stamp"] )))
+                    previous_timestamp = packet["time_stamp"]
+                    previous_packet = "Send:"
+                    continue
+                if previous_packet == "Read:":
+                    server_time = server_time +","+ time_diff_with_string(previous_timestamp,packet["time_stamp"])
+                    previous_timestamp = packet["time_stamp"]
+                    previous_packet = "Send:"
+                    continue
+            if packet["packet_type"] == "Read:":
+                if previous_packet == "Read:":
+                    server_time = server_time +","+ time_diff_with_string(previous_timestamp,packet["time_stamp"])
+                    previous_timestamp = packet["time_stamp"]
+                    previous_packet = "Read:"
+                    continue
+                if previous_packet == "Send:":
+                    client_time = client_time +","+ time_diff_with_string(previous_timestamp,packet["time_stamp"])
+                    previous_timestamp = packet["time_stamp"]
+                    previous_packet = "Read:"
+                    continue
+    meta["client_time"] = client_time 
+    meta["server_time"] = server_time
     meta["send_count"] = send_count
     meta["read_count"] = read_count
     meta["bytes_sent"] = bytes_sent
@@ -182,14 +212,14 @@ def execution(file_name):
     #print("Completed  ....")
     return True, statistics
 
-'''
+
 if __name__ == '__main__':
-    fname = "./helpers/test_snoop_1.out"
-    #fname = "test_snoop_1.out"
+    #fname = "./helpers/test_snoop_1.out"
+    fname = "test_snoop_2.out"
     #execution(fname)
     lines = read_file(fname)
     data_json = parse_lines(lines)
     statistics = extract_meta(data_json)
     print(statistics)
-'''
+
 
