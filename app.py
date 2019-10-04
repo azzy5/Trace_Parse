@@ -185,11 +185,11 @@ def trace_only():
                     print("the file not found, exiting...")
                     data = []
                     flash("Invalid file format for TraceOption:" + trace_option, error_class)
-                    return render_template('traceview.html', data=data,meta=meta)
+                    return render_template('index.html')
             else:
                 flash("Please validate the log file reupload ..", error_class)
                 data = []
-                return render_template('traceview.html', data=data,  meta=meta)
+                return render_template('index.html')
         else:
             flash("Are you sure that's correct file?", error_class)
             return render_template("index.html")
