@@ -12,8 +12,8 @@
                 <p class="d-inline">{{ meta["file_name"] }}</p>
             </div>
             <div class="col-sm-3 border ">
-                <p class="d-inline strong text-info ">Comment :</p>
-                <p class="d-inline">{{ meta["comment"] }}</p>
+                <p class="d-inline strong text-info ">PPID :</p>
+                <p class="d-inline">  {% if data != "" %} {{ data[0]["ppid"] }} {% endif %}</p>
             </div>
             <div class="col-sm-3 border  ">
                 <p class="d-inline strong text-info ">Created At :</p>
@@ -74,7 +74,7 @@
             <th>End</th>
             <th>Duration</th>
             <th>Result</th>
-            <th></th>
+            <th><a href ="/show_trace_logs"><button type="button" class="btn  btn-danger">Show Searchable view</button></a></th>
         </tr>
     </thead>
     <tbody>

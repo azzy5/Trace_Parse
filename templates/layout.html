@@ -20,7 +20,9 @@
   {% include '_navbar.html' %} {% block body %}{% endblock %}
 <script type="text/javascript">
       $(document).ready(function () {
-          $('#example').DataTable();
+          $('#example').DataTable({
+            "pageLength": 100
+          });
       });
 </script>
 <script>
